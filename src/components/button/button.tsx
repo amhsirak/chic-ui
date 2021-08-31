@@ -53,7 +53,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
         withText: children != null
     }
 
-    if (as) {
+    if (as && !disabled) {
         return (
             <StyledButton
                 as={as}
@@ -71,7 +71,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
         )
     }
 
-    if (href) {
+    if (href && !disabled) {
         return (
             <StyledButton
                 as='a'
