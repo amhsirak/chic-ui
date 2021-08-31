@@ -1,6 +1,7 @@
 import React, { ElementType, MouseEventHandler, ReactNode } from "react";
 import { StyledButton } from "./styled";
 import { ComponentSize }  from "../../config/sizes";
+import Spinner from "../spinner";
 
 export type ButtonType = 'default' | 'secondary' | 'danger' | 'warning' | 'success'| 'light';
 
@@ -53,6 +54,11 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
         withText: children != null
     }
 
+    const spinnerStyles = {
+        size: size === 'extraLarge' ? 28 : size === 'large' ? 25 : size === 'default' ? 20 : 15,
+        innerType: 'light'
+    }
+
     if (as && !disabled) {
         return (
             <StyledButton
@@ -65,6 +71,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
                 {loading ? (
                      <>
                      Loading...
+                     <Spinner {...spinnerStyles} />
                      </>
                 ): children}
             </StyledButton>
@@ -83,7 +90,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
                 {loading ? (
                     <>
                         Loading
-                        
+                        <Spinner {...spinnerStyles} />
                     </>
                 ) : children}
             </StyledButton>
@@ -102,6 +109,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
         >{loading ? (
             <>
             Loading...
+            <Spinner {...spinnerStyles} />
             </>
         ): children}
     </StyledButton>

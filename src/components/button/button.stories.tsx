@@ -87,6 +87,18 @@ export const Sizes = () => {
         <Button type='danger' size='small'>Small</Button>
       </ButtonRow>
       <ButtonRow>
+        <Button type='warning' size='extraLarge'>Extra Large</Button>
+        <Button type='warning' size='large'>Large</Button>
+        <Button type='warning' size='default'>Default</Button>
+        <Button type='warning' size='small'>Small</Button>
+      </ButtonRow>
+      <ButtonRow>
+        <Button type='success' size='extraLarge'>Extra Large</Button>
+        <Button type='success' size='large'>Large</Button>
+        <Button type='success' size='default'>Default</Button>
+        <Button type='success' size='small'>Small</Button>
+      </ButtonRow>
+      <ButtonRow>
         <Button type='light' size='extraLarge'>Extra Large</Button>
         <Button type='light' size='large'>Large</Button>
         <Button type='light' size='default'>Default</Button>
@@ -99,10 +111,11 @@ export const Sizes = () => {
         <Button disabled size='small'>Small</Button>
       </ButtonRow>
       <ButtonRow>
-        <Button loading size='extraLarge'>Extra Large</Button>
-        <Button loading size='large'>Large</Button>
-        <Button loading size='default'>Default</Button>
-        <Button loading size='small'>Small</Button>
+        {/* "Note: The default color of spinner is Blue" */}
+        <Button loading type='success' size='extraLarge'>Extra Large</Button>
+        <Button loading type='danger'size='large'>Large</Button>
+        <Button loading type='warning'size='default'>Default</Button>
+        <Button loading type='secondary'size='small'>Small</Button>
       </ButtonRow>
       </>
   );
