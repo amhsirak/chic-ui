@@ -14,17 +14,33 @@ Default.args = {
     size: 50
 }
 
-const DarkBackground  = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: #000000;
-`;
+export const SecondarySpinner = Template.bind({});
+SecondarySpinner.args = {
+    size: 50,
+    type: 'secondary'
+}
 
-export const Light = () => (
-    <DarkBackground>
-        <Spinner size={50} light />
-    </DarkBackground>
-)
+export const DangerSpinner = Template.bind({});
+DangerSpinner.args = {
+    size: 50,
+    type: 'danger'
+}
+
+
+export const WarningSpinner = Template.bind({});
+WarningSpinner.args = {
+    size: 50,
+    type: 'warning'
+}
+
+export const SuccessSpinner = Template.bind({});
+SuccessSpinner.args = {
+    size: 50,
+    type: 'success'
+}
+
+export const LightSpinner = Template.bind({});
+LightSpinner.args = {
+    size: 50,
+    type: 'light'
+}
