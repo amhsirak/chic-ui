@@ -12,17 +12,25 @@ const typeColors: {
 } = {
     default: {
         regular: '#0018cf',
-        hover: '#114cab',
+        hover: '#001be8',
     },
     secondary: {
         regular: '#000',
-        hover: '#3d3d3d',
+        hover: '#212121',
     },
     danger: {
         regular: '#d93848',
         hover: '#eb4d5d',
     },
-    hidden: {
+    warning: {
+        regular: '#de9b00',
+        hover: '#eba607'
+    },
+    success: {
+        regular: '#039e2f',
+        hover: '#03a832'
+    },
+    light: {
         regular: 'transparent',
         hover: '#dbdbdb',
     }
@@ -47,8 +55,8 @@ export const StyledButton =  styled.button<StyledButtonProps>`
     padding: 0 ${ pr => sidePaddings[pr.size]}px;
     height: ${ pr => heights[pr.size]}px;
     background-color: ${ pr => typeColors[pr.innerType].regular};
-    color: ${ pr => pr.innerType === 'hidden'
-            ? typeColors['default'].regular
+    color: ${ pr => pr.innerType === 'light'
+            ? '#000'
             : '#fff'
     };
     &:hover {

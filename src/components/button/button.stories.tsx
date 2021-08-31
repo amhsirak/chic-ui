@@ -26,10 +26,22 @@ DangerButton.args = {
   type: 'danger',
 };
 
-export const HiddenButton = Template.bind({});
-HiddenButton.args = {
-  children: 'Hidden Button',
-  type: 'hidden',
+export const WarningButton = Template.bind({});
+WarningButton.args = {
+  children: 'Warning Button',
+  type: 'warning',
+};
+
+export const SuccessButton = Template.bind({});
+SuccessButton.args = {
+  children: 'Success Button',
+  type: 'success',
+};
+
+export const LightButton = Template.bind({});
+LightButton.args = {
+  children: 'Light Button',
+  type: 'light',
 };
 
 export const Disabled = Template.bind({});
@@ -75,10 +87,10 @@ export const Sizes = () => {
         <Button type='danger' size='small'>Small</Button>
       </ButtonRow>
       <ButtonRow>
-        <Button type='hidden' size='extraLarge'>Extra Large</Button>
-        <Button type='hidden' size='large'>Large</Button>
-        <Button type='hidden' size='default'>Default</Button>
-        <Button type='hidden' size='small'>Small</Button>
+        <Button type='light' size='extraLarge'>Extra Large</Button>
+        <Button type='light' size='large'>Large</Button>
+        <Button type='light' size='default'>Default</Button>
+        <Button type='light' size='small'>Small</Button>
       </ButtonRow>
       <ButtonRow>
         <Button disabled size='extraLarge'>Extra Large</Button>

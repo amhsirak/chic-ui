@@ -19,7 +19,7 @@ const typeColors: {
         regular: '#d93848'
     },
     warning: {
-        regular: '#f2e200'
+        regular: '#de9b00'
     },
     success: {
         regular: '#039e2f'

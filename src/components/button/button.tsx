@@ -2,7 +2,7 @@ import React, { ElementType, MouseEventHandler, ReactNode } from "react";
 import { StyledButton } from "./styled";
 import { ComponentSize }  from "../../config/sizes";
 
-export type ButtonType = 'default' | 'secondary' | 'danger' | 'hidden';
+export type ButtonType = 'default' | 'secondary' | 'danger' | 'warning' | 'success'| 'light';
 
 interface BaseButtonProps {
     type?: ButtonType;
