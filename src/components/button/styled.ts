@@ -49,7 +49,7 @@ export const StyledButton =  styled.button<StyledButtonProps>`
     justify-content: center;
     font-size: 15px;
     border: none;
-    border-radius: 7px;
+    border-radius: 8px;
     outline: none;
     cursor: pointer;
     padding: 0 ${ pr => sidePaddings[pr.size]}px;
