@@ -1,0 +1,1 @@
+import { StyledSkeleton } from './styled';
