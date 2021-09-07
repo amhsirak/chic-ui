@@ -24,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "compile-icons": "npx @svgr/cli -d src/icons src/icons --typescript"
   },
   "eslintConfig": {
     "extends": [
@@ -60,6 +61,7 @@
     "@storybook/addon-links": "^6.3.7",
     "@storybook/node-logger": "^6.3.7",
     "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.7"
+    "@storybook/react": "^6.3.7",
+    "@svgr/cli": "^5.5.0"
   }
 }

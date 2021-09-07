@@ -83,3 +83,7 @@ export const StyledButton =  styled.button<StyledButtonProps>`
         }
         `: ''}
 `;
+
+export const StyledIcon = styled.div`
+    height: 20px;
+`;
