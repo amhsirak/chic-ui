@@ -1,5 +1,5 @@
 import React, { ElementType, MouseEventHandler, ReactNode } from "react";
-import { StyledButton } from "./styled";
+import { StyledButton, StyledIcon } from "./styled";
 import { ComponentSize }  from "../../config/sizes";
 import Spinner from "../spinner";
 
@@ -7,7 +7,7 @@ export type ButtonType = 'default' | 'secondary' | 'danger' | 'warning' | 'succe
 
 interface BaseButtonProps {
     type?: ButtonType;
-    //icon?: ElementType;
+    icon?: ElementType;
     size?: ComponentSize;
     className?: string;
     children?: ReactNode;
@@ -35,7 +35,7 @@ export type ButtonProps = HTMLButtonProps & HTMLAnchorProps & CustomNodeProps;
 const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref) => {
     const {
         type = 'default',
-        //icon,
+        icon,
         size = 'default',
         className,
         children,
@@ -59,6 +59,13 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
         innerType: 'light'
     }
 
+    const childrenWithIcon = !icon ? children : (
+        <>
+            {children}
+            <StyledIcon as={icon} />
+        </>
+    )
+
     if (as && !disabled) {
         return (
             <StyledButton
@@ -73,7 +80,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
                      Loading...
                      <Spinner {...spinnerStyles} />
                      </>
-                ): children}
+                ): childrenWithIcon}
             </StyledButton>
         )
     }
@@ -92,7 +99,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
                         Loading
                         <Spinner {...spinnerStyles} />
                     </>
-                ) : children}
+                ) : childrenWithIcon}
             </StyledButton>
         );
     }
@@ -111,7 +118,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
             Loading...
             <Spinner {...spinnerStyles} />
             </>
-        ): children}
+        ): childrenWithIcon}
     </StyledButton>
     )
     
