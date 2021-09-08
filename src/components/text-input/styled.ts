@@ -22,7 +22,7 @@ interface StyledTextInputProps {
     withCross: boolean;
 }
 
-export const StyledTextInpt = styled.input<StyledTextInputProps>`
+export const StyledTextInput = styled.input<StyledTextInputProps>`
     box-sizing: border-box;
     position: relative;
     color: #000;
