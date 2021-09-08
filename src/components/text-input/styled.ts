@@ -63,12 +63,12 @@ export const StyledIcon = styled.div.withConfig({
     !['innerSize'].includes(prop) && defPropValFN(prop),
 })<StyledIconProps>`
     box-sizing: border-box;
-    postion: absolute;
-    left: ${ pr => sidePaddings[pr.innerSize]}px;
+    position: absolute;
+    left: ${pr => sidePaddings[pr.innerSize]}px;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
     height: 15px;
-    width: 15px;
 `;
 
 interface StyledCrossProps {
