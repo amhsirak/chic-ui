@@ -1,5 +1,5 @@
 import Skeleton from './skeleton';
 
-import * from './skeleton';
+export * from './skeleton';
 
 export default Skeleton;
