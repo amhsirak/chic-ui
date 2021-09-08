@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledSpinner } from "./styled";
 
-export type SpinnerType = 'default' | 'secondary' | 'danger' | 'warning' | 'success'| 'light';
+export type SpinnerType = 'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'light';
 
 export interface SpinnerProps {
     type?: SpinnerType;

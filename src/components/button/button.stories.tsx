@@ -1,6 +1,7 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 import styled from 'styled-components';
 import Button, { ButtonProps } from '.';
+import SearchIcon from '../../icons/Search';
 
 export default {
   title: 'Components/Button',
@@ -55,6 +56,14 @@ Loading.args = {
   children: 'Button',
   loading: true,
 };
+
+export const WithIcon = Template.bind({});
+WithIcon.args = {
+  icon: SearchIcon,
+  type: 'light',
+  children: 'Search',
+};
+
 
 const ButtonRow = styled.div `
   display: flex;
