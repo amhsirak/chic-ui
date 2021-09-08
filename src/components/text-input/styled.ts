@@ -70,3 +70,17 @@ export const StyledIcon = styled.div.withConfig({
     height: 15px;
     width: 15px;
 `;
+
+interface StyledCrossProps {
+    innerSize: ComponentSize;
+}
+
+export const StyledCross = styled(CrossIcon)<StyledCrossProps>`
+    box-sizing: border-box;
+    position: absolute;
+    right: ${pr => sidePaddings[pr.innerSize]}px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    height: 15px;
+`;
