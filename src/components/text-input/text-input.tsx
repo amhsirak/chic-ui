@@ -9,7 +9,6 @@ export interface TextInputProps extends Omit<HTMLAttributes<HTMLInputElement>, '
     error?: boolean;
     width?: string;
     value?: string;
-    className?: string;
     onChange?: ChangeEventHandler<HTMLInputElement>;
     // if input is controlled by another element
     readonly?: boolean;
@@ -42,7 +41,29 @@ const TextInput: React.ForwardRefRenderFunction<HTMLInputElement, TextInputProps
         withCross: clearable
     };
     return(
-        <StyledWrapper width={width} innerSize={size} />
+        <StyledWrapper width={width} innerSize={size} >
+             <StyledTextInput
+                type={rest.type || 'text'}
+                value={value}
+                onChange={onChange}
+                readOnly={readonly}
+                ref={ref}
+                className={className}
+                placeholder={placeholder}
+                {...styles}
+                {...rest}
+            />
+            <StyledIcon as={icon} innerSize={size} />
+            {clearable && value ? (
+                <StyledCross 
+                    innerSize={size} 
+                    onClick={() => 
+                        onChange 
+                        && onChange({ currentTarget: { value: '' } } as any)
+                    }
+                />
+            ) : null}
+        </StyledWrapper>
     );
 }
 
