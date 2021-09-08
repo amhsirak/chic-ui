@@ -1,7 +1,7 @@
 {
   "name": "chic",
   "version": "1.0.0",
-  "description": "Reusable and customisable React components to help you code faster",
+  "description": "Reusable and customisable React Components to help you code faster.",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
