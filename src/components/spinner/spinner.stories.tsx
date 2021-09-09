@@ -1,5 +1,4 @@
 import { Story, Meta } from '@storybook/react';
-import styled from 'styled-components';
 import Spinner, { SpinnerProps } from '.';
 
 export default {
