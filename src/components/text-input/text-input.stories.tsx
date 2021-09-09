@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Story, Meta } from '@storybook/react';
-import TextInput,{ TextInputProps } from './text-input';
+import TextInput,{ TextInputProps } from '.';
 import styled from 'styled-components';
 import SearchIcon from '../../icons/Search';
 
