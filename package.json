@@ -1,5 +1,5 @@
 {
-  "name": "chic",
+  "name": "chic-ui",
   "version": "0.1.0",
   "description": "Reusable and customisable React Components to help you code faster.",
   "license": "ISC",
@@ -13,13 +13,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/karishmashuklaa/chic",
+  "homepage": "https://github.com/karishmashuklaa/chic-ui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/karishmashuklaa/chic.git"
+    "url": "https://github.com/karishmashuklaa/chic-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/karishmashuklaa/chic/issues",
+    "url": "https://github.com/karishmashuklaa/chic-ui/issues",
     "email": "carishmashukla28@gmail.com"
   },
   "keywords": [
