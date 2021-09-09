@@ -1,4 +1,4 @@
-<h2> 🐙 Reusable and customisable React components to help you code faster 🐙 </h2>
+<h2>🐙Reusable and customisable React components to help you code faster🐙</h2>
 
 ## Installation
 
