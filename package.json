@@ -1,20 +1,20 @@
 {
-  "name":"chic",
-  "version":"1.0.0",
+  "name": "chic",
+  "version": "0.1.0",
   "description": "Reusable and customisable React Components to help you code faster.",
   "license": "ISC",
   "main": "lib/index.js",
-  "directories":{
-    "lib":"lib"
+  "directories": {
+    "lib": "lib"
   },
   "files": [
     "lib"
   ],
-  "publishConfig":{
-    "access":"public"
+  "publishConfig": {
+    "access": "public"
   },
-  "homepage":"https://github.com/karishmashuklaa/chic",
-  "repository":{
+  "homepage": "https://github.com/karishmashuklaa/chic",
+  "repository": {
     "type": "git",
     "url": "https://github.com/karishmashuklaa/chic.git"
   },
@@ -29,7 +29,7 @@
     "react-library",
     "chic"
   ],
-  "author": "Karishma Shukla (https://github.com/karishmashuklaa)",
+  "author": "Karishma Shukla(https://github.com/karishmashuklaa)",
   "dependencies": {
     "styled-components": "^5.3.1"
   },
