@@ -1,12 +1,11 @@
-<img src="public/chic_copy.png" />
-
-<h2>Reusable and customisable React components to help you code faster</h2>
+<h2> 🐙 Reusable and customisable React components to help you code faster 🐙 </h2>
 
 ## Installation
 
 ```
-npm i chic
+npm i chic-ui
 ```
+
 Note: Documentation will be rolled out soon. Basic implementation is explained here.
 
 ## Components
