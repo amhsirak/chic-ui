@@ -1,5 +1,9 @@
 <h2>🐙Reusable and customisable React components to help you code faster🐙</h2>
 
+[![npm Package](https://img.shields.io/npm/v/chic-ui.svg)](https://www.npmjs.org/package/chic-ui) 
+[![downloads](https://img.shields.io/npm/dt/chic-ui.svg)](http://npm-stat.com/charts.html?package=chic-ui)
+
+
 ## Installation
 
 ```
@@ -54,7 +58,7 @@ Note: Documentation will be rolled out soon. Basic implementation is explained h
 If you want to work on a new feature / become a collabrator, [Email me](carishmashukla28@gmail.com)
 
 ## Issues
-Raise an [Issue](https://github.com/karishmashuklaa/chic/issues) if you find any bugs/got ideas. 
+Raise an [Issue](https://github.com/karishmashuklaa/chic-ui/issues) if you find any bugs/got ideas. 
 
 
-***Thanks for reading! ⭐ Dont forget to star the [Repository](https://github.com/karishmashuklaa/chic) ⭐***
+***Thanks for reading! ⭐ Dont forget to star the [Repository](https://github.com/karishmashuklaa/chic-ui) ⭐***
