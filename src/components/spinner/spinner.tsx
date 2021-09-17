@@ -11,7 +11,7 @@ export interface SpinnerProps {
 
 const Spinner: React.ForwardRefRenderFunction<HTMLDivElement, SpinnerProps> = (props, ref) => {
     const {
-        type = 'default',
+        type = 'light',
         size = 30,
         className,
     } = props;

@@ -120,11 +120,11 @@ export const Sizes = () => {
         <Button disabled size='small'>Small</Button>
       </ButtonRow>
       <ButtonRow>
-        {/* "Note: The default color of spinner is Blue" */}
+        {/* "Note: The default color of spinner is Light" */}
         <Button loading type='success' size='extraLarge'>Extra Large</Button>
-        <Button loading type='danger'size='large'>Large</Button>
-        <Button loading type='warning'size='default'>Default</Button>
-        <Button loading type='secondary'size='small'>Small</Button>
+        <Button loading type='danger' size='large'>Large</Button>
+        <Button loading type='warning' size='default'>Default</Button>
+        <Button loading type='secondary' size='small'>Small</Button>
       </ButtonRow>
       </>
   );

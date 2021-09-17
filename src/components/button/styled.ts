@@ -31,8 +31,8 @@ const typeColors: {
         hover: '#03a832'
     },
     light: {
-        regular: 'transparent',
-        hover: '#dbdbdb',
+        regular: '#ffffff',
+        hover: '#e5e5e5',
     }
 };
 
