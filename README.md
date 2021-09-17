@@ -1,5 +1,9 @@
 <h2>Simple Reusable Components for React.</h2>
 
+[![npm Package](https://img.shields.io/npm/v/chic-ui.svg)](https://www.npmjs.org/package/chic-ui) 
+[![downloads](https://img.shields.io/npm/dt/chic-ui.svg)](http://npm-stat.com/charts.html?package=chic-ui)
+
+
 ## Installation
 
 ```
