@@ -27,7 +27,7 @@ const Search: React.ForwardRefRenderFunction<HTMLDivElement, SearchProps> = (pro
     const textInputStyles = {
         size,
         width: '100%',
-        placeholder
+        //placeholder
     }
 
     return (
@@ -39,11 +39,11 @@ const Search: React.ForwardRefRenderFunction<HTMLDivElement, SearchProps> = (pro
             <TextInput
                 value={value}
                 onChange={onChange}
-                //placeholder={placeholder}
+                placeholder={placeholder}
                 clearable
                 {...textInputStyles}
             />
-            <Button type='secondary' icon={SearchIcon} />
+            <Button type='light' icon={SearchIcon} />
         </SearchWrapper>
     );
 }
