@@ -27,7 +27,7 @@ export const StyledTextInput = styled.input<StyledTextInputProps>`
     position: relative;
     color: #000;
     border: none;
-    border-radius: 0;
+    border-radius: 8px;
     outline: none;
     transition: 0.1s ease-out;
     padding: 0;

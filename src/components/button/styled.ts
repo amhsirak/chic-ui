@@ -32,7 +32,7 @@ const typeColors: {
     },
     light: {
         regular: '#ffffff',
-        hover: '#e5e5e5',
+        hover: '#fcfcfc',
     }
 };
 
