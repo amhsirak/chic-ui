@@ -19,5 +19,6 @@ export const WidthAndHeight = Template.bind({});
 WidthAndHeight.args = {
   src: 'https://i1.sndcdn.com/avatars-000323919926-l9fdlc-t500x500.jpg',
   height: '300px',
-  width: '300px'
+  width: '300px',
+  circle: true
 }

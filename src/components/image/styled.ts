@@ -1,19 +1,13 @@
 import styled from 'styled-components';
+import { ImageProps } from '.';
 
-interface StyledImageProps {
-    width: string;
-    height: string;
-    rounded: boolean;
-    circle: boolean;
-    outline: boolean;
-}
-
-export const StyledImage = styled.image<StyledImageProps>`
+export const StyledImage = styled.img<ImageProps>`
     box-sizing: border-box;
     position: relative;
     max-width: 100%; 
     display: block; 
     height: auto;
+    background-image: ${pr => pr.src};
     border: none;
     outline: none;
     padding: 0;
