@@ -8,7 +8,7 @@ interface StyledImageProps {
     outline: boolean;
 }
 
-export const StyledImage = styled.img<StyledImageProps>`
+export const StyledImage = styled.image<StyledImageProps>`
     box-sizing: border-box;
     position: relative;
     max-width: 100%; 
@@ -21,12 +21,11 @@ export const StyledImage = styled.img<StyledImageProps>`
     width: ${pr => pr.width};
     
     // Rounded 
-    border-radius: 8px;
+    ${pr => pr.rounded ? `border-radius: 8px;` : ''}
 
     // Circle
-    border-radius: 50%;
+    ${pr => pr.circle ? `border-radius: 50%;` : ''}
 
     // Outline
-    background: #fff;
-    padding: 1rem;
+    ${pr => pr.outline ? `background: #fff; padding: 1rem;` : ''}
 `;
