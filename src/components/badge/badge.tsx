@@ -2,6 +2,8 @@ import React, { ElementType, ReactNode } from 'react';
 import styled from 'styled-components';
 import { ComponentSize } from '../../config/sizes';
 
+export type BadgeType = 'default' | 'secondary' | 'danger' | 'warning' | 'success'| 'light';
+
 export interface BaseBadgeProps {
     type?: string;
     rounded?: boolean;
