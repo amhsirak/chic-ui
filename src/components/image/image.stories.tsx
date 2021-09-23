@@ -12,30 +12,30 @@ const Template: Story<ImageProps> = (args) => <Image {...args} />;
 export const Default = Template.bind({});
 Default.args = {
     src: 'chic_copy.png',
-    height: '500px',
-    width: '500px',
+    height: '200px',
+    width: '200px',
 }
 
 export const Circle = Template.bind({});
 Circle.args = {
   src: 'chic_copy.png',
-  height: '300px',
-  width: '300px',
+  height: '200px',
+  width: '200px',
   circle: true
 }
 
 export const Rounded = Template.bind({});
 Rounded.args = {
   src: 'chic_copy.png',
-  height: '300px',
-  width: '300px',
+  height: '200px',
+  width: '200px',
   rounded: true
 }
 
 export const Outline = Template.bind({});
 Outline.args = {
   src: 'chic_copy.png',
-  height: '300px',
-  width: '300px',
+  height: '200px',
+  width: '200px',
   outline: true
 }
