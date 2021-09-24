@@ -38,15 +38,15 @@ interface StyledBadgeProps {
 
 // Real tag is assigned dynamically
 export const StyledBadge =  styled.span<StyledBadgeProps>`
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     font-size: 12px;
     font-weight: bold;
     border-radius: 8px;
     outline: none;
-    padding: ${pr => badgeSidePaddings[pr.size]}px;
-    height: ${pr => badgeHeights[pr.size]}px;
+    padding: 0.3rem ${pr => badgeSidePaddings[pr.size]}px;
+    height: 0 ${pr => badgeHeights[pr.size]}px;
     background-color: ${ pr => typeColors[pr.innerType].regular};
     color: ${pr => pr.innerType === 'light'
             ? '#000'
