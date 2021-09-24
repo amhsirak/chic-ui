@@ -34,6 +34,7 @@ interface StyledBadgeProps {
     size: ComponentSize;
     withText: boolean;
     rounded: boolean;
+    //circle: boolean;
 }
 
 // Real tag is assigned dynamically
@@ -57,4 +58,5 @@ export const StyledBadge =  styled.span<StyledBadgeProps>`
 
     // Rounded 
     ${pr => pr.rounded ? `border-radius: 14px;`: ''}
+
 `;
