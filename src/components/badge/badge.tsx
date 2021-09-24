@@ -8,7 +8,6 @@ export type BadgeType = 'default' | 'secondary' | 'danger' | 'warning' | 'succes
 export interface BaseBadgeProps {
     type?: string;
     rounded?: boolean;
-    //circle?: boolean;
     className?: string;
     children?: ReactNode;
     size?: ComponentSize;
@@ -24,7 +23,6 @@ const Badge: React.ForwardRefRenderFunction<unknown, BadgeProps> = (props, ref) 
     const {
         type = 'default',
         rounded = false,
-        // circle = false,
         className,
         children,
         size = 'default',
@@ -37,7 +35,6 @@ const Badge: React.ForwardRefRenderFunction<unknown, BadgeProps> = (props, ref) 
         size,
         withText: children != null,
         rounded,
-        //circle
     }
     
     if (as) {

@@ -11,12 +11,27 @@ const Template: Story<BadgeProps> = (args) => <Badge {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    children: 'Default Badge'
+    children: 'Default'
 }
 
-export const Rounded = Template.bind({});
-Rounded.args = {
-    children: 'Rounded',
-    rounded: true
-}
+const BadgeRow = styled.div `
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  & > * {
+    margin-right: 12px;
+  }
+`;
 
+export const Sizes = () => {
+  return (
+    <>
+    <BadgeRow>
+      <Badge size='extraLarge'>Extra Large</Badge>
+      <Badge size='large'>Large</Badge>
+      <Badge size='default'>Default</Badge>
+      <Badge size='small'>Small</Badge>
+    </BadgeRow>
+    </>
+    );
+}

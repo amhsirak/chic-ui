@@ -34,29 +34,24 @@ interface StyledBadgeProps {
     size: ComponentSize;
     withText: boolean;
     rounded: boolean;
-    //circle: boolean;
 }
 
 // Real tag is assigned dynamically
 export const StyledBadge =  styled.span<StyledBadgeProps>`
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 12px;
     font-weight: bold;
-    border: 1px solid transparent;
     border-radius: 8px;
     outline: none;
-    cursor: pointer;
-    padding:  0.4rem ${ pr => badgeSidePaddings[pr.size]}px;
-    height: ${ pr => badgeHeights[pr.size]}px;
+    padding: ${pr => badgeSidePaddings[pr.size]}px;
+    height: ${pr => badgeHeights[pr.size]}px;
     background-color: ${ pr => typeColors[pr.innerType].regular};
-    color: ${ pr => pr.innerType === 'light'
+    color: ${pr => pr.innerType === 'light'
             ? '#000'
             : '#fff'
     };
-
     // Rounded 
     ${pr => pr.rounded ? `border-radius: 14px;`: ''}
-
 `;

@@ -21,17 +21,17 @@ export const heights: {
 export const badgeSidePaddings: {
     [key in ComponentSize]: number
 } = {
-    default: 10,
-    small: 8,
-    large: 12,
-    extraLarge: 14
+    default: 15,
+    small: 13,
+    large: 17,
+    extraLarge: 19
 }
 
 export const badgeHeights: {
     [key in ComponentSize]: number
 } = {
-    default: 30,
+    default: 25,
     small: 20,
-    large: 40,
-    extraLarge: 50
+    large: 30,
+    extraLarge: 35
 }
