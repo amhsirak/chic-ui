@@ -44,7 +44,8 @@ interface StyledButtonProps {
 
 // Real tag is assigned dynamically
 export const StyledButton =  styled.button<StyledButtonProps>`
-    display: flex;
+    box-sizing: border-box;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     font-size: 15px;
@@ -52,6 +53,7 @@ export const StyledButton =  styled.button<StyledButtonProps>`
     border-radius: 8px;
     outline: none;
     cursor: pointer;
+    width: auto;
     padding: 0 ${ pr => sidePaddings[pr.size]}px;
     height: ${ pr => heights[pr.size]}px;
     background-color: ${ pr => typeColors[pr.innerType].regular};
