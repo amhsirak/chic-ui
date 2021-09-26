@@ -3,8 +3,6 @@ import styled, {css} from 'styled-components';
 interface StyledAvatarProps {
     src: string;
     className?: string;
-    width?: string;
-    height?: string;
     name?: string;
     hasBadge?: boolean;
     isActive?: boolean;
@@ -13,8 +11,8 @@ interface StyledAvatarProps {
 export const StyledAvatar = styled.span<StyledAvatarProps>`
     display: block;
     position: relative;
-    width: ${pr => pr.width}px;
-    height: ${pr => pr.height}px;
+    width: 80px;
+    height: 80px;
     padding: 5px;
     border-radius: 50%;
     ${pr => pr.isActive && isActiveProp};
@@ -26,6 +24,8 @@ const isActiveProp = css`
         content: '';
         display: block;
         position: absolute;
+        top: -2px;
+        left: -2px;
         z-index: -1;
         width: calc(100% + 4px);
         height: calc(100% + 4px);

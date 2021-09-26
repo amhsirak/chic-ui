@@ -1,11 +1,41 @@
-import styled from 'styled-components';
+import React from 'react'
+import { StyledAvatar, StyledImage, StyledBadge, StyledSpan } from './styled'; 
 
-interface AvatarProps {
+export interface AvatarProps {
     src: string;
     className?: string;
-    width?: string;
-    height?: string;
     name?: string;
     hasBadge?: boolean;
     isActive?: boolean;
 }
+
+export const Avatar: React.ForwardRefRenderFunction<HTMLSpanElement, AvatarProps> = (props, ref) => {
+    const {
+        src,
+        className,
+        name,
+        hasBadge = false,
+        isActive = false,
+        ...rest
+    } = props;
+    return(
+       <StyledAvatar
+       src={src}
+       ref={ref}
+       hasBadge={hasBadge}
+       isActive={isActive}
+       {...rest}
+       >
+           {hasBadge && <StyledBadge />}
+           {src ? (
+               <StyledImage alt={name} src={src} {...rest} />
+           ) : (
+               <StyledSpan {...rest}>
+                   {name}
+                </StyledSpan>
+           )}
+       </StyledAvatar>
+    );
+}
+
+export default React.forwardRef<HTMLSpanElement, AvatarProps>(Avatar);
