@@ -80,7 +80,7 @@ export const Sizes = () => {
         <TextInput placeholder='extraLarge' size='extraLarge' />
         <TextInput placeholder='large' size='large' />
         <TextInput placeholder='default' size='default' />
-        <TextInput placeholder='small' size='small' />
+        <TextInput placeholder='small' size='small' /> 
         {/* <TextInput placeholder='Trying Icon' size='small' icon={SearchIcon} /> */}
       </Row>
     </>

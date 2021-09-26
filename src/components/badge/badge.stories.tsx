@@ -10,11 +10,6 @@ export default {
 
 const Template: Story<BadgeProps> = (args) => <Badge {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
-    children: 'Default'
-}
-
 const BadgeRow = styled.div `
   display: flex;
   align-items: flex-start;
