@@ -1,7 +1,7 @@
 import styled, {css} from 'styled-components';
 
 interface StyledAvatarProps {
-    src: string;
+    src?: string;
     className?: string;
     name?: string;
     hasBadge?: boolean;
@@ -38,7 +38,7 @@ const commonStyles = css`
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: white;
+  background: #eee;
 `;
 
 export const StyledImage = styled.img`
@@ -51,7 +51,7 @@ export const StyledSpan = styled.span`
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   ${commonStyles};
 `;
 
@@ -59,11 +59,10 @@ export const StyledBadge = styled.span`
   display: block;
   position: absolute;
   z-index: 1;
-  top: -6px;
-  right: -2px;
-  width: 28px;
-  height: 28px;
+  top: 3px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  border: 4px solid #262526;
-  background: #21fc6b;
+  background: #37c225;
 `;

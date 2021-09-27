@@ -2,7 +2,7 @@ import React from 'react'
 import { StyledAvatar, StyledImage, StyledBadge, StyledSpan } from './styled'; 
 
 export interface AvatarProps {
-    src: string;
+    src?: string;
     className?: string;
     name?: string;
     hasBadge?: boolean;
@@ -22,7 +22,6 @@ export const Avatar: React.ForwardRefRenderFunction<HTMLSpanElement, AvatarProps
        <StyledAvatar
        src={src}
        ref={ref}
-       hasBadge={hasBadge}
        isActive={isActive}
        {...rest}
        >
