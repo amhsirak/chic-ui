@@ -19,7 +19,7 @@ export const StyledAvatar = styled.span<StyledAvatarProps>`
 `;
 
 const isActiveProp = css`
-    background: #37c225;
+    background: linear-gradient(90deg, rgba(3,70,75,1) 0%, rgba(69,181,46,1) 35%, rgba(21,227,145,1) 100%);
     &::before {
         content: '';
         display: block;
@@ -64,5 +64,5 @@ export const StyledBadge = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #37c225;
+  background: #27c421;
 `;
