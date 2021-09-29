@@ -75,14 +75,8 @@ export const StyledButton =  styled.button<StyledButtonProps>`
 
     // Disabled button logic
     ${ pr => pr.disabled ? `
-        background-color: #a6a6a6;
-        color: #5e5e5e;
+        opacity: 0.6;
         cursor: not-allowed;
-
-        &:hover {
-            background-color: #a6a6a6 !important;
-            color: #5e5e5e !important;
-        }
         `: ''}
 `;
 

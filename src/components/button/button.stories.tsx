@@ -13,6 +13,7 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Disabled = Template.bind({});
 Disabled.args = {
+  type: 'success',
   children: 'Disabled Button',
   disabled: true
 };
