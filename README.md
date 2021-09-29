@@ -11,7 +11,7 @@
 ## 🤔 What is Chic UI?
 
 ### Chic UI is a simple UI Component Library for React built using TypeScript and Styled Components. Aiming to build as many reusable components as possible! ✨
-<a href="https://www.npmjs.com/package/chic-ui">Documentation</a> | <a href="https://www.npmjs.com/package/chic-ui">NPM Link</a>
+<a href="https://chic-ui.web.app/">Documentation</a> | <a href="https://www.npmjs.com/package/chic-ui">NPM Link</a>
 
 ## Installation
 
