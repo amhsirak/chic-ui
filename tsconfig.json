@@ -16,11 +16,13 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "outDir": "lib",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
+    "noFallthroughCasesInSwitch": true,
+    "noEmit": true
   },
   "include": [
     "src"
@@ -31,5 +33,5 @@
     "**/*.test.tsx",
     "**/*.stories.tsx",
     "./src/setupTests.ts"
-  ],
+  ]
 }
