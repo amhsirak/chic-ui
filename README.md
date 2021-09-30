@@ -22,10 +22,10 @@ npm i chic-ui
 
 ## 🙌 Contributions
 
-If you want to work on a new feature / become a collabrator, <a href="mailto:carishmashukla28@gmail.com">Email me</a>
+I would be extremely happy to have you contributing to Chic UI. You can read Contribution guidelines in **[CONTRIBUTING.md](CONTRIBUTING.md)**
 
 ## Issues
 Raise an [Issue](https://github.com/karishmashuklaa/chic-ui/issues) if you find any bugs/got ideas. 
 
-
+             
 ***Thanks for reading! ⭐ Dont forget to star the [Repository](https://github.com/karishmashuklaa/chic-ui) ⭐***
