@@ -1,5 +1,5 @@
 import React from "react";
-export declare type SpinnerType = 'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'light';
+export declare type SpinnerType = 'blue' | 'secondary' | 'danger' | 'warning' | 'success' | 'default';
 export interface SpinnerProps {
     type?: SpinnerType;
     size?: number;
