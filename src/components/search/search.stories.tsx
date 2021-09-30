@@ -13,7 +13,7 @@ export const Default = () => {
     return (
         <Search 
         placeholder='Search something...'
-        width='300px'
+        width='400px'
         value={value}
         onChange={e => setValue(e.currentTarget.value)}
         />

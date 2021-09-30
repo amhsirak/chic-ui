@@ -3,7 +3,6 @@ import Button from '../button';
 import TextInput from '../text-input';
 import { ComponentSize } from '../../config/sizes';
 import { SearchWrapper } from './styled';
-import SearchIcon from '../../icons/Search';
 
 export interface SearchProps {
     className?: string;
@@ -16,7 +15,6 @@ export interface SearchProps {
 
 const Search: React.ForwardRefRenderFunction<HTMLDivElement, SearchProps> = (props, ref) => {
     const { 
-        size = 'default',
         className,
         value,
         onChange,
@@ -25,7 +23,6 @@ const Search: React.ForwardRefRenderFunction<HTMLDivElement, SearchProps> = (pro
     } = props;
 
     const textInputStyles = {
-        size,
         width: '100%',
         //placeholder
     }
@@ -43,7 +40,9 @@ const Search: React.ForwardRefRenderFunction<HTMLDivElement, SearchProps> = (pro
                 clearable
                 {...textInputStyles}
             />
-            <Button type='light' icon={SearchIcon} />
+            <Button type='secondary'>
+                Search
+            </Button>
         </SearchWrapper>
     );
 }

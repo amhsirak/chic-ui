@@ -60,9 +60,9 @@ export const StyledBadge = styled.span`
   position: absolute;
   z-index: 1;
   top: 3px;
-  right: 7px;
-  width: 18px;
-  height: 18px;
+  right: 9px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   background: #27c421;
 `;
