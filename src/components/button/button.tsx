@@ -56,7 +56,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
 
     const spinnerStyles = {
         size: size === 'extraLarge' ? 28 : size === 'large' ? 25 : size === 'default' ? 20 : 15,
-        innerType: 'light'
+        innerType: 'default'
     }
 
     const childrenWithIcon = !icon ? children : (
@@ -77,7 +77,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
             >
                 {loading ? (
                      <>
-                     Loading...
+                     Loading
                      <Spinner {...spinnerStyles} />
                      </>
                 ): childrenWithIcon}
@@ -115,7 +115,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
             {...styles}
         >{loading ? (
             <>
-            Loading...
+            Loading
             <Spinner {...spinnerStyles} />
             </>
         ): childrenWithIcon}

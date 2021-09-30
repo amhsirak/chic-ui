@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { ComponentSize, badgeHeights, badgeSidePaddings } from '../../config/sizes';
 import { BadgeType } from './badge';
 
 type StateColors = {
@@ -31,7 +30,6 @@ const typeColors: {
 
 interface StyledBadgeProps {
     innerType: BadgeType;
-    size: ComponentSize;
     withText: boolean;
     rounded: boolean;
 }
@@ -45,8 +43,8 @@ export const StyledBadge =  styled.span<StyledBadgeProps>`
     font-weight: bold;
     border-radius: 8px;
     outline: none;
-    padding: 0.3rem ${pr => badgeSidePaddings[pr.size]}px;
-    height: 0 ${pr => badgeHeights[pr.size]}px;
+    padding: 4.6px 15px;
+    height: 0 25px;
     background-color: ${ pr => typeColors[pr.innerType].regular};
     color: ${pr => pr.innerType === 'light'
             ? '#000'

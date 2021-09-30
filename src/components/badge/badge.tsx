@@ -10,7 +10,6 @@ export interface BaseBadgeProps {
     rounded?: boolean;
     className?: string;
     children?: ReactNode;
-    size?: ComponentSize;
 }
 
 // If `as` is added, badge becomes a custom html node specified in `as`
@@ -25,14 +24,12 @@ const Badge: React.ForwardRefRenderFunction<unknown, BadgeProps> = (props, ref) 
         rounded = false,
         className,
         children,
-        size = 'default',
         as,
         to
     } = props;
 
     const styles = {
         innerType: type,
-        size,
         withText: children != null,
         rounded,
     }

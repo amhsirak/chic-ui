@@ -9,8 +9,8 @@ interface StyledWrapperProps {
 
 export const StyledWrapper = styled.div<StyledWrapperProps>`
     position: relative;
-    width: ${pr => pr.width};
     height: ${pr => heights[pr.innerSize]}px;
+    width: ${pr => pr.width};
 `;
 
 interface StyledTextInputProps {

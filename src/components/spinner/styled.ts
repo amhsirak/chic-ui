@@ -9,7 +9,7 @@ type StateColors = {
 const typeColors: {
     [key in SpinnerType]: StateColors
 } = {
-    default: {
+    blue: {
         regular: '#0018cf'
     },
     secondary: {
@@ -24,8 +24,8 @@ const typeColors: {
     success: {
         regular: '#039e2f'
     },
-    light: {
-        regular: '#edede4'
+    default: {
+        regular: '#e3e3de'
     }
 
 };

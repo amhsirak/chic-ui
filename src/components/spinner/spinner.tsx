@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledSpinner } from "./styled";
 
-export type SpinnerType = 'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'light';
+export type SpinnerType = 'blue' | 'secondary' | 'danger' | 'warning' | 'success' | 'default';
 
 export interface SpinnerProps {
     type?: SpinnerType;
@@ -11,8 +11,8 @@ export interface SpinnerProps {
 
 const Spinner: React.ForwardRefRenderFunction<HTMLDivElement, SpinnerProps> = (props, ref) => {
     const {
-        type = 'light',
-        size = 30,
+        type = 'default',
+        size = 50,
         className,
     } = props;
 
