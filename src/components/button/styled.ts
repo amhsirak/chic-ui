@@ -31,8 +31,8 @@ const typeColors: {
         hover: '#03a832'
     },
     light: {
-        regular: '#ffffff',
-        hover: '#fcfcfc',
+        regular: '#faf7f7',
+        hover: '#f7f5f5',
     }
 };
 
@@ -70,7 +70,7 @@ export const StyledButton =  styled.button<StyledButtonProps>`
 
     // Add margin for icon and loading
     & > *:nth-child(1) {
-        margin-left: ${ pr => pr.withText ? 7 : 0}px;
+        margin-left: ${ pr => pr.withText ? 7 : 5}px;
     }
 
     // Disabled button logic

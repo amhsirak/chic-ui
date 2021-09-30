@@ -38,8 +38,8 @@ SuccessSpinner.args = {
     type: 'success'
 }
 
-export const LightSpinner = Template.bind({});
-LightSpinner.args = {
+export const BlueSpinner = Template.bind({});
+BlueSpinner.args = {
     size: 50,
-    type: 'light'
+    type: 'blue'
 }

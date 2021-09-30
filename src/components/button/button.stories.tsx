@@ -18,12 +18,6 @@ Disabled.args = {
   disabled: true
 };
 
-export const Loading = Template.bind({});
-Loading.args = {
-  children: 'Button',
-  loading: true,
-};
-
 export const WithIcon = Template.bind({});
 WithIcon.args = {
   icon: SearchIcon,
@@ -60,7 +54,8 @@ export const Sizes = () => {
     </ButtonRow>
     <ButtonRow>
         {/* "Note: The default color of spinner is Light" */}
-        <Button loading type='secondary' size='default'>Default</Button>
+        <Button loading type='secondary'/>
+        <Button loading type='light' />
       <Button disabled>Disabled</Button>
     </ButtonRow>
       </>
