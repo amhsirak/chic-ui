@@ -1,8 +1,8 @@
 {
   "name": "chic-ui",
-  "version": "0.1.4",
-  "description": "Reusable and customisable React Components to help you code faster.",
-  "license": "ISC",
+  "version": "0.1.5",
+  "description": "Simple and lightweight UI component library for React.",
+  "license": "MIT",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"
@@ -28,7 +28,8 @@
     "library",
     "react-library",
     "chic-ui",
-    "ui-library"
+    "ui-library",
+    "styled-components"
   ],
   "author": "Karishma Shukla(https://github.com/karishmashuklaa)",
   "dependencies": {
