@@ -6,21 +6,23 @@ export interface ProgressBarProps  {
  fgColor?:string;
  bgColor?:string;
  height ?: number;
+ loadingText?:boolean;
 }
 
 const ProgressBar: React.ForwardRefRenderFunction<HTMLAnchorElement, ProgressBarProps> = (
   props,
   ref
 ) => {
-  const {progress= 70, fgColor = "#123123" , bgColor="#E2E2E2" , height=20} = props
+  const {progress= 70, fgColor = "#123123" , bgColor="#E2E2E2" , height=20 , loadingText=true} = props
 
   return (
       <div style={{position:'relative'}} >
+          { loadingText &&
           <StyledLoadingText>
             <div style={{height:"100%" , display:"flex",justifyContent:" center",alignItems: "center"}}>
                 <span>{progress}% </span>
             </div>
-          </StyledLoadingText>
+          </StyledLoadingText>}
     <StyledProgressBar
     color={fgColor}
     height={height}

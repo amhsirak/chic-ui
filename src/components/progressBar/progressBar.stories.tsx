@@ -20,7 +20,9 @@ Custom.args = {
  fgColor:"rgb(30, 167, 253)",
  bgColor:"#DDE0E2",
  height: 24,
+ loadingText:true
 }
+
 
 
 
