@@ -40,7 +40,7 @@
     "build": "tsc --build \"./tsconfig.json\"",
     "build:storybook": "build-storybook -s public",
     "lint": "eslint --ignore-path .gitignore .",
-    "format": "prettier --write \"**/*.+(js|json)\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
