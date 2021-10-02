@@ -15,3 +15,5 @@ export { default as Image } from './image';
 export { default as Badge } from './badge';
 
 export { default as Avatar } from './avatar';
+
+export { default as Breadcrumb } from './breadcrumb';
