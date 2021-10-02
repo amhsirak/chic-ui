@@ -12,7 +12,7 @@ export { default as Search } from './search';
 
 export { default as Image } from './image';
 
-export { default as Badge } from './badge';
+export { default as Tag } from './tag';
 
 export { default as Avatar } from './avatar';
 
