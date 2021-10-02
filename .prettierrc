@@ -1,7 +1,12 @@
 {
   "bracketSpacing": false,
+  "htmlWhitespaceSensitivity": "css",
+  "jsxSingleQuote": false,
+  "printWidth": 80,
   "semi": true,
   "tabWidth": 4,
+  "trailingComma": "all",
+  "useTabs": false,
   "overrides": [
     {
       "files": ["*.json"],
