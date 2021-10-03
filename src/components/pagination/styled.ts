@@ -1,46 +1,6 @@
 import styled from 'styled-components';
-import { bgType, PaginationProps } from './pagination';
-
-type StateColors = {
-  regular: string;
-  hover: string;
-  color: string;
-};
-
-const typeColors: {
-  [key in bgType]: StateColors;
-} = {
-  default: {
-    regular: '#0018cf',
-    hover: '#001be8',
-    color: 'white',
-  },
-  secondary: {
-    regular: '#000',
-    hover: '#212121',
-    color: 'white',
-  },
-  danger: {
-    regular: '#d93848',
-    hover: '#eb4d5d',
-    color: 'white',
-  },
-  warning: {
-    regular: '#de9b00',
-    hover: '#eba607',
-    color: 'white',
-  },
-  success: {
-    regular: '#039e2f',
-    hover: '#03a832',
-    color: 'white',
-  },
-  light: {
-    regular: '#faf7f7',
-    hover: '#f7f5f5',
-    color: 'black',
-  },
-};
+import { PaginationProps } from './pagination';
+import { theme as typeColors } from '../../config/themes';
 
 export const Container = styled.div``;
 

@@ -1,18 +1,12 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
+import { theme } from '../../config/themes';
 import Pagination, { PaginationProps } from './pagination';
 export default {
   title: 'Components/Pagination',
   component: Pagination,
   argTypes: {
     bgType: {
-      options: [
-        'default',
-        'secondary',
-        'danger',
-        'warning',
-        'success',
-        'light',
-      ],
+      options: Object.keys(theme),
       control: { type: 'radio' },
     },
     pages: {
