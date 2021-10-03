@@ -1,12 +1,12 @@
-import React, { ElementType, MouseEventHandler, ReactNode } from "react";
-import { StyledButton, StyledIcon } from "./styled";
-import { ComponentSize }  from "../../config/sizes";
+import React, {ElementType, MouseEventHandler, ReactNode} from "react";
+import {StyledButton, StyledIcon} from "./styled";
+import {ComponentSize} from "../../config/sizes";
+import { themeType } from '../../config/themes';
 import Spinner from "../spinner";
 
-export type ButtonType = 'default' | 'secondary' | 'danger' | 'warning' | 'success'| 'light';
 
 interface BaseButtonProps {
-    type?: ButtonType;
+    type?: themeType;
     icon?: ElementType;
     size?: ComponentSize;
     className?: string;
@@ -32,11 +32,14 @@ type CustomNodeProps = {
 
 export type ButtonProps = HTMLButtonProps & HTMLAnchorProps & CustomNodeProps;
 
-const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref) => {
+const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
+    props,
+    ref,
+) => {
     const {
-        type = 'default',
+        type = "default",
         icon,
-        size = 'default',
+        size = "default",
         className,
         children,
         disabled = false,
@@ -51,20 +54,29 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
         innerType: type,
         size,
         disabled,
-        withText: children != null
-    }
+        withText: children != null,
+    };
 
     const spinnerStyles = {
-        size: size === 'extraLarge' ? 28 : size === 'large' ? 25 : size === 'default' ? 20 : 15,
-        innerType: 'default'
-    }
+        size:
+            size === "extraLarge"
+                ? 28
+                : size === "large"
+                ? 25
+                : size === "default"
+                ? 20
+                : 15,
+        innerType: "default",
+    };
 
-    const childrenWithIcon = !icon ? children : (
+    const childrenWithIcon = !icon ? (
+        children
+    ) : (
         <>
             {children}
             <StyledIcon as={icon} />
         </>
-    )
+    );
 
     if (as && !disabled) {
         return (
@@ -76,19 +88,21 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
                 {...styles}
             >
                 {loading ? (
-                     <>
-                     Loading
-                     <Spinner {...spinnerStyles} />
-                     </>
-                ): childrenWithIcon}
+                    <>
+                        Loading
+                        <Spinner {...spinnerStyles} />
+                    </>
+                ) : (
+                    childrenWithIcon
+                )}
             </StyledButton>
-        )
+        );
     }
 
     if (href && !disabled) {
         return (
             <StyledButton
-                as='a'
+                as="a"
                 href={href}
                 ref={ref as React.MutableRefObject<HTMLAnchorElement>}
                 className={className}
@@ -99,29 +113,32 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref
                         Loading
                         <Spinner {...spinnerStyles} />
                     </>
-                ) : childrenWithIcon}
+                ) : (
+                    childrenWithIcon
+                )}
             </StyledButton>
         );
     }
-    
 
     return (
         <StyledButton
-            as='button'
-            type='button'
+            as="button"
+            type="button"
             onClick={onClick}
             ref={ref as React.MutableRefObject<HTMLButtonElement>}
             className={className}
             {...styles}
-        >{loading ? (
-            <>
-            Loading
-            <Spinner {...spinnerStyles} />
-            </>
-        ): childrenWithIcon}
-    </StyledButton>
-    )
-    
-}
+        >
+            {loading ? (
+                <>
+                    Loading
+                    <Spinner {...spinnerStyles} />
+                </>
+            ) : (
+                childrenWithIcon
+            )}
+        </StyledButton>
+    );
+};
 
 export default React.forwardRef<unknown, ButtonProps>(Button);
