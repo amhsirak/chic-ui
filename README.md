@@ -22,10 +22,18 @@ npm i chic-ui
 
 ## 🙌 Contributions
 
-I would be extremely happy to have you contributing to Chic UI. You can read Contribution guidelines in **[CONTRIBUTING.md](CONTRIBUTING.md)**
+I would be extremely happy to have you contributing to Chic UI. **You can read Contribution guidelines in [CONTRIBUTING.md](CONTRIBUTING.md)**
 
 ## Issues
 Raise an [Issue](https://github.com/karishmashuklaa/chic-ui/issues) if you find any bugs/got ideas. 
 
-             
+## 💗 Contributors
+
+Thank you to everyone contributing! ❤️
+
+<a href="https://github.com/karishmashuklaa/chic-ui/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=karishmashuklaa/chic-ui" />
+</a>
+    
+    
 ***Thanks for reading! ⭐ Dont forget to star the [Repository](https://github.com/karishmashuklaa/chic-ui) ⭐***
