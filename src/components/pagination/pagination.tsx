@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
+import { themeType, ThemeValues } from '../../config/themes';
 import { Container, NextButton, PageButton, PreviousButton } from './styled';
-
-export type bgType =
-  | 'default'
-  | 'secondary'
-  | 'danger'
-  | 'warning'
-  | 'success'
-  | 'light';
 
 export interface PaginationProps {
   pages: number;
@@ -15,12 +8,8 @@ export interface PaginationProps {
   whenNextPage: (page: number) => void;
   whenPreviousPage: (page: number) => void;
   whenPageChange: (page: number) => void;
-  bgType: bgType;
-  customBg?: {
-    regular: string;
-    hover: string;
-    color: string;
-  };
+  bgType: themeType;
+  customBg?: ThemeValues;
   activeBg: string;
   activeColor: string;
   activeHoverColor?: string;
