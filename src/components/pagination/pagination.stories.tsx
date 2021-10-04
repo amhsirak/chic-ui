@@ -7,15 +7,15 @@ export default {
   argTypes: {
     bgType: {
       options: Object.keys(theme),
-      control: { type: 'radio' },
+      control: { type: 'radio' }
     },
     pages: {
-      control: { type: 'number' },
+      control: { type: 'number' }
     },
     startCountInZero: {
-      control: { type: 'boolean' },
-    },
-  },
+      control: { type: 'boolean' }
+    }
+  }
 } as Meta;
 
 const Template: Story<PaginationProps> = (args) => <Pagination {...args} />;
@@ -28,16 +28,16 @@ export const HandleChanges = Template.bind({});
 
 Default.args = {
   pages: 4,
-  bgType: 'success',
-  activeBg: 'blue',
-  activeHoverColor: 'white',
-  activeColor: 'white',
+  bgType: 'default',
+  activeBg: 'white',
+  activeHoverColor: 'black',
+  activeColor: 'black',
   whenPreviousPage: (page) =>
     console.log(`Previous page hit, currently in page ${page}`),
   whenNextPage: (page) =>
     console.log(`Next page hit, currently in page ${page}`),
   whenPageChange: (page) =>
-    console.log(`Different page hit, currently in page ${page}`),
+    console.log(`Different page hit, currently in page ${page}`)
 };
 
 CustomOptions.args = {
@@ -48,7 +48,7 @@ CustomOptions.args = {
   customBg: {
     regular: 'pink',
     hover: 'black',
-    color: 'red',
+    color: 'red'
   },
   activeHoverColor: 'white',
   whenPreviousPage: (page) =>
@@ -56,7 +56,7 @@ CustomOptions.args = {
   whenNextPage: (page) =>
     console.log(`Next page hit, currently in page ${page}`),
   whenPageChange: (page) =>
-    console.log(`Different page hit, currently in page ${page}`),
+    console.log(`Different page hit, currently in page ${page}`)
 };
 
 HandleChanges.args = {
@@ -66,5 +66,5 @@ HandleChanges.args = {
   whenNextPage: (page) =>
     alert(`whenNextPage page hit, currently in page ${page}`),
   whenPageChange: (page) =>
-    alert(`whenPageChange hit, currently in page ${page}`),
+    alert(`whenPageChange hit, currently in page ${page}`)
 };

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { ComponentSize } from "../../config/sizes";
+import React, { useState } from 'react';
+import { ComponentSize } from '../../config/sizes';
 import {
   SelectWrapper,
   SelectOption,
   StyledSelectDiv,
-  SelectOptionWrapper,
-} from "./styled";
+  SelectOptionWrapper
+} from './styled';
 
 export interface SelectProps<T> {
   className?: string;
@@ -29,17 +29,17 @@ const Select: React.ForwardRefRenderFunction<
     size,
     disabled,
     error,
-    width = "100%",
+    width = '100%',
     data,
     dataKey,
     dataName,
     placeholder,
-    onChange,
+    onChange
   },
   ref
 ) => {
   const [showOptions, setShowOptions] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOption, setSelectedOption] = useState('');
 
   const onOptionSelect = (value: string) => {
     const selectedValue = dataKey
@@ -58,7 +58,7 @@ const Select: React.ForwardRefRenderFunction<
       <StyledSelectDiv
         disabled={disabled || false}
         error={error || false}
-        innerSize={size || "small"}
+        innerSize={size || 'small'}
         onClick={() => setShowOptions(!showOptions)}
       >
         {selectedOption || placeholder}

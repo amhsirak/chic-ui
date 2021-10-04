@@ -1,7 +1,13 @@
-import React, { ChangeEventHandler } from "react";
-import { StyledSlider } from "./styled";
+import React, { ChangeEventHandler } from 'react';
+import { StyledSlider } from './styled';
 
-export type SliderType = "default" | "secondary" | "danger" | "warning" | "success" | "light";
+export type SliderType =
+  | 'default'
+  | 'secondary'
+  | 'danger'
+  | 'warning'
+  | 'success'
+  | 'light';
 
 interface BaseSliderProps {
   type?: SliderType;
@@ -15,12 +21,24 @@ interface BaseSliderProps {
 
 export type SliderProps = HTMLInputElement & BaseSliderProps;
 
-const Slider: React.ForwardRefRenderFunction<HTMLInputElement, SliderProps> = (props, ref) => {
-  let { min, max, step, onChange, className, value, type = "default", disabled = false } = props;
+const Slider: React.ForwardRefRenderFunction<HTMLInputElement, SliderProps> = (
+  props,
+  ref
+) => {
+  let {
+    min,
+    max,
+    step,
+    onChange,
+    className,
+    value,
+    type = 'default',
+    disabled = false
+  } = props;
 
   const styles = {
     innerType: type,
-    disabled,
+    disabled
   };
 
   return (

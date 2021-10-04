@@ -5,7 +5,7 @@ import Button from '../button';
 
 export default {
   title: 'Components/Badge',
-  component: Badge,
+  component: Badge
 } as Meta;
 
 const Template: Story<BadgeProps> = (args) => <Badge {...args} />;

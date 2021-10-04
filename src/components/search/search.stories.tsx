@@ -3,19 +3,19 @@ import { Meta } from '@storybook/react';
 import Search from '.';
 
 export default {
-    title: 'Components/Search',
-    component: Search,
+  title: 'Components/Search',
+  component: Search
 } as Meta;
 
 export const Default = () => {
-    const [value, setValue] = useState('');
+  const [value, setValue] = useState('');
 
-    return (
-        <Search 
-        placeholder='Search something...'
-        width='400px'
-        value={value}
-        onChange={e => setValue(e.currentTarget.value)}
-        />
-    );
-}
+  return (
+    <Search
+      placeholder="Search something..."
+      width="400px"
+      value={value}
+      onChange={(e) => setValue(e.currentTarget.value)}
+    />
+  );
+};

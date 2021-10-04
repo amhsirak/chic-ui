@@ -3,54 +3,71 @@ import { StyledBreadcrumb } from './styled';
 
 // Interfaces
 interface BaseBreadcrumbProps {
-	className?: string;
-	separator?: ReactNode | string;
-	style?: any;
+  className?: string;
+  separator?: ReactNode | string;
+  style?: any;
 }
 
 interface BreadcrumbItemProps {
-	children?: ReactNode;
+  children?: ReactNode;
 }
 
 interface BreadcrumbSeparatorProps {
-	children?: ReactNode;
+  children?: ReactNode;
 }
 
 // Main component
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ separator, ...props }) => {
-	let children = React.Children.toArray(props.children);
+  let children = React.Children.toArray(props.children);
 
-	const totalItems = children.length;
-	const lastIndex = totalItems - 1;
+  const totalItems = children.length;
+  const lastIndex = totalItems - 1;
 
-	// * RETURNS CHILDREN WITH SEPARATORS
-	children = children.map(toBreadcrumbItem).reduce(withSeparator(lastIndex, separator), []);
+  // * RETURNS CHILDREN WITH SEPARATORS
+  children = children
+    .map(toBreadcrumbItem)
+    .reduce(withSeparator(lastIndex, separator), []);
 
-	return <StyledBreadcrumb {...props}>{children}</StyledBreadcrumb>;
+  return <StyledBreadcrumb {...props}>{children}</StyledBreadcrumb>;
 };
 
-const toBreadcrumbItem = (child: ReactNode, index: number) => <BreadcrumbItem key={`breadcrumb_item${index}`}>{child}</BreadcrumbItem>;
-
-const withSeparator = (lastIndex: number, separator: ReactNode) => (acc: any, child: ReactNode, index: number) => {
-	const notLast = index < lastIndex;
-	if (notLast) {
-		acc.push([child, <BreadcrumbSeparator key={`breadcrumb_sep${index}`}>{separator}</BreadcrumbSeparator>]);
-	} else {
-		acc.push(child);
-	}
-	return acc;
-};
-
-const BreadcrumbItem: React.FC<BreadcrumbItemProps> = ({ children, ...props }) => (
-	<li className='breadcrumb-item' {...props}>
-		{children}
-	</li>
+const toBreadcrumbItem = (child: ReactNode, index: number) => (
+  <BreadcrumbItem key={`breadcrumb_item${index}`}>{child}</BreadcrumbItem>
 );
 
-const BreadcrumbSeparator: React.FC<BreadcrumbSeparatorProps> = ({ children, ...props }) => (
-	<li className='breadcrumb-separator' {...props}>
-		{children}
-	</li>
+const withSeparator =
+  (lastIndex: number, separator: ReactNode) =>
+  (acc: any, child: ReactNode, index: number) => {
+    const notLast = index < lastIndex;
+    if (notLast) {
+      acc.push([
+        child,
+        <BreadcrumbSeparator key={`breadcrumb_sep${index}`}>
+          {separator}
+        </BreadcrumbSeparator>
+      ]);
+    } else {
+      acc.push(child);
+    }
+    return acc;
+  };
+
+const BreadcrumbItem: React.FC<BreadcrumbItemProps> = ({
+  children,
+  ...props
+}) => (
+  <li className="breadcrumb-item" {...props}>
+    {children}
+  </li>
+);
+
+const BreadcrumbSeparator: React.FC<BreadcrumbSeparatorProps> = ({
+  children,
+  ...props
+}) => (
+  <li className="breadcrumb-separator" {...props}>
+    {children}
+  </li>
 );
 
 export default Breadcrumb;

@@ -1,6 +1,5 @@
-import styled from "styled-components";
-// import { ComponentSize, heights, sidePaddings } from "../../config/sizes";
-import { SliderType } from "./slider";
+import styled from 'styled-components';
+import { SliderType } from './slider';
 
 type StateColors = {
   thumb: string;
@@ -11,51 +10,51 @@ type StateColors = {
 const typeColors = (type: SliderType, isDisabled: boolean): StateColors => {
   if (isDisabled) {
     return {
-      thumb: "#d3d3d3",
-      track: "#d3d3d333",
-      hover: "transparent",
+      thumb: '#d3d3d3',
+      track: '#d3d3d333',
+      hover: 'transparent'
     };
   }
   switch (type) {
-    case "secondary":
+    case 'secondary':
       return {
-        thumb: "#000000",
-        hover: "#0000001A",
-        track: "#00000033",
+        thumb: '#000000',
+        hover: '#0000001A',
+        track: '#00000033'
       };
-    case "danger":
+    case 'danger':
       return {
-        thumb: "#d93848",
-        hover: "#d938481A",
-        track: "#d9384833",
-      };
-
-    case "warning":
-      return {
-        thumb: "#de9b00",
-        hover: "#de9b001A",
-        track: "#de9b0033",
+        thumb: '#d93848',
+        hover: '#d938481A',
+        track: '#d9384833'
       };
 
-    case "success":
+    case 'warning':
       return {
-        thumb: "#039e2f",
-        hover: "#039e2f1A",
-        track: "#039e2f33",
+        thumb: '#de9b00',
+        hover: '#de9b001A',
+        track: '#de9b0033'
       };
 
-    case "light":
+    case 'success':
       return {
-        thumb: "#faf7f7",
-        hover: "#faf7f71A",
-        track: "#faf7f733",
+        thumb: '#039e2f',
+        hover: '#039e2f1A',
+        track: '#039e2f33'
+      };
+
+    case 'light':
+      return {
+        thumb: '#faf7f7',
+        hover: '#faf7f71A',
+        track: '#faf7f733'
       };
 
     default:
       return {
-        thumb: "#0018cf",
-        hover: "#0018cf1A",
-        track: "#0018cf33",
+        thumb: '#0018cf',
+        hover: '#0018cf1A',
+        track: '#0018cf33'
       };
   }
 };
@@ -83,7 +82,7 @@ export const StyledSlider = styled.input<StyledSliderProps>`
   &::-webkit-slider-thumb {
     appearance: none;
     -webkit-appearance: none;
-    cursor: ${(pr) => (pr.disabled ? "default" : "grab")};
+    cursor: ${(pr) => (pr.disabled ? 'default' : 'grab')};
     height: 2px;
     width: 2px;
     border-radius: 8px;
@@ -94,7 +93,8 @@ export const StyledSlider = styled.input<StyledSliderProps>`
     background: ${(pr) => typeColors(pr.innerType, pr.disabled).thumb};
 
     &:hover {
-      box-shadow: 0 0 0 1px ${(pr) => typeColors(pr.innerType, pr.disabled).hover};
+      box-shadow: 0 0 0 1px
+        ${(pr) => typeColors(pr.innerType, pr.disabled).hover};
     }
   }
 
@@ -109,7 +109,7 @@ export const StyledSlider = styled.input<StyledSliderProps>`
   &::-moz-range-thumb {
     appearance: none;
     -moz-appearance: none;
-    cursor: ${(pr) => (pr.disabled ? "default" : "grab")};
+    cursor: ${(pr) => (pr.disabled ? 'default' : 'grab')};
     height: 2px;
     width: 2px;
     border-radius: 8px;
@@ -120,7 +120,8 @@ export const StyledSlider = styled.input<StyledSliderProps>`
     background: ${(pr) => typeColors(pr.innerType, pr.disabled).thumb};
 
     &:hover {
-      box-shadow: 0 0 0 2px ${(pr) => typeColors(pr.innerType, pr.disabled).hover};
+      box-shadow: 0 0 0 2px
+        ${(pr) => typeColors(pr.innerType, pr.disabled).hover};
     }
   }
 
@@ -143,7 +144,7 @@ export const StyledSlider = styled.input<StyledSliderProps>`
 
   &::-ms-thumb {
     appearance: none;
-    cursor: ${(pr) => (pr.disabled ? "default" : "grab")};
+    cursor: ${(pr) => (pr.disabled ? 'default' : 'grab')};
     height: 2px;
     width: 2px;
     border-radius: 8px;
@@ -154,7 +155,8 @@ export const StyledSlider = styled.input<StyledSliderProps>`
     background: ${(pr) => typeColors(pr.innerType, pr.disabled).thumb};
 
     &:hover {
-      box-shadow: 0 0 0 1px ${(pr) => typeColors(pr.innerType, pr.disabled).hover};
+      box-shadow: 0 0 0 1px
+        ${(pr) => typeColors(pr.innerType, pr.disabled).hover};
     }
   }
 

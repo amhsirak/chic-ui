@@ -24,7 +24,7 @@ export const PageButton = styled.button<PageButtonProps>`
     customBg,
     activePage,
     buttonPage,
-    activeBg,
+    activeBg
   }) =>
     !isNaN(activePage!) && activePage === buttonPage
       ? activeBg
@@ -37,7 +37,7 @@ export const PageButton = styled.button<PageButtonProps>`
       customBg,
       activePage,
       buttonPage,
-      activeBg,
+      activeBg
     }) =>
       !isNaN(activePage!) && activePage === buttonPage
         ? activeBg

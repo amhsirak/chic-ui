@@ -10,8 +10,8 @@ const arrowStyles = {
       bottom: '100%',
       left: '50%',
       right: 'unset',
-      top: 'unset',
-    },
+      top: 'unset'
+    }
   },
   bottom: {
     borderColor: (color: string) =>
@@ -21,8 +21,8 @@ const arrowStyles = {
       bottom: 'unset',
       left: '50%',
       right: 'unset',
-      top: '100%',
-    },
+      top: '100%'
+    }
   },
   left: {
     borderColor: (color: string) =>
@@ -32,8 +32,8 @@ const arrowStyles = {
       bottom: 'unset',
       left: 'unset',
       right: '100%',
-      top: '50%',
-    },
+      top: '50%'
+    }
   },
   right: {
     borderColor: (color: string) =>
@@ -43,9 +43,9 @@ const arrowStyles = {
       bottom: 'unset',
       left: '100%',
       right: 'unset',
-      top: '50%',
-    },
-  },
+      top: '50%'
+    }
+  }
 };
 
 export const StyledTooltip = styled.span<TooltipProps>`

@@ -1,5 +1,5 @@
-import Select from "./select";
+import Select from './select';
 
-export * from "./select";
+export * from './select';
 
 export default Select;
