@@ -4,7 +4,8 @@ import {
   SelectWrapper,
   SelectOption,
   StyledSelectDiv,
-  SelectOptionWrapper
+  SelectOptionWrapper,
+  ArrowDown
 } from './styled';
 
 export interface SelectProps<T> {
@@ -17,7 +18,7 @@ export interface SelectProps<T> {
   dataName?: string;
   error?: boolean;
   placeholder?: string;
-  onChange: (value: T) => void;
+  onChange?: (value: T) => void;
 }
 
 const Select: React.ForwardRefRenderFunction<
@@ -42,37 +43,42 @@ const Select: React.ForwardRefRenderFunction<
   const [selectedOption, setSelectedOption] = useState('');
 
   const onOptionSelect = (value: string) => {
-    const selectedValue = dataKey
-      ? data?.find((x) => x[dataKey] === value)
-      : value;
-    console.log(selectedValue);
-    setSelectedOption(
-      dataKey && dataName ? selectedValue[dataName] : selectedValue
-    );
-    setShowOptions(false);
-    onChange && onChange(selectedValue);
+    if (!disabled) {
+      const selectedValue = dataKey
+        ? data?.find((option) => option[dataKey] === value)
+        : value;
+      setSelectedOption(
+        dataKey && dataName ? selectedValue[dataName] : selectedValue
+      );
+      setShowOptions(false);
+      onChange && onChange(selectedValue);
+    }
   };
 
   return (
     <SelectWrapper ref={ref} className={className} width={width}>
       <StyledSelectDiv
+        tabIndex={disabled ? undefined : 0}
         disabled={disabled || false}
         error={error || false}
         innerSize={size || 'small'}
-        onClick={() => setShowOptions(!showOptions)}
+        onClick={() => !disabled && setShowOptions(!showOptions)}
       >
         {selectedOption || placeholder}
+        <ArrowDown />
       </StyledSelectDiv>
       {showOptions && (
         <SelectOptionWrapper>
           <ul>
             {data &&
-              data.map((x, i) => (
+              data.map((option, index) => (
                 <SelectOption
-                  key={`${x}_${i}`}
-                  onClick={() => onOptionSelect(dataKey ? x[dataKey] : x)}
+                  key={`${option}_${index}`}
+                  onClick={() =>
+                    onOptionSelect(dataKey ? option[dataKey] : option)
+                  }
                 >
-                  {dataKey && dataName ? x[dataName] : x}
+                  {dataKey && dataName ? option[dataName] : option}
                 </SelectOption>
               ))}
           </ul>
