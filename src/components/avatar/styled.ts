@@ -1,36 +1,41 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface StyledAvatarProps {
-    src?: string;
-    className?: string;
-    name?: string;
-    hasBadge?: boolean;
-    isActive?: boolean;
+  src?: string;
+  className?: string;
+  name?: string;
+  hasBadge?: boolean;
+  isActive?: boolean;
 }
 
 export const StyledAvatar = styled.span<StyledAvatarProps>`
-    display: block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-    padding: 5px;
-    border-radius: 50%;
-    ${pr => pr.isActive && isActiveProp};
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  border-radius: 50%;
+  ${(pr) => pr.isActive && isActiveProp};
 `;
 
 const isActiveProp = css`
-    background: linear-gradient(90deg, rgba(3,70,75,1) 0%, rgba(69,181,46,1) 35%, rgba(21,227,145,1) 100%);
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        z-index: -1;
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        border-radius: 50%;
-    }
+  background: linear-gradient(
+    90deg,
+    rgba(3, 70, 75, 1) 0%,
+    rgba(69, 181, 46, 1) 35%,
+    rgba(21, 227, 145, 1) 100%
+  );
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 50%;
+  }
 `;
 
 const commonStyles = css`

@@ -24,7 +24,7 @@ const Pagination: React.ForwardRefRenderFunction<
     startCountInZero,
     whenPreviousPage,
     whenNextPage,
-    whenPageChange,
+    whenPageChange
   } = props;
 
   const [page, setPage] = useState(startCountInZero ? 0 : 1);

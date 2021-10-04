@@ -6,7 +6,7 @@ export const sidePaddings: {
   default: 22,
   small: 19,
   large: 25,
-  extraLarge: 28,
+  extraLarge: 28
 };
 
 export const heights: {
@@ -15,5 +15,5 @@ export const heights: {
   default: 40,
   small: 33,
   large: 47,
-  extraLarge: 54,
+  extraLarge: 54
 };

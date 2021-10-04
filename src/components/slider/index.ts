@@ -1,5 +1,5 @@
-import Slider from "./slider";
+import Slider from './slider';
 
-export * from "./slider";
+export * from './slider';
 
 export default Slider;

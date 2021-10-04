@@ -1,15 +1,15 @@
-import { Meta } from "@storybook/react";
-import React, { useState } from "react";
-import Select from ".";
+import { Meta } from '@storybook/react';
+import React, { useState } from 'react';
+import Select from '.';
 
 export default {
-  title: "Components/Select",
-  component: Select,
+  title: 'Components/Select',
+  component: Select
 } as Meta;
 
 export const Default = () => {
-  const [value, setValue] = useState("");
-  const data = ["India", "Mexico", "Australia", "Germany"];
+  const [value, setValue] = useState('');
+  const data = ['India', 'Mexico', 'Australia', 'Germany'];
 
   return (
     <>
@@ -27,9 +27,9 @@ export const Default = () => {
 export const ComplexObject = () => {
   const [value, setValue] = useState({});
   const data = [
-    { id: 1, game: "hockey" },
-    { id: 2, game: "football" },
-    { id: 3, game: "running" },
+    { id: 1, game: 'hockey' },
+    { id: 2, game: 'football' },
+    { id: 3, game: 'running' }
   ];
 
   return (

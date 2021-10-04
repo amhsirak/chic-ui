@@ -1,7 +1,8 @@
 import React, { ReactNode, ElementType, HTMLAttributes } from 'react';
 import { StyledLink } from './styled';
 
-export interface LinkProps extends Omit<HTMLAttributes<HTMLAnchorElement>, 'as' | 'disabled'> {
+export interface LinkProps
+  extends Omit<HTMLAttributes<HTMLAnchorElement>, 'as' | 'disabled'> {
   disabled?: boolean;
   className?: string;
   children: ReactNode;

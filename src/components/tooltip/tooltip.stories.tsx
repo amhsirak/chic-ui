@@ -6,18 +6,18 @@ export default {
   argTypes: {
     position: {
       options: ['top', 'right', 'bottom', 'left'],
-      control: { type: 'radio' },
+      control: { type: 'radio' }
     },
     bg: {
       control: {
-        type: 'color',
-      },
+        type: 'color'
+      }
     },
     arrowColor: {
       control: {
-        type: 'color',
-      },
-    },
+        type: 'color'
+      }
+    }
   },
   args: {
     bg: 'black',
@@ -30,8 +30,8 @@ export default {
       </p>
     ),
     arrowColor: 'black',
-    position: 'top',
-  },
+    position: 'top'
+  }
 } as Meta;
 
 const Template: Story<TooltipProps> = (args) => <Tooltip {...args} />;
@@ -43,23 +43,23 @@ export const Left = Template.bind({});
 export const Big = Template.bind({});
 
 Top.args = {
-  position: 'top',
+  position: 'top'
 };
 
 Right.args = {
-  position: 'right',
+  position: 'right'
 };
 
 Bottom.args = {
-  position: 'bottom',
+  position: 'bottom'
 };
 
 Left.args = {
-  position: 'left',
+  position: 'left'
 };
 
 Big.args = {
   children: <div style={{ width: '400px', height: '200px' }}></div>,
   arrowColor: '#E5E5E5',
-  bg: '#E5E5E5',
+  bg: '#E5E5E5'
 };

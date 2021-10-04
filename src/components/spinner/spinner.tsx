@@ -16,7 +16,7 @@ const Spinner: React.ForwardRefRenderFunction<HTMLDivElement, SpinnerProps> = (
 
   const styles = {
     innerType: type,
-    size,
+    size
   };
 
   return <StyledSpinner ref={ref} className={className} {...styles} />;

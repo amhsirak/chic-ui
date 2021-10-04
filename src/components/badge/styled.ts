@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { themeType, theme as typeColors } from '../../config/themes';
 
-
 interface StyledBadgeProps {
   innerType: themeType;
   withText: boolean;

@@ -2,7 +2,6 @@ import React, { ElementType, ReactNode } from 'react';
 import { StyledBadge } from './styled';
 import { themeType } from '../../config/themes';
 
-
 export interface BaseBadgeProps {
   type?: string;
   rounded?: boolean;
@@ -26,13 +25,13 @@ const Badge: React.ForwardRefRenderFunction<unknown, BadgeProps> = (
     className,
     children,
     as,
-    to,
+    to
   } = props;
 
   const styles = {
     innerType: type,
     withText: children != null,
-    rounded,
+    rounded
   };
 
   if (as) {
