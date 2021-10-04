@@ -4,17 +4,17 @@ import Image, { ImageProps } from '.';
 
 export default {
   title: 'Components/Image',
-  component: Image,
+  component: Image
 } as Meta;
 
 const Template: Story<ImageProps> = (args) => <Image {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    src: 'chic_copy.png',
-    height: '300px',
-    width: '300px',
-}
+  src: 'chic_copy.png',
+  height: '300px',
+  width: '300px'
+};
 
 export const Circle = Template.bind({});
 Circle.args = {
@@ -22,7 +22,7 @@ Circle.args = {
   height: '300px',
   width: '300px',
   circle: true
-}
+};
 
 export const Rounded = Template.bind({});
 Rounded.args = {
@@ -30,7 +30,7 @@ Rounded.args = {
   height: '300px',
   width: '300px',
   rounded: true
-}
+};
 
 export const Outline = Template.bind({});
 Outline.args = {
@@ -38,4 +38,4 @@ Outline.args = {
   height: '300px',
   width: '300px',
   outline: true
-}
+};

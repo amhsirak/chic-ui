@@ -11,7 +11,10 @@ export interface ImageProps {
   src: string;
 }
 
-export const Image: React.ForwardRefRenderFunction<HTMLImageElement,ImageProps> = (props, ref) => {
+export const Image: React.ForwardRefRenderFunction<
+  HTMLImageElement,
+  ImageProps
+> = (props, ref) => {
   const {
     width = '100%',
     height = '100%',
@@ -19,7 +22,7 @@ export const Image: React.ForwardRefRenderFunction<HTMLImageElement,ImageProps> 
     src,
     rounded = false,
     circle = false,
-    outline = false,
+    outline = false
   } = props;
 
   return (
