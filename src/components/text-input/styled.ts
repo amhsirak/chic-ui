@@ -20,6 +20,7 @@ interface StyledTextInputProps {
   width: string;
   withIcon: boolean;
   withCross: boolean;
+  isSearch: boolean;
 }
 
 export const StyledTextInput = styled.input<StyledTextInputProps>`
