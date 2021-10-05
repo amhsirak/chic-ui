@@ -42,7 +42,7 @@ export const theme: Theme = {
   },
   light: {
     regular: '#faf7f7',
-    hover: '#f7f5f5',
+    hover: '#e3e3e3',
     color: 'black'
   }
 };
