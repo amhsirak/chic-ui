@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ComponentSize } from '../../config/sizes';
 import {
   SelectWrapper,
   SelectOption,
   StyledSelectDiv,
   SelectOptionWrapper,
-  ArrowDown
+  ArrowDown,
+  StyledCross,
+  MultiSelectOptionWrapper
 } from './styled';
 
 export interface SelectProps<T> {
@@ -15,10 +17,11 @@ export interface SelectProps<T> {
   data?: T[];
   disabled?: boolean;
   dataKey?: string;
+  multiSelect?: boolean;
   dataName?: string;
   error?: boolean;
   placeholder?: string;
-  onChange?: (value: T) => void;
+  onChange?: (value: T | T[]) => void;
 }
 
 const Select: React.ForwardRefRenderFunction<
@@ -30,6 +33,7 @@ const Select: React.ForwardRefRenderFunction<
     size,
     disabled,
     error,
+    multiSelect,
     width = '100%',
     data,
     dataKey,
@@ -40,18 +44,75 @@ const Select: React.ForwardRefRenderFunction<
   ref
 ) => {
   const [showOptions, setShowOptions] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState<any>();
+
+  useEffect(() => {
+    onChange && onChange(selectedOption);
+  }, [selectedOption]);
 
   const onOptionSelect = (value: string) => {
     if (!disabled) {
       const selectedValue = dataKey
         ? data?.find((option) => option[dataKey] === value)
         : value;
-      setSelectedOption(
-        dataKey && dataName ? selectedValue[dataName] : selectedValue
+      multiSelect
+        ? setMultiSelectOption(selectedValue)
+        : setSelectedOption(selectedValue);
+      if (!multiSelect) {
+        setShowOptions(false);
+      }
+    }
+  };
+
+  const setMultiSelectOption = (selectedValue: any) => {
+    if (selectedOption && selectedOption.length > 0) {
+      const selected = dataKey
+        ? selectedOption.find(
+            (option: any) => option[dataKey] === selectedValue[dataKey]
+          )
+        : selectedOption.includes(selectedValue);
+      if (selected) {
+        dataKey && dataName
+          ? setSelectedOption(
+              selectedOption.filter(
+                (option: any) => option[dataKey] !== selectedValue[dataKey]
+              )
+            )
+          : setSelectedOption(
+              selectedOption.filter((option: any) => option !== selectedValue)
+            );
+      } else {
+        setSelectedOption([...selectedOption, selectedValue]);
+      }
+    } else {
+      setSelectedOption([selectedValue]);
+    }
+  };
+
+  const showSelectedOptionValue = () => {
+    if (!multiSelect) {
+      if (dataName) {
+        return (selectedOption && selectedOption[dataName]) || placeholder;
+      } else {
+        return selectedOption || placeholder;
+      }
+    } else {
+      return (
+        (selectedOption &&
+          selectedOption.length > 0 &&
+          selectedOption.map((option: any) => (
+            <MultiSelectOptionWrapper>
+              {dataKey && dataName ? option[dataName] : option}
+              <StyledCross
+                onClick={(e) => {
+                  e.stopPropagation;
+                  setMultiSelectOption(option);
+                }}
+              />
+            </MultiSelectOptionWrapper>
+          ))) ||
+        placeholder
       );
-      setShowOptions(false);
-      onChange && onChange(selectedValue);
     }
   };
 
@@ -64,7 +125,7 @@ const Select: React.ForwardRefRenderFunction<
         innerSize={size || 'small'}
         onClick={() => !disabled && setShowOptions(!showOptions)}
       >
-        {selectedOption || placeholder}
+        <div>{showSelectedOptionValue()}</div>
         <ArrowDown />
       </StyledSelectDiv>
       {showOptions && (
@@ -73,10 +134,21 @@ const Select: React.ForwardRefRenderFunction<
             {data &&
               data.map((option, index) => (
                 <SelectOption
-                  key={`${option}_${index}`}
-                  onClick={() =>
-                    onOptionSelect(dataKey ? option[dataKey] : option)
+                  selected={
+                    multiSelect &&
+                    selectedOption &&
+                    selectedOption.length > 0 &&
+                    (dataKey && dataName
+                      ? !!selectedOption.find(
+                          (opt: any) => opt[dataKey] === option[dataKey]
+                        )
+                      : selectedOption.includes(option))
                   }
+                  key={`${option}_${index}`}
+                  onClick={(e) => {
+                    e.stopPropagation;
+                    onOptionSelect(dataKey ? option[dataKey] : option);
+                  }}
                 >
                   {dataKey && dataName ? option[dataName] : option}
                 </SelectOption>
