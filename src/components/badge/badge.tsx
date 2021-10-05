@@ -53,3 +53,4 @@ const Badge: React.ForwardRefRenderFunction<
 };
 
 export default React.forwardRef(Badge);
+

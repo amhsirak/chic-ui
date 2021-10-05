@@ -31,9 +31,10 @@ const Search: React.ForwardRefRenderFunction<HTMLDivElement, SearchProps> = (
         onChange={onChange}
         placeholder={placeholder}
         clearable
+        isSearch={true}
         {...textInputStyles}
       />
-      <Button type="secondary">Search</Button>
+      <Button type="secondary" search={true}>Search</Button>
     </SearchWrapper>
   );
 };

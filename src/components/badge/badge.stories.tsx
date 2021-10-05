@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react';
 import styled from 'styled-components';
 
-import Badge, { BadgeProps, BADGE_TYPES } from './badge';
+import Badge, {BadgeProps, BADGE_TYPES} from '.';
 
 type Arguments = Omit<BadgeProps, 'offset'> & {
   offsetX: number;
