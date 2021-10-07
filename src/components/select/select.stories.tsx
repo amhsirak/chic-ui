@@ -39,6 +39,13 @@ Error.args = {
   error: true
 };
 
+export const SimpleMultiSelect = Template.bind({});
+SimpleMultiSelect.args = {
+  width: '400px',
+  placeholder: 'Select a country',
+  multiSelect: true
+};
+
 export const ComplexObject = () => {
   const [value, setValue] = useState({});
   const data = [
@@ -56,6 +63,30 @@ export const ComplexObject = () => {
         dataKey="id"
         dataName="game"
         placeholder="Select a Sport"
+        onChange={(value) => setValue(value)}
+      />
+    </>
+  );
+};
+
+export const ComplexObjectMultiSelect = () => {
+  const [value, setValue] = useState({});
+  const data = [
+    { id: 1, game: 'hockey' },
+    { id: 2, game: 'football' },
+    { id: 3, game: 'running' }
+  ];
+
+  return (
+    <>
+      <div>Result: {JSON.stringify(value)}</div>
+      <Select
+        width="200px"
+        data={data}
+        dataKey="id"
+        dataName="game"
+        placeholder="Select a Sport"
+        multiSelect={true}
         onChange={(value) => setValue(value)}
       />
     </>

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { ComponentSize, heights, sidePaddings } from '../../config/sizes';
 import SvgArrowDown from '../../icons/ArrowDown';
+import Cross from '../../icons/Cross';
 
 interface SelectWrapperProps {
   width: string;
@@ -12,9 +13,15 @@ export const SelectWrapper = styled.div<SelectWrapperProps>`
   flex-direction: column;
 `;
 
-export const SelectOption = styled.li`
+interface SelectOptionProps {
+  selected?: boolean;
+}
+
+export const SelectOption = styled.li<SelectOptionProps>`
   list-style: none;
   border-radius: 2px;
+  background-color: ${(pr) =>
+    pr.selected ? 'rgba(144, 202, 249, 0.6)' : 'rgba(144, 202, 249, 0.16)'};
   padding: 8px;
   &:hover {
     background-color: rgba(144, 202, 249, 0.6);
@@ -68,4 +75,14 @@ export const SelectOptionWrapper = styled.div`
 export const ArrowDown = styled(SvgArrowDown)`
   box-sizing: border-box;
   height: 15px;
+`;
+
+export const StyledCross = styled(Cross)`
+  box-sizing: border-box;
+  padding-left: 3px;
+  height: 10px;
+`;
+
+export const MultiSelectOptionWrapper = styled.span`
+  padding-right: 10px;
 `;
