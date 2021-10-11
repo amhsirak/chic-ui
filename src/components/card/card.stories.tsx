@@ -13,8 +13,12 @@ export const Default = Template.bind({});
 Default.args = {
   children: 'Card',
   href: '#',
+  linkText: 'Link',
   src: 'chic_copy.png',
   height: '300px',
-  width: '300px'
+  width: '300px',
+  header: 'Card Header',
+  footer: 'Card Footer',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 };
 
