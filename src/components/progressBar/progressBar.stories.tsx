@@ -16,11 +16,9 @@ Default.args = {
 }
 export const Custom = Template.bind({});
 Custom.args = {
-    progress:80,
- fgColor:"rgb(30, 167, 253)",
- bgColor:"#DDE0E2",
- height: 24,
- loadingText:true
+  progress:80,
+  type:'default',
+  loadingText:true
 }
 
 

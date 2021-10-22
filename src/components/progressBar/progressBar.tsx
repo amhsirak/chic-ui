@@ -1,42 +1,51 @@
-import React, { ReactNode, ElementType, HTMLAttributes } from 'react';
-import { StyledProgressBar,StyledLoadingText } from './styled';
+import React from 'react';
+import { themeType } from '../../config/themes';
+import { StyledProgressBar, StyledLoadingText, StyledProgressWrapper } from './styled';
 
-export interface ProgressBarProps  {
- progress?:number;
- fgColor?:string;
- bgColor?:string;
- height ?: number;
- loadingText?:boolean;
+export interface ProgressBarProps {
+  progress?: number;
+  type?: themeType;
+  height?: number;
+  loadingText?: boolean;
 }
 
-const ProgressBar: React.ForwardRefRenderFunction<HTMLAnchorElement, ProgressBarProps> = (
-  props,
-  ref
-) => {
-  const {progress= 70, fgColor = "#123123" , bgColor="#E2E2E2" , height=20 , loadingText=true} = props
+const ProgressBar: React.ForwardRefRenderFunction<
+  HTMLAnchorElement,
+  ProgressBarProps
+> = (props, ref) => {
+  const {
+    progress = 70,
+    type = 'default',
+    height = 20,
+    loadingText = true
+  } = props;
 
   return (
-      <div style={{position:'relative'}} >
-          { loadingText &&
-          <StyledLoadingText>
-            <div style={{height:"100%" , display:"flex",justifyContent:" center",alignItems: "center"}}>
-                <span>{progress}% </span>
-            </div>
-          </StyledLoadingText>}
-    <StyledProgressBar
-    color={fgColor}
-    height={height}
-    width = {progress}
+    <StyledProgressWrapper
+    width={100}
     >
-    </StyledProgressBar>
-    <StyledProgressBar
-    color={bgColor}
-    height={height}
-    width = {100-progress}
-    >
-    </StyledProgressBar>
-        </div>
+      {loadingText && (
+        <StyledLoadingText>
+          <div
+            style={{
+              height: '100%',
+              display: 'flex',
+              justifyContent: ' center',
+              alignItems: 'center'
+            }}
+          >
+            <span>{progress}% </span>
+          </div>
+        </StyledLoadingText>
+      )}
+      <StyledProgressBar
+        type={type}
+        width={progress}
+      ></StyledProgressBar>
+    </StyledProgressWrapper>
   );
 };
 
-export default React.forwardRef<HTMLAnchorElement, ProgressBarProps>(ProgressBar);
+export default React.forwardRef<HTMLAnchorElement, ProgressBarProps>(
+  ProgressBar
+);
