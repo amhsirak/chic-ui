@@ -3,6 +3,7 @@ import { themeType, theme as typeColors } from '../../config/themes';
 
 interface StyledProgressBar {
   type?: themeType;
+  animated?: boolean;
   width?: number;
 }
 
@@ -11,7 +12,9 @@ export const StyledProgressBar = styled.div<StyledProgressBar>`
   height: 25px;
   background-color: ${(pr) => typeColors[pr.type!].regular};
   width: ${(pr) => pr.width}%;
-  transition: width 1s ease-in-out,
+  ${pr => pr.animated && `transition: width 1s ease-in-out`};
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 `;
 
 export const StyledProgressWrapper = styled.div`
@@ -19,6 +22,7 @@ export const StyledProgressWrapper = styled.div`
   height: 25px;
   background-color: #E2E2E2;
   width: 100%;
+  border-radius: 8px;
 `;
 
 export const StyledLoadingText = styled.span`
@@ -27,4 +31,5 @@ export const StyledLoadingText = styled.span`
   alignItems: center
   height: 100%;
   color: #fff;
+  padding-left: 12px;
 `;

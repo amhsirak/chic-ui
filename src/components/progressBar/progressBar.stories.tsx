@@ -18,7 +18,8 @@ export const Custom = Template.bind({});
 Custom.args = {
   progress:80,
   type:'default',
-  showProgress:true
+  showProgress:true,
+  animated: false
 }
 
 

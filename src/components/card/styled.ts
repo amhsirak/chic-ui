@@ -21,12 +21,10 @@ export const StyledImage = styled.img`
 `;
 
 export const StyledHeader = styled.h3`
-  margin-top: 5px;
-  text-align: center;
+  margin: auto 10px;
 `;
 
 export const StyledDescription = styled.p`
-  margin-top: 5px;
   margin: auto 10px;
 `;
 

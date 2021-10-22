@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { Wrapper, StyledBadge } from './styled';
+import { themeType } from '../../config/themes';
 
 export const BADGE_TYPES = [
   'default',
@@ -10,7 +11,7 @@ export const BADGE_TYPES = [
   'light'
 ] as const;
 
-type BadgeType = typeof BADGE_TYPES[number];
+type BadgeType = themeType[number];
 
 export type BadgeProps = {
   count?: number;

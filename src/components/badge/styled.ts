@@ -15,9 +15,6 @@ const getTypeStyles = (type: StyledBadgeProps['type']) =>
     default: css`
       background: #0018cf;
     `,
-    secondary: css`
-      background: #000;
-    `,
     danger: css`
       background: #d93848;
     `,
