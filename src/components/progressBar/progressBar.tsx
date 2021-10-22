@@ -5,8 +5,7 @@ import { StyledProgressBar, StyledLoadingText, StyledProgressWrapper } from './s
 export interface ProgressBarProps {
   progress?: number;
   type?: themeType;
-  height?: number;
-  loadingText?: boolean;
+  showProgress?: boolean;
 }
 
 const ProgressBar: React.ForwardRefRenderFunction<
@@ -16,32 +15,27 @@ const ProgressBar: React.ForwardRefRenderFunction<
   const {
     progress = 70,
     type = 'default',
-    height = 20,
-    loadingText = true
+    showProgress = true
   } = props;
 
   return (
-    <StyledProgressWrapper
-    width={100}
-    >
-      {loadingText && (
-        <StyledLoadingText>
-          <div
-            style={{
-              height: '100%',
-              display: 'flex',
-              justifyContent: ' center',
-              alignItems: 'center'
-            }}
-          >
-            <span>{progress}% </span>
-          </div>
-        </StyledLoadingText>
-      )}
+    <StyledProgressWrapper>
       <StyledProgressBar
         type={type}
-        width={progress}
-      ></StyledProgressBar>
+        width={progress}>
+        {showProgress && (
+            <div
+              style={{
+                height: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <StyledLoadingText>{progress}% </StyledLoadingText>
+            </div>
+        )}
+      </StyledProgressBar>
     </StyledProgressWrapper>
   );
 };

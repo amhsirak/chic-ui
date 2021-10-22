@@ -6,29 +6,25 @@ interface StyledProgressBar {
   width?: number;
 }
 
-interface StyledProgressWrapper {
-  width?: number;
-}
-
 export const StyledProgressBar = styled.div<StyledProgressBar>`
   display: inline-block;
   height: 25px;
   background-color: ${(pr) => typeColors[pr.type!].regular};
   width: ${(pr) => pr.width}%;
+  transition: width 1s ease-in-out,
 `;
 
-export const StyledProgressWrapper = styled.div<StyledProgressWrapper>`
+export const StyledProgressWrapper = styled.div`
   position: relative;
   height: 25px;
   background-color: #E2E2E2;
-  width: ${(pr) => pr.width}%;
+  width: 100%;
 `;
 
 export const StyledLoadingText = styled.span`
-  position: absolute;
-  display: block;
-  text-align: center;
-  width: 100%;
+  display: flex,
+  justifyContent: center,
+  alignItems: center
   height: 100%;
   color: #fff;
 `;
