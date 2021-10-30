@@ -61,9 +61,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
 
   const spinnerStyles = {
     size:
-      size === 'extraLarge'
-        ? 28
-        : size === 'large'
+        size === 'large'
         ? 25
         : size === 'default'
         ? 20

@@ -23,7 +23,6 @@ export const Sizes = () => {
   return (
     <>
       <ButtonRow>
-        <Button size="extraLarge">Extra Large</Button>
         <Button size="large">Large</Button>
         <Button size="default">Default</Button>
         <Button size="small">Small</Button>
