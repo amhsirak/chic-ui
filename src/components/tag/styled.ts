@@ -1,33 +1,8 @@
 import styled from 'styled-components';
-import { TagType } from './tag';
-
-type StateColors = {
-  regular: string;
-};
-
-const typeColors: Record<TagType, StateColors> = {
-  default: {
-    regular: '#0018cf'
-  },
-  secondary: {
-    regular: '#000'
-  },
-  danger: {
-    regular: '#d93848'
-  },
-  warning: {
-    regular: '#de9b00'
-  },
-  success: {
-    regular: '#039e2f'
-  },
-  light: {
-    regular: '#edede4'
-  }
-};
+import { themeType, theme as typeColors } from '../../config/themes';
 
 interface StyledTagProps {
-  innerType: TagType;
+  innerType: themeType;
   withText: boolean;
   rounded: boolean;
 }

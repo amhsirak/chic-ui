@@ -1,19 +1,9 @@
 import React, { ElementType, ReactNode } from 'react';
 import { StyledTag } from './styled';
-
-export const TAG_TYPES = [
-  'default',
-  'secondary',
-  'danger',
-  'warning',
-  'success',
-  'light'
-] as const;
-
-export type TagType = typeof TAG_TYPES[number];
+import { themeType } from '../../config/themes';
 
 export interface BaseTagProps {
-  type?: string;
+  type?: themeType;
   rounded?: boolean;
   className?: string;
   children?: ReactNode;
