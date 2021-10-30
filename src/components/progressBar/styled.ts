@@ -13,8 +13,7 @@ export const StyledProgressBar = styled.div<StyledProgressBar>`
   background-color: ${(pr) => typeColors[pr.type!].regular};
   width: ${(pr) => pr.width}%;
   ${pr => pr.animated && `transition: width 1s ease-in-out`};
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-radius: 8px;
 `;
 
 export const StyledProgressWrapper = styled.div`
