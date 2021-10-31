@@ -7,42 +7,42 @@ export type themeType =
   | 'light';
 
 export interface ThemeValues {
-  regular: string; // bg color
-  hover: string; // hover bg color
-  color?: string; // font color
+  regular: string; 
+  hover: string; 
+  color?: string;
 }
 
 export type Theme = Record<themeType, ThemeValues>;
 
 export const theme: Theme = {
   default: {
-    regular: '#0018cf',
-    hover: '#001be8',
-    color: 'white'
+    regular: '#1F51FF',
+    hover: '#1d47db',
+    color: '#ffffff'
   },
   secondary: {
-    regular: '#000',
-    hover: '#212121',
-    color: 'white'
+    regular: '#35212A',
+    hover: '#2b1b22',
+    color: '#ffffff'
   },
   danger: {
-    regular: '#d93848',
-    hover: '#eb4d5d',
-    color: 'white'
+    regular: '#FF0075',
+    hover: '#de0066',
+    color: '#ffffff'
   },
   warning: {
-    regular: '#de9b00',
-    hover: '#eba607',
-    color: 'white'
+    regular: '#f08e0a',
+    hover: '#e08509',
+    color: '#ffffff'
   },
   success: {
-    regular: '#039e2f',
-    hover: '#03a832',
-    color: 'white'
+    regular: '#00bf87',
+    hover: '#02a676',
+    color: '#ffffff'
   },
   light: {
-    regular: '#faf7f7',
-    hover: '#e3e3e3',
+    regular: '#f2f2f2',
+    hover: '#f2f2f2',
     color: 'black'
   }
 };

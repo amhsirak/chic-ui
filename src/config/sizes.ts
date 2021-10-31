@@ -1,4 +1,4 @@
-export type ComponentSize = 'default' | 'small' | 'large' | 'extraLarge';
+export type ComponentSize = 'default' | 'small' | 'large';
 
 export const sidePaddings: {
   [key in ComponentSize]: number;
@@ -6,8 +6,8 @@ export const sidePaddings: {
   default: 22,
   small: 19,
   large: 25,
-  extraLarge: 28
-};
+}
+  
 
 export const heights: {
   [key in ComponentSize]: number;
@@ -15,5 +15,4 @@ export const heights: {
   default: 40,
   small: 33,
   large: 47,
-  extraLarge: 54
 };
