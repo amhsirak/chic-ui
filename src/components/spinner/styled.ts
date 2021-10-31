@@ -13,11 +13,11 @@ export const StyledSpinner = styled.span<StyledSpinnerProps>`
   display: block;
   border: ${(pr) => spinnerWidth(pr.size)}px solid transparent;
   border-top: ${(pr) => spinnerWidth(pr.size)}px solid
-    ${(pr) => typeColors[pr.innerType].hover};
+    ${(pr) => (pr.innerType === 'light' ? '#dedede' : typeColors[pr.innerType].hover)};
   border-right: ${(pr) => spinnerWidth(pr.size)}px solid
-    ${(pr) => typeColors[pr.innerType].hover};
+  ${(pr) => (pr.innerType === 'light' ? '#dedede' : typeColors[pr.innerType].hover)};
   border-bottom: ${(pr) => spinnerWidth(pr.size)}px solid
-    ${(pr) => typeColors[pr.innerType].hover};
+  ${(pr) => (pr.innerType === 'light' ? '#dedede' : typeColors[pr.innerType].hover)};
   border-radius: 50%;
   width: ${(pr) => pr.size}px;
   height: ${(pr) => pr.size}px;
