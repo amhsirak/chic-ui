@@ -2,21 +2,10 @@ import React, { PropsWithChildren } from 'react';
 import { Wrapper, StyledBadge } from './styled';
 import { themeType } from '../../config/themes';
 
-export const BADGE_TYPES = [
-  'default',
-  'secondary',
-  'danger',
-  'warning',
-  'success',
-  'light'
-] as const;
-
-type BadgeType = themeType[number];
-
 export type BadgeProps = {
   count?: number;
   limit?: number;
-  type?: BadgeType;
+  type?: themeType;
   showZero?: boolean;
   showCount?: boolean;
   offset?: [number, number];

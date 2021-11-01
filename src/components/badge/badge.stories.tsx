@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react';
 import styled from 'styled-components';
 
-import Badge, {BadgeProps, BADGE_TYPES} from '.';
+import Badge, {BadgeProps} from '.';
 
 type Arguments = Omit<BadgeProps, 'offset'> & {
   offsetX: number;
@@ -33,10 +33,6 @@ Playground.args = {
   showZero: false,
   offsetX: 0,
   offsetY: 0
-};
-
-Playground.argTypes = {
-  type: { control: 'select', options: BADGE_TYPES }
 };
 
 export default {
