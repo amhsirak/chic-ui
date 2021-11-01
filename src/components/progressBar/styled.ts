@@ -7,6 +7,10 @@ interface StyledProgressBar {
   width?: number;
 }
 
+interface StyledLoadingText {
+  type?: themeType;
+}
+
 export const StyledProgressBar = styled.div<StyledProgressBar>`
   display: inline-block;
   height: 25px;
@@ -24,11 +28,11 @@ export const StyledProgressWrapper = styled.div`
   border-radius: 8px;
 `;
 
-export const StyledLoadingText = styled.span`
+export const StyledLoadingText = styled.span<StyledLoadingText>`
   display: flex,
   justifyContent: center,
   alignItems: center
   height: 100%;
-  color: #fff;
+  color: ${(pr) => typeColors[pr.type!].color};
   padding-left: 12px;
 `;

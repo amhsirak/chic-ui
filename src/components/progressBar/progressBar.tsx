@@ -36,7 +36,7 @@ const ProgressBar: React.ForwardRefRenderFunction<
                 alignItems: 'center',
               }}
             >
-              <StyledLoadingText>{progress}% </StyledLoadingText>
+              <StyledLoadingText type={type}>{progress}% </StyledLoadingText>
             </div>
         )}
       </StyledProgressBar>
