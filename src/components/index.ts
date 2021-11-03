@@ -6,6 +6,8 @@ export { default as Breadcrumb } from './breadcrumb';
 
 export { default as Button } from './button';
 
+export { default as Card } from './card';
+
 export { default as Image } from './image';
 
 export { default as Link } from './link';
