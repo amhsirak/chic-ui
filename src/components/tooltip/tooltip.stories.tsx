@@ -13,11 +13,6 @@ export default {
         type: 'color'
       }
     },
-    arrowColor: {
-      control: {
-        type: 'color'
-      }
-    }
   },
   args: {
     bg: 'black',
@@ -29,7 +24,6 @@ export default {
         </a>
       </p>
     ),
-    arrowColor: 'black',
     position: 'top'
   }
 } as Meta;

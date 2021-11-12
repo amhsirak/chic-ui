@@ -64,7 +64,7 @@ export const StyledTooltip = styled.span<TooltipProps>`
     margin: ${({ position }) => arrowStyles[position].margin};
     border-width: 6px;
     border-style: solid;
-    border-color: ${({ position, arrowColor }) =>
-      arrowStyles[position].borderColor(arrowColor)};
+    border-color: ${({ position, bg }) =>
+      arrowStyles[position].borderColor(bg)};
   }
 `;
