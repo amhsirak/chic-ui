@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ComponentSize, heights, sidePaddings } from '../../config/sizes';
+import { ComponentSize, heights } from '../../config/sizes';
 import SvgArrowDown from '../../icons/ArrowDown';
 import Cross from '../../icons/Cross';
 
@@ -19,12 +19,12 @@ interface SelectOptionProps {
 
 export const SelectOption = styled.li<SelectOptionProps>`
   list-style: none;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: ${(pr) =>
-    pr.selected ? 'rgba(144, 202, 249, 0.6)' : 'rgba(144, 202, 249, 0.16)'};
+    pr.selected ? 'rgba(144, 202, 249, 0.13)' : '#f0f3f5'};
   padding: 8px;
   &:hover {
-    background-color: rgba(144, 202, 249, 0.6);
+    background-color: #d1d1d1;
   }
 `;
 
