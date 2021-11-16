@@ -1,13 +1,12 @@
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { Meta } from '@storybook/react/types-6-0';
 import styled from 'styled-components';
-import Avatar, { AvatarProps } from '.';
+import Avatar from '.';
+import Badge from '../badge';
 
 export default {
   title: 'Components/Avatar',
   component: Avatar
 } as Meta;
-
-const Template: Story<AvatarProps> = (args) => <Avatar {...args} />;
 
 const AvatarRow = styled.div`
   display: flex;
@@ -27,16 +26,17 @@ export const AllAvatars = () => {
           src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
           isActive
         />
-        <Avatar
-          src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
-          hasBadge
-        />
       </AvatarRow>
       <AvatarRow>
         <Avatar name="KS" />
         <Avatar name="KS" isActive />
-        <Avatar name="KS" hasBadge />
       </AvatarRow>
+      <Badge type='danger' offset={[-13,11]} count={3} showCount>
+        <Avatar src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" />
+      </Badge>
+      <Badge type='success' offset={[-13,11]} count={0} showZero>
+        <Avatar src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" />
+      </Badge>
     </>
   );
 };
