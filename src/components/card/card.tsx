@@ -1,17 +1,21 @@
-import React from 'react';
-import { StyledCard, StyledDescription, StyledFooter, StyledFooterText, StyledFooterLink, StyledHeader, StyledImage } from './styled';
+import React, { ReactNode } from 'react';
+import { themeType } from 'src/config/themes';
+import { StyledCard, StyledDescription, StyledFooter, StyledFooterText, StyledFooterLink, StyledTitle, StyledSubTitle, StyledImage } from './styled';
 
 export interface StyledCardProps {
   align?:string,
+  children?: ReactNode;
   href?: string;
   width?: string;
   height?: string;
   className?: string;
   src?: string;
-  header?: string;
-  footer?: string;
+  title?: string;
+  subTitle?: ReactNode;
+  footer?: ReactNode;
   description?: string;
-  linkText?: string;
+  hrefText?: string;
+  type?: themeType;
 }
 
 export const Card: React.ForwardRefRenderFunction<
@@ -22,13 +26,16 @@ export const Card: React.ForwardRefRenderFunction<
     className, 
     href, 
     src, 
-    width = '50px',
-    height = '50px',
-    header,
+    width = '300px',
+    height = '200px',
+    title,
+    subTitle,
+    children,
     footer,
-    linkText,
+    hrefText,
     description,
-     } = props;
+    type= 'light'
+    } = props;
 
   return (
     <StyledCard
@@ -36,17 +43,20 @@ export const Card: React.ForwardRefRenderFunction<
       ref={ref}
       width={width}
       height={height}
+      type={type}
     >
       {src && (
         <StyledImage src={src} width={'100%'}
       height={'100%'}/>
       ) }      
-      {header && <StyledHeader children={header}/>}
+      {title && <StyledTitle children={title}/>}
+      {subTitle && <StyledSubTitle children={subTitle}/>}
       {description && <StyledDescription children={description}/>}
       {footer && <StyledFooter>
         <StyledFooterText children={footer}/>
-        {href && <StyledFooterLink href={href} children={linkText}/>}
+        {href && <StyledFooterLink href={href} children={hrefText}/>}
       </StyledFooter> }
+      {children}
     </StyledCard>
   );
 };
