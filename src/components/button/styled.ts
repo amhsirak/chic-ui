@@ -24,7 +24,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   padding: 0 ${(pr) => sidePaddings[pr.size]}px;
   height: ${(pr) => heights[pr.size]}px;
   background-color: ${(pr) => typeColors[pr.innerType].regular};
-  color: ${(pr) => (pr.innerType === 'light' ? '#000' : '#fff')};
+  color: ${(pr) => typeColors[pr.innerType].color};
   &:hover {
     background-color: ${(pr) => typeColors[pr.innerType].hover};
   }

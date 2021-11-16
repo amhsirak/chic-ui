@@ -33,6 +33,7 @@ export const Sizes = () => {
         <Button type="warning">Warning</Button>
         <Button type="success">Success</Button>
         <Button type="danger">Danger</Button>
+        <Button type='info'>Info</Button>
         <Button type="light">Light</Button>
       </ButtonRow>
       <ButtonRow>
