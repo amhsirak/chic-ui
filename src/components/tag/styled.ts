@@ -12,12 +12,12 @@ export const StyledTag = styled.span<StyledTagProps>`
   display: inline-block;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 4px;
   outline: none;
-  padding: 4.6px 15px;
-  height: 0 25px;
+  padding: 3.3px 14px;
+  height: 0 23px;
   background-color: ${(pr) => typeColors[pr.innerType].regular};
   color: ${(pr) => (pr.innerType === 'light' ? '#000' : '#fff')};
   // Rounded
