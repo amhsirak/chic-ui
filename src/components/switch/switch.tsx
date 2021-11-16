@@ -1,20 +1,12 @@
 import React, { useCallback } from 'react';
 import { ComponentSize } from '../../config/sizes';
 import { SwitchToggle, SwitchWrapper } from './styled';
-
-export type SwitchType =
-  | 'default'
-  | 'secondary'
-  | 'danger'
-  | 'warning'
-  | 'success';
-
-export type SwitchPadding = 'default' | 'small' | 'large';
+import { themeType } from '../../config/themes';
 
 export interface SwitchProps {
   size?: ComponentSize;
-  type?: SwitchType;
-  padding?: SwitchPadding;
+  type?: themeType;
+  padding?: ComponentSize;
   checked?: boolean;
   onChange?: () => void;
   disabled?: boolean;

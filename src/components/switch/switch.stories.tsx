@@ -54,10 +54,6 @@ export const Sizes = () => {
       <SectionHeader>Sizes</SectionHeader>
       <SwitchRow>
         <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} size="extraLarge" />
-          <SwitchLabel>extraLarge</SwitchLabel>
-        </LabeledSwitch>
-        <LabeledSwitch>
           <Switch checked={checked} onChange={onChange} size="large" />
           <SwitchLabel>large</SwitchLabel>
         </LabeledSwitch>
@@ -159,10 +155,6 @@ export const All = () => {
       </SwitchRow>
       <SectionHeader>Sizes</SectionHeader>
       <SwitchRow>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} size="extraLarge" />
-          <SwitchLabel>extraLarge</SwitchLabel>
-        </LabeledSwitch>
         <LabeledSwitch>
           <Switch checked={checked} onChange={onChange} size="large" />
           <SwitchLabel>large</SwitchLabel>
