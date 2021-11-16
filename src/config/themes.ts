@@ -4,6 +4,7 @@ export type themeType =
   | 'danger'
   | 'warning'
   | 'success'
+  | 'info'
   | 'light';
 
 export interface ThemeValues {
@@ -40,9 +41,17 @@ export const theme: Theme = {
     hover: '#02a676',
     color: '#ffffff'
   },
+  info: {
+    regular: '#24c4e0',
+    hover: '#22b9d4',
+    color: '#ffffff'
+  },
   light: {
     regular: '#f2f2f2',
-    hover: '#f2f2f2',
-    color: 'black'
+    hover: '#ebebeb',
+    color: '#000000'
   }
 };
+
+
+
