@@ -14,10 +14,10 @@ function getBackgroundColor(
   pr: Pick<SwitchWrapperProps, 'disabled' | 'checked' | 'type'>
 ): string {
   if (pr.disabled) {
-    return typeColors['disabled'].regular;
+    return typeColors['light'].regular;
   }
   if (!pr.checked) {
-    return typeColors['unchecked'].regular;
+    return typeColors['light'].hover;
   }
   return typeColors[pr.type].regular;
 }
