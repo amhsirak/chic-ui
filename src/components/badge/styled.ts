@@ -1,25 +1,42 @@
 import styled from 'styled-components';
-import { themeType, theme as typeColors } from '../../config/themes';
+import { BadgeProps } from './badge';
+import { theme as typeColors } from '../../config/themes';
 
-interface StyledBadgeProps {
-  innerType: themeType;
-  withText: boolean;
-  rounded: boolean;
-}
-
-// Real tag is assigned dynamically
-export const StyledBadge = styled.span<StyledBadgeProps>`
+export const Wrapper = styled.div`
+  position: relative;
   display: inline-block;
+`;
+
+type StyledBadgeProps = Required<
+  Pick<BadgeProps, 'offset' | 'showCount' | 'type'>
+>;
+
+
+export const StyledBadge = styled.div<StyledBadgeProps>`
+  position: absolute;
+  z-index: 2;
+  border-radius: 9999px;
+  background: ${(pr) => typeColors[pr.type!].regular};
+  padding: 4px 6px;
+  text-align: center;
+  color: ${(pr) => typeColors[pr.type!].color};
+  font-size: 11px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 8px;
-  outline: none;
-  padding: 4.3px 15px;
-  height: 0 25px;
-  background-color: ${(pr) => typeColors[pr.innerType].regular};
-  color: ${(pr) => (pr.innerType === 'light' ? '#000' : '#fff')};
-  // Rounded
-  ${(pr) => (pr.rounded ? `border-radius: 14px;` : '')}
+  transform: translate(40%, -40%);
+  box-shadow: 0 0 0 1px #fff;
+
+  ${pr => pr.offset && `
+    right: ${0 - pr.offset[0]}px;
+    top: ${0 + pr.offset[1]}px;
+  `}
+
+  ${pr => pr.showCount ? `
+    min-width: 19px;
+    height: 19px;
+  ` : `
+    min-width: 13px;
+    height: 13px;
+  `}
 `;

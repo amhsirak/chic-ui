@@ -19,22 +19,23 @@ export const StyledAvatar = styled.span<StyledAvatarProps>`
 `;
 
 const isActiveProp = css`
-  background: linear-gradient(
-    90deg,
-    rgba(3, 70, 75, 1) 0%,
-    rgba(69, 181, 46, 1) 35%,
-    rgba(21, 227, 145, 1) 100%
-  );
+  background: #262526;
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
-    top: -2px;
-    left: -2px;
     z-index: -1;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
     border-radius: 50%;
+    background: linear-gradient(
+      90deg,
+      rgba(3, 70, 75, 1) 0%,
+      rgba(69, 181, 46, 1) 35%,
+      rgba(21, 227, 145, 1) 100%
+    );
   }
 `;
 
@@ -44,6 +45,7 @@ const commonStyles = css`
   height: 100%;
   border-radius: 50%;
   background: #eee;
+  color: #00000;
 `;
 
 export const StyledImage = styled.img`
@@ -57,17 +59,6 @@ export const StyledSpan = styled.span`
   justify-content: center;
   font-size: 24px;
   font-weight: 700;
+  color: #00000;
   ${commonStyles};
-`;
-
-export const StyledBadge = styled.span`
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 3px;
-  right: 9px;
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  background: #27c421;
 `;

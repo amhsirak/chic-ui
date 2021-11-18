@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { StyledTooltip } from './styled';
 export type position = 'top' | 'bottom' | 'left' | 'right';
 
 export interface TooltipProps {
   bg: string;
-  label: string;
   position: position;
-  arrowColor: string;
+  className?: string;
+  children?: ReactNode;
 }
 
 const Tooltip: React.ForwardRefRenderFunction<HTMLSpanElement, TooltipProps> = (
@@ -15,7 +15,10 @@ const Tooltip: React.ForwardRefRenderFunction<HTMLSpanElement, TooltipProps> = (
 ) => {
   const { children } = props;
   return (
-    <StyledTooltip {...props} ref={ref}>
+    <StyledTooltip 
+    {...props} 
+    ref={ref as React.MutableRefObject<HTMLSpanElement>}
+    >
       {children}
     </StyledTooltip>
   );

@@ -6,6 +6,7 @@ interface StyledButtonProps {
   innerType: themeType;
   size: ComponentSize;
   withText: boolean;
+  isSearch: boolean;
 }
 
 // Real tag is assigned dynamically
@@ -16,14 +17,14 @@ export const StyledButton = styled.button<StyledButtonProps>`
   justify-content: center;
   font-size: 15px;
   border: none;
-  border-radius: 8px;
+  border-radius: ${(pr) => (pr.isSearch ? '0px 8px 8px 0px' : '8px')};
   outline: none;
   cursor: pointer;
   width: auto;
   padding: 0 ${(pr) => sidePaddings[pr.size]}px;
   height: ${(pr) => heights[pr.size]}px;
   background-color: ${(pr) => typeColors[pr.innerType].regular};
-  color: ${(pr) => (pr.innerType === 'light' ? '#000' : '#fff')};
+  color: ${(pr) => typeColors[pr.innerType].color};
   &:hover {
     background-color: ${(pr) => typeColors[pr.innerType].hover};
   }

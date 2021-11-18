@@ -77,7 +77,6 @@ export const Sizes = () => {
   return (
     <>
       <Row>
-        <TextInput placeholder="extraLarge" size="extraLarge" />
         <TextInput placeholder="large" size="large" />
         <TextInput placeholder="default" size="default" />
         <TextInput placeholder="small" size="small" />

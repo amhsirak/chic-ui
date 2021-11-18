@@ -1,81 +1,59 @@
 import styled from 'styled-components';
-import { ComponentSize, heights } from '../../config/sizes';
-import { SwitchPadding, SwitchType } from './switch';
-
-type SwitchBackgrounds = SwitchType | 'disabled' | 'unchecked';
-
-const typeColors: {
-  [key in SwitchBackgrounds]: string;
-} = {
-  default: '#0018cf',
-  secondary: '#000',
-  danger: '#d93848',
-  warning: '#de9b00',
-  success: '#039e2f',
-  disabled: '#efefef',
-  unchecked: '#c0c0c0'
-};
-
-const paddingNumbers: {
-  [key in SwitchPadding]: number;
-} = {
-  small: 1,
-  default: 2,
-  large: 4
-};
+import { ComponentSize, heights, switchPaddingNumbers } from '../../config/sizes';
+import { themeType, theme as typeColors } from '../../config/themes';
 
 interface SwitchWrapperProps {
-  type: SwitchType;
+  type: themeType;
   size: ComponentSize;
   checked: boolean;
   disabled: boolean;
-  padding: SwitchPadding;
+  padding: ComponentSize;
 }
 
 function getBackgroundColor(
-  props: Pick<SwitchWrapperProps, 'disabled' | 'checked' | 'type'>
+  pr: Pick<SwitchWrapperProps, 'disabled' | 'checked' | 'type'>
 ): string {
-  if (props.disabled) {
-    return typeColors['disabled'];
+  if (pr.disabled) {
+    return typeColors['light'].regular;
   }
-  if (!props.checked) {
-    return typeColors['unchecked'];
+  if (!pr.checked) {
+    return typeColors['light'].hover;
   }
-  return typeColors[props.type];
+  return typeColors[pr.type].regular;
 }
 
 export const SwitchWrapper = styled.div<SwitchWrapperProps>`
   background-color: ${getBackgroundColor};
-  padding: ${(props) => paddingNumbers[props.padding]}px;
-  height: ${(props) => heights[props.size]}px;
-  width: ${(props) => heights[props.size] * 2}px;
-  border-radius: ${(props) => heights[props.size] / 2}px;
-  cursor: ${(props) => (props.disabled ? 'default' : 'pointer')};
+  padding: ${(pr) => switchPaddingNumbers[pr.padding]}px;
+  height: ${(pr) => heights[pr.size]}px;
+  width: ${(pr) => heights[pr.size] * 2}px;
+  border-radius: ${(pr) => heights[pr.size] / 2}px;
+  cursor: ${(pr) => (pr.disabled ? 'default' : 'pointer')};
   transition: all 250ms ease-in-out;
 `;
 
 SwitchWrapper.displayName = 'SwitchWrapper';
 
 interface SwitchToggleProps {
-  type: SwitchType;
+  type: themeType;
   size: ComponentSize;
   checked: boolean;
-  padding: SwitchPadding;
+  padding: ComponentSize;
   disabled: boolean;
 }
 
 export const SwitchToggle = styled.div<SwitchToggleProps>`
   aspect-ratio: 1;
-  width: ${(props) =>
-    heights[props.size] - paddingNumbers[props.padding] * 2}px;
-  height: ${(props) =>
-    heights[props.size] - paddingNumbers[props.padding] * 2}px;
-  background-color: ${(props) => (props.disabled ? '#c0c0c0' : '#fff')};
+  width: ${(pr) =>
+    heights[pr.size] - switchPaddingNumbers[pr.padding] * 2}px;
+  height: ${(pr) =>
+    heights[pr.size] - switchPaddingNumbers[pr.padding] * 2}px;
+  background-color: ${(pr) => (pr.disabled ? '#c0c0c0' : '#fff')};
   transition: all 250ms ease-in-out;
   transform: translateX(
-    ${(props) => (props.checked ? heights[props.size] : 0)}px
+    ${(pr) => (pr.checked ? heights[pr.size] : 0)}px
   );
-  border-radius: ${(props) => heights[props.size] / 2}px;
+  border-radius: ${(pr) => heights[pr.size] / 2}px;
 `;
 
 SwitchToggle.displayName = 'SwitchToggle';

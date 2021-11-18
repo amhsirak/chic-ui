@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 import { StyledBreadcrumb } from './styled';
 
-// Interfaces
 interface BaseBreadcrumbProps {
   className?: string;
   separator?: ReactNode | string;

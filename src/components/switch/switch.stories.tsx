@@ -46,90 +46,6 @@ function useSwitch(initial: boolean): [boolean, () => void] {
   return [checked, onChange];
 }
 
-export const Sizes = () => {
-  const [checked, onChange] = useSwitch(true);
-
-  return (
-    <>
-      <SectionHeader>Sizes</SectionHeader>
-      <SwitchRow>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} size="extraLarge" />
-          <SwitchLabel>extraLarge</SwitchLabel>
-        </LabeledSwitch>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} size="large" />
-          <SwitchLabel>large</SwitchLabel>
-        </LabeledSwitch>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} size="default" />
-          <SwitchLabel>default</SwitchLabel>
-        </LabeledSwitch>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} size="small" />
-          <SwitchLabel>small</SwitchLabel>
-        </LabeledSwitch>
-      </SwitchRow>
-    </>
-  );
-};
-
-export const Types = () => {
-  const [checked, onChange] = useSwitch(true);
-
-  return (
-    <>
-      <SectionHeader>Types</SectionHeader>
-      <SwitchRow>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} type={'default'} />
-          <SwitchLabel>default</SwitchLabel>
-        </LabeledSwitch>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} type={'success'} />
-          <SwitchLabel>success</SwitchLabel>
-        </LabeledSwitch>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} type={'secondary'} />
-          <SwitchLabel>secondary</SwitchLabel>
-        </LabeledSwitch>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} type={'warning'} />
-          <SwitchLabel>warning</SwitchLabel>
-        </LabeledSwitch>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} type={'danger'} />
-          <SwitchLabel>danger</SwitchLabel>
-        </LabeledSwitch>
-      </SwitchRow>
-    </>
-  );
-};
-
-export const Paddings = () => {
-  const [checked, onChange] = useSwitch(true);
-
-  return (
-    <>
-      <SectionHeader>Paddings</SectionHeader>
-      <SwitchRow>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} padding={'small'} />
-          <SwitchLabel>small</SwitchLabel>
-        </LabeledSwitch>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} padding={'default'} />
-          <SwitchLabel>default</SwitchLabel>
-        </LabeledSwitch>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} padding={'large'} />
-          <SwitchLabel>large</SwitchLabel>
-        </LabeledSwitch>
-      </SwitchRow>
-    </>
-  );
-};
-
 export const All = () => {
   const [checked, onChange] = useSwitch(true);
   return (
@@ -156,13 +72,18 @@ export const All = () => {
           <Switch checked={checked} onChange={onChange} type={'danger'} />
           <SwitchLabel>danger</SwitchLabel>
         </LabeledSwitch>
+        <LabeledSwitch>
+          <Switch checked={checked} onChange={onChange} type={'info'} />
+          <SwitchLabel>info</SwitchLabel>
+        </LabeledSwitch>
+        <LabeledSwitch>
+          <Switch checked={checked} onChange={onChange} type={'light'} />
+          <SwitchLabel>light</SwitchLabel>
+        </LabeledSwitch>
       </SwitchRow>
+
       <SectionHeader>Sizes</SectionHeader>
       <SwitchRow>
-        <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} size="extraLarge" />
-          <SwitchLabel>extraLarge</SwitchLabel>
-        </LabeledSwitch>
         <LabeledSwitch>
           <Switch checked={checked} onChange={onChange} size="large" />
           <SwitchLabel>large</SwitchLabel>

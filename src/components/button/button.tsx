@@ -12,6 +12,7 @@ interface BaseButtonProps {
   children?: ReactNode;
   disabled?: boolean;
   loading?: boolean;
+  search?: boolean;
 }
 
 type HTMLButtonProps = {
@@ -46,21 +47,21 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     onClick,
     href,
     as,
-    to
+    to,
+    search = false
   } = props;
 
   const styles = {
     innerType: type,
     size,
     disabled,
-    withText: children != null
+    withText: children != null,
+    isSearch: search
   };
 
   const spinnerStyles = {
     size:
-      size === 'extraLarge'
-        ? 28
-        : size === 'large'
+        size === 'large'
         ? 25
         : size === 'default'
         ? 20

@@ -40,6 +40,7 @@ const TextInput: React.ForwardRefRenderFunction<
     onChange,
     readonly = false,
     clearable = false,
+    search = false,
     placeholder,
     ...rest
   } = props;
@@ -50,7 +51,8 @@ const TextInput: React.ForwardRefRenderFunction<
     error,
     width,
     withIcon: icon !== undefined,
-    withCross: clearable
+    withCross: clearable,
+    isSearch: search
   };
   return (
     <StyledWrapper width={width} innerSize={size}>

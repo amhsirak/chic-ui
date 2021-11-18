@@ -1,58 +1,46 @@
-import React, { ElementType, ReactNode } from 'react';
-import { StyledBadge } from './styled';
+import React, { PropsWithChildren } from 'react';
+import { Wrapper, StyledBadge } from './styled';
 import { themeType } from '../../config/themes';
 
-export interface BaseBadgeProps {
-  type?: string;
-  rounded?: boolean;
-  className?: string;
-  children?: ReactNode;
-}
-
-// If `as` is added, badge becomes a custom html node specified in `as`
 export type BadgeProps = {
-  as?: ElementType;
-  to?: string;
-} & BaseBadgeProps;
+  count?: number;
+  limit?: number;
+  type?: themeType;
+  showZero?: boolean;
+  showCount?: boolean;
+  offset?: [number, number];
+};
 
-const Badge: React.ForwardRefRenderFunction<unknown, BadgeProps> = (
-  props,
-  ref
-) => {
+const Badge: React.ForwardRefRenderFunction<
+  HTMLDivElement,
+  PropsWithChildren<BadgeProps>
+> = (props, ref) => {
   const {
+    count = 0,
+    limit,
     type = 'default',
-    rounded = false,
-    className,
-    children,
-    as,
-    to
+    showCount = true,
+    showZero = false,
+    offset = [0, 0],
+    children
   } = props;
 
-  const styles = {
-    innerType: type,
-    withText: children != null,
-    rounded
-  };
-
-  if (as) {
-    return (
-      <StyledBadge as={as} to={to} ref={ref} className={className} {...styles}>
-        {children}
-      </StyledBadge>
-    );
-  }
+  const isBadgeVisible = count !== 0 || showZero;
+  const displayCount = limit && count > limit ? `${limit}+` : count;
 
   return (
-    <StyledBadge
-      as={as}
-      type="span"
-      ref={ref as React.MutableRefObject<HTMLSpanElement>}
-      className={className}
-      {...styles}
-    >
-      {children}
-    </StyledBadge>
+    <Wrapper ref={ref}>
+      <>
+        {children}
+        {isBadgeVisible && (
+          <StyledBadge offset={offset} type={type} showCount={showCount}>
+            {showCount && displayCount}
+          </StyledBadge>
+        )}
+      </>
+    </Wrapper>
   );
 };
 
-export default React.forwardRef<unknown, BadgeProps>(Badge);
+export default React.forwardRef(Badge);
+
