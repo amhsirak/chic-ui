@@ -1,6 +1,6 @@
 import React, { ElementType, ReactNode } from 'react';
 import { StyledTag } from './styled';
-import { themeType } from '../../config/themes';
+import { themeType } from 'config/themes';
 
 export interface BaseTagProps {
   type?: themeType;
