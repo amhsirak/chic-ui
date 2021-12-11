@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-interface StyledBreadcrumbProps {}
-
-export const StyledBreadcrumb = styled.ol<StyledBreadcrumbProps>`
+export const StyledBreadcrumb = styled.ol`
   list-style: none;
   display: flex;
   align-items: center;
