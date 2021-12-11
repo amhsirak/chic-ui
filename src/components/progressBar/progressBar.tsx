@@ -1,6 +1,10 @@
 import React from 'react';
-import { themeType } from '../../config/themes';
-import { StyledProgressBar, StyledLoadingText, StyledProgressWrapper } from './styled';
+import { themeType } from 'config/themes';
+import {
+  StyledProgressBar,
+  StyledLoadingText,
+  StyledProgressWrapper
+} from './styled';
 
 export interface ProgressBarProps {
   progress?: number;
@@ -12,7 +16,7 @@ export interface ProgressBarProps {
 const ProgressBar: React.ForwardRefRenderFunction<
   HTMLAnchorElement,
   ProgressBarProps
-> = (props, ref) => {
+> = (props) => {
   const {
     progress = 70,
     type = 'default',
@@ -22,22 +26,18 @@ const ProgressBar: React.ForwardRefRenderFunction<
 
   return (
     <StyledProgressWrapper>
-      <StyledProgressBar
-        type={type}
-        width={progress}
-        animated={animated}
-        >
+      <StyledProgressBar type={type} width={progress} animated={animated}>
         {showProgress && (
-            <div
-              style={{
-                height: '100%',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-            >
-              <StyledLoadingText type={type}>{progress}% </StyledLoadingText>
-            </div>
+          <div
+            style={{
+              height: '100%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
+          >
+            <StyledLoadingText type={type}>{progress}% </StyledLoadingText>
+          </div>
         )}
       </StyledProgressBar>
     </StyledProgressWrapper>

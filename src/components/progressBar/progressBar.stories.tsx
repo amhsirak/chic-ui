@@ -19,13 +19,9 @@ export default {
 const Template: Story<ProgressBarProps> = (args) => <ProgressBar {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {    
-  progress:80,
-  type:'default',
-  showProgress:true,
+Default.args = {
+  progress: 80,
+  type: 'default',
+  showProgress: true,
   animated: false
-}
-
-
-
-
+};
