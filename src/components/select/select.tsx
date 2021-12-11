@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ComponentSize } from '../../config/sizes';
+import { ComponentSize } from 'config/sizes';
 import {
   SelectWrapper,
   SelectOption,
