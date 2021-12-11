@@ -6,7 +6,7 @@
 
 **Simple and lightweight UI Component Library for React built using TypeScript and Styled Components.**
 
-Read Documentation here - https://chic-ui.web.app/
+Read Documentation here - https://chic-ui.vercel.app/
 
 NPM Link - https://www.npmjs.com/package/chic-ui
 
