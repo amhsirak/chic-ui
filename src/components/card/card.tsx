@@ -1,9 +1,18 @@
 import React, { ReactNode } from 'react';
-import { themeType } from 'src/config/themes';
-import { StyledCard, StyledDescription, StyledFooter, StyledFooterText, StyledFooterLink, StyledTitle, StyledSubTitle, StyledImage } from './styled';
+import { themeType } from 'config/themes';
+import {
+  StyledCard,
+  StyledDescription,
+  StyledFooter,
+  StyledFooterText,
+  StyledFooterLink,
+  StyledTitle,
+  StyledSubTitle,
+  StyledImage
+} from './styled';
 
 export interface StyledCardProps {
-  align?:string,
+  align?: string;
   children?: ReactNode;
   href?: string;
   width?: string;
@@ -22,10 +31,10 @@ export const Card: React.ForwardRefRenderFunction<
   HTMLDivElement,
   StyledCardProps
 > = (props, ref) => {
-  const { 
-    className, 
-    href, 
-    src, 
+  const {
+    className,
+    href,
+    src,
     width = '300px',
     height = '200px',
     title,
@@ -34,8 +43,8 @@ export const Card: React.ForwardRefRenderFunction<
     footer,
     hrefText,
     description,
-    type= 'light'
-    } = props;
+    type = 'light'
+  } = props;
 
   return (
     <StyledCard
@@ -45,17 +54,16 @@ export const Card: React.ForwardRefRenderFunction<
       height={height}
       type={type}
     >
-      {src && (
-        <StyledImage src={src} width={'100%'}
-      height={'100%'}/>
-      ) }      
-      {title && <StyledTitle children={title}/>}
-      {subTitle && <StyledSubTitle children={subTitle}/>}
-      {description && <StyledDescription children={description}/>}
-      {footer && <StyledFooter>
-        <StyledFooterText children={footer}/>
-        {href && <StyledFooterLink href={href} children={hrefText}/>}
-      </StyledFooter> }
+      {src && <StyledImage src={src} width={'100%'} height={'100%'} />}
+      {title && <StyledTitle children={title} />}
+      {subTitle && <StyledSubTitle children={subTitle} />}
+      {description && <StyledDescription children={description} />}
+      {footer && (
+        <StyledFooter>
+          <StyledFooterText children={footer} />
+          {href && <StyledFooterLink href={href} children={hrefText} />}
+        </StyledFooter>
+      )}
       {children}
     </StyledCard>
   );

@@ -1,19 +1,20 @@
 import styled from 'styled-components';
 import { StyledCardProps } from '.';
-import { theme as typeColors } from '../../config/themes';
+import { theme as typeColors } from 'config/themes';
 
 export const StyledCard = styled.div<StyledCardProps>`
   display: inline-block;
   box-sizing: border-box;
-  color: ${pr => pr.type ? typeColors[pr.type].color : '#00000'};
+  color: ${(pr) => (pr.type ? typeColors[pr.type].color : '#00000')};
   text-decoration: none;
   padding-bottom: 40px;
   font-size: 15px;
-  background-color: ${pr => pr.type ? typeColors[pr.type].regular : '#ffff'};
+  background-color: ${(pr) =>
+    pr.type ? typeColors[pr.type].regular : '#ffff'};
   height: ${(pr) => pr.height};
   width: ${(pr) => pr.width};
-  -webkit-box-shadow: 5px 5px 15px 5px #ADADAD; 
-  box-shadow: 5px 5px 15px 5px #ADADAD;
+  -webkit-box-shadow: 5px 5px 15px 5px #adadad;
+  box-shadow: 5px 5px 15px 5px #adadad;
 `;
 
 export const StyledImage = styled.img`
@@ -38,7 +39,7 @@ export const StyledDescription = styled.p`
 `;
 
 export const StyledFooter = styled.div<StyledCardProps>`
-  color: ${pr => pr.type ? typeColors[pr.type].color : '#00000'};
+  color: ${(pr) => (pr.type ? typeColors[pr.type].color : '#00000')};
   text-align: center;
   display: flexbox;
   justify-content: space-between;
@@ -64,4 +65,3 @@ export const StyledFooterLink = styled.a<StyledCardProps>`
     color: #6874cc;
   }
 `;
-
