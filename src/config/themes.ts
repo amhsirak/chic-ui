@@ -1,8 +1,3 @@
-import check from '../icons/check.svg';
-import error from '../icons/error.svg';
-import info from '../icons/info.svg';
-import warning from '../icons/warning.svg';
-
 export type themeType =
   | 'default'
   | 'secondary'
@@ -13,8 +8,8 @@ export type themeType =
   | 'light';
 
 export interface ThemeValues {
-  regular: string; 
-  hover: string; 
+  regular: string;
+  hover: string;
   color?: string;
 }
 
@@ -57,34 +52,3 @@ export const theme: Theme = {
     color: '#000000'
   }
 };
-
-// For Alert Component
-export type alertType = 'danger' | 'warning' | 'success' | 'info';
-export interface AlertValues {
-  regular: string; 
-  icon?: string;
-}
-export type AlertTheme = Record<alertType, AlertValues>;
-export const alertTheme: AlertTheme = {
-  danger: {
-    regular: '#FF0075',
-    icon: error
-  },
-  warning: {
-    regular: '#f08e0a',
-    icon: warning
-  },
-  success: {
-    regular: '#00bf87',
-    icon: check
-  },
-  info: {
-    regular: '#24c4e0',
-    icon: info
-  }
-};
-
-
-
-
-

@@ -5,15 +5,15 @@ export const sidePaddings: {
 } = {
   default: 22,
   small: 19,
-  large: 25,
-}
-  
+  large: 25
+};
+
 export const heights: {
   [key in ComponentSize]: number;
 } = {
   default: 40,
   small: 33,
-  large: 47,
+  large: 47
 };
 
 export const switchPaddingNumbers: {
@@ -23,4 +23,3 @@ export const switchPaddingNumbers: {
   default: 2,
   large: 4
 };
-
