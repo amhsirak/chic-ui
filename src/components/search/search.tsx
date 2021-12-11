@@ -1,7 +1,7 @@
 import React, { ChangeEventHandler } from 'react';
-import Button from '../button';
-import TextInput from '../text-input';
-import { ComponentSize } from '../../config/sizes';
+import Button from 'components/button';
+import TextInput from 'components/text-input';
+import { ComponentSize } from 'config/sizes';
 import { SearchWrapper } from './styled';
 
 export interface SearchProps {
