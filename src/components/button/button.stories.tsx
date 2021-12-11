@@ -1,14 +1,12 @@
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { Meta } from '@storybook/react/types-6-0';
 import styled from 'styled-components';
-import Button, { ButtonProps } from '.';
+import Button from '.';
 import SearchIcon from '../../icons/Search';
 
 export default {
   title: 'Components/Button',
   component: Button
 } as Meta;
-
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 const ButtonRow = styled.div`
   display: flex;
@@ -33,7 +31,7 @@ export const Sizes = () => {
         <Button type="warning">Warning</Button>
         <Button type="success">Success</Button>
         <Button type="danger">Danger</Button>
-        <Button type='info'>Info</Button>
+        <Button type="info">Info</Button>
         <Button type="light">Light</Button>
       </ButtonRow>
       <ButtonRow>
