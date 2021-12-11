@@ -1,7 +1,8 @@
 import { Meta, Story } from '@storybook/react';
 import styled from 'styled-components';
+import { theme } from '../../config/themes'
 
-import Badge, {BadgeProps} from '.';
+import Badge, { BadgeProps } from '.';
 
 type Arguments = Omit<BadgeProps, 'offset'> & {
   offsetX: number;
@@ -15,7 +16,7 @@ const Box = styled.div`
   border-radius: 4px;
 `;
 
-export const Playground: Story<Arguments> = ({ offsetX, offsetY, ...args }) => {
+export const Default: Story<Arguments> = ({ offsetX, offsetY, ...args }) => {
   const offset: BadgeProps['offset'] = [offsetX, offsetY];
 
   return (
@@ -25,7 +26,7 @@ export const Playground: Story<Arguments> = ({ offsetX, offsetY, ...args }) => {
   );
 };
 
-Playground.args = {
+Default.args = {
   count: 3,
   limit: 99,
   type: 'default',
@@ -37,5 +38,11 @@ Playground.args = {
 
 export default {
   title: 'Components/Badge',
-  component: Badge
+  component: Badge,
+  argTypes: {
+    type: {
+      options: Object.keys(theme),
+      control: { type: 'radio' }
+    }
+  }
 } as Meta;

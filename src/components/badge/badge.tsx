@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { Wrapper, StyledBadge } from './styled';
-import { themeType } from '../../config/themes';
+import { themeType } from 'config/themes';
 
 export type BadgeProps = {
   count?: number;
@@ -19,7 +19,7 @@ const Badge: React.ForwardRefRenderFunction<
     count = 0,
     limit,
     type = 'default',
-    showCount = true,
+    showCount = false,
     showZero = false,
     offset = [0, 0],
     children
@@ -43,4 +43,3 @@ const Badge: React.ForwardRefRenderFunction<
 };
 
 export default React.forwardRef(Badge);
-
