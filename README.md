@@ -29,6 +29,10 @@ Raise an [Issue](https://github.com/karishmashuklaa/chic-ui/issues) if you find 
 <a href="https://github.com/karishmashuklaa/chic-ui/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=karishmashuklaa/chic-ui" />
 </a>
+
+## License 
+<a href="https://github.com/karishmashuklaa/chic-ui/blob/feature/LICENSE">MIT</a>
+
 <hr>
 Copyright 2021 <a href="https://github.com/karishmashuklaa/">Karishma Shukla</a>
 
