@@ -10,7 +10,7 @@ export const StyledBreadcrumb = styled.ol`
   .breadcrumb-separator {
     display: flex;
     align-items: center;
-    color: #333;
+    color: #b8b8b8;
     margin: auto 6px;
     user-select: none;
   }
