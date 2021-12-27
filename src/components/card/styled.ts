@@ -19,6 +19,7 @@ export const StyledCardItem = styled.div<StyledCardProps>`
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border-radius: 8px;
   color: ${(pr) => (pr.type ? typeColors[pr.type].color : '#00000')};
   text-decoration: none;
   font-size: 15px;
