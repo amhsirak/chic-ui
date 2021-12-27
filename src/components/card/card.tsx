@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { themeType } from 'config/themes';
 import {
   StyledCard,
+  StyledCardItem,
   StyledDescription,
   StyledFooter,
   StyledFooterText,
@@ -35,8 +36,8 @@ export const Card: React.ForwardRefRenderFunction<
     className,
     href,
     src,
-    width = '300px',
-    height = '200px',
+    width = '24rem',
+    height = 'auto',
     title,
     subTitle,
     children,
@@ -47,7 +48,8 @@ export const Card: React.ForwardRefRenderFunction<
   } = props;
 
   return (
-    <StyledCard
+    <StyledCard>
+       <StyledCardItem
       className={className}
       ref={ref}
       width={width}
@@ -65,6 +67,7 @@ export const Card: React.ForwardRefRenderFunction<
         </StyledFooter>
       )}
       {children}
+    </StyledCardItem>
     </StyledCard>
   );
 };
