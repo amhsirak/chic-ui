@@ -3,7 +3,7 @@ import { theme as typeColors } from 'config/themes';
 import { DividerProps } from './divider';
 
 export const StyledDivider = styled.hr<DividerProps>`
-  border-width: 2px;
+  border-width: ${pr => pr.thickness}px;
   border-style: ${(pr) => (pr.dashed ? `dashed` : `solid`)};
   border-color: ${(pr) => typeColors[pr.type!].regular};
   width: 100%;
