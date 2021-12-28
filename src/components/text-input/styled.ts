@@ -10,7 +10,7 @@ interface StyledWrapperProps {
 export const StyledWrapper = styled.div<StyledWrapperProps>`
   position: relative;
   height: ${(pr) => heights[pr.innerSize]}px;
-  width: ${(pr) => pr.width};
+  max-width: ${(pr) => pr.width};
 `;
 
 interface StyledTextInputProps {
@@ -39,7 +39,7 @@ export const StyledTextInput = styled.input<StyledTextInputProps>`
     sidePaddings[pr.innerSize] +
     (pr.withIcon ? sidePaddings[pr.innerSize] : 0)}px;
   height: ${(pr) => heights[pr.innerSize]}px;
-  width: ${(pr) => pr.width};
+  width: 100%;
   box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : 'transparent')};
   background-color: ${(pr) => (pr.error ? 'ffe3e6' : '#EEEEEE')};
   &:focus {
