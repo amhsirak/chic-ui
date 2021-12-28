@@ -36,8 +36,6 @@ export const Card: React.ForwardRefRenderFunction<
     className,
     href,
     src,
-    width = '24rem',
-    height = 'auto',
     title,
     subTitle,
     children,
@@ -52,8 +50,6 @@ export const Card: React.ForwardRefRenderFunction<
        <StyledCardItem
       className={className}
       ref={ref}
-      width={width}
-      height={height}
       type={type}
     >
       {src && <StyledImage src={src} width={'100%'} height={'100%'} />}
