@@ -16,8 +16,6 @@ export interface StyledCardProps {
   align?: string;
   children?: ReactNode;
   href?: string;
-  width?: string;
-  height?: string;
   className?: string;
   src?: string;
   title?: string;
