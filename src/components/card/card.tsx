@@ -13,7 +13,6 @@ import {
 } from './styled';
 
 export interface StyledCardProps {
-  align?: string;
   children?: ReactNode;
   href?: string;
   className?: string;
