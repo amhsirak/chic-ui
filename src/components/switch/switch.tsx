@@ -19,7 +19,7 @@ export const Switch: React.ForwardRefRenderFunction<
 > = (props, ref) => {
   const {
     size = 'default',
-    type = 'default',
+    type = 'primary',
     padding = 'default',
     checked = false,
     disabled = false,

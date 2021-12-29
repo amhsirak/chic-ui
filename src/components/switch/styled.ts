@@ -18,12 +18,12 @@ function getBackgroundColor(
   pr: Pick<SwitchWrapperProps, 'disabled' | 'checked' | 'type'>
 ): string {
   if (pr.disabled) {
-    return typeColors['light'].regular;
+    return typeColors['light'].bgColor;
   }
   if (!pr.checked) {
     return typeColors['light'].hover;
   }
-  return typeColors[pr.type].regular;
+  return typeColors[pr.type].bgColor;
 }
 
 export const SwitchWrapper = styled.div<SwitchWrapperProps>`
