@@ -29,7 +29,7 @@ export const Default: Story<Arguments> = ({ offsetX, offsetY, ...args }) => {
 Default.args = {
   count: 3,
   limit: 99,
-  type: 'default',
+  type: 'primary',
   showCount: true,
   showZero: false,
   offsetX: 0,

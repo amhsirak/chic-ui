@@ -18,7 +18,7 @@ const Badge: React.ForwardRefRenderFunction<
   const {
     count = 0,
     limit,
-    type = 'default',
+    type = 'primary',
     showCount = false,
     showZero = false,
     offset = [0, 0],

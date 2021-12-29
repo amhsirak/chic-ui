@@ -15,7 +15,7 @@ export const StyledBadge = styled.div<StyledBadgeProps>`
   position: absolute;
   z-index: 2;
   border-radius: 9999px;
-  background: ${(pr) => typeColors[pr.type!].regular};
+  background: ${(pr) => typeColors[pr.type!].bgColor};
   padding: 4px 6px;
   text-align: center;
   color: ${(pr) => typeColors[pr.type!].color};
