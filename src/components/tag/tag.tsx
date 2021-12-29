@@ -17,7 +17,7 @@ export type TagProps = {
 
 const Tag: React.ForwardRefRenderFunction<unknown, TagProps> = (props, ref) => {
   const {
-    type = 'default',
+    type = 'primary',
     rounded = false,
     className,
     children,

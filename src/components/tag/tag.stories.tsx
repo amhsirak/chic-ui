@@ -20,7 +20,7 @@ Playground.argTypes = {
 
 Playground.args = {
   content: 'Lorem ipsum',
-  type: 'default',
+  type: 'primary',
   rounded: false
 };
 

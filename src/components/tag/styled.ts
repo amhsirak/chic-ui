@@ -18,7 +18,7 @@ export const StyledTag = styled.span<StyledTagProps>`
   outline: none;
   padding: 3.3px 14px;
   height: 0 23px;
-  background-color: ${(pr) => typeColors[pr.innerType].regular};
+  background-color: ${(pr) => typeColors[pr.innerType].bgColor};
   color: ${(pr) => (pr.innerType === 'light' ? '#000' : '#fff')};
   // Rounded
   ${(pr) => (pr.rounded ? `border-radius: 14px;` : '')}
