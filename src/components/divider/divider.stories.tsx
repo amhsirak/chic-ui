@@ -9,7 +9,7 @@ export default {
 export const All = () => {
   return (
     <>
-      <Divider type="default" thickness={2} />
+      <Divider type="primary" thickness={2} />
       <br />
       <Divider type="danger" dashed />
       <br />
