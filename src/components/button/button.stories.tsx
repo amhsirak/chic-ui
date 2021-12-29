@@ -26,7 +26,7 @@ export const Sizes = () => {
         <Button size="small">Small</Button>
       </ButtonRow>
       <ButtonRow>
-        <Button>Default</Button>
+        <Button>Primary</Button>
         <Button type="secondary">Secondary</Button>
         <Button type="warning">Warning</Button>
         <Button type="success">Success</Button>

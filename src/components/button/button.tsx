@@ -37,7 +37,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
   ref
 ) => {
   const {
-    type = 'default',
+    type = 'primary',
     icon,
     size = 'default',
     className,
