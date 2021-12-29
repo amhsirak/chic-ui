@@ -49,7 +49,7 @@ export const StyledTextInput = styled.input<StyledTextInputProps>`
   // Disabled
   ${(pr) =>
     pr.disabled
-      ? `
+      && `
         background-color: #a6a6a6;
         color: #5e5e5e;
         cursor: not-allowed;
@@ -58,8 +58,7 @@ export const StyledTextInput = styled.input<StyledTextInputProps>`
             background-color: #a6a6a6 !important;
             color: #5e5e5e !important;
         }
-    `
-      : ''}
+    `}
 `;
 
 interface StyledIconProps {
