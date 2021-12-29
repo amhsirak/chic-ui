@@ -27,8 +27,8 @@ export const CustomOptions = Template.bind({});
 export const HandleChanges = Template.bind({});
 
 Default.args = {
-  pages: 4,
-  bgType: 'default',
+  pages: 10,
+  bgType: 'primary',
   activeBg: 'white',
   activeHoverColor: 'black',
   activeColor: 'black',
@@ -42,11 +42,10 @@ Default.args = {
 
 CustomOptions.args = {
   pages: 4,
-  bgType: 'warning',
   activeBg: 'red',
   startCountInZero: true,
   customBg: {
-    regular: 'pink',
+    bgColor: 'purple',
     hover: 'black',
     color: 'red'
   },

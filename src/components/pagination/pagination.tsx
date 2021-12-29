@@ -8,7 +8,7 @@ export interface PaginationProps {
   whenNextPage: (page: number) => void;
   whenPreviousPage: (page: number) => void;
   whenPageChange: (page: number) => void;
-  bgType: themeType;
+  bgType?: themeType;
   customBg?: ThemeValues;
   activeBg: string;
   activeColor: string;
@@ -24,7 +24,8 @@ const Pagination: React.ForwardRefRenderFunction<
     startCountInZero,
     whenPreviousPage,
     whenNextPage,
-    whenPageChange
+    whenPageChange,
+    bgType='primary'
   } = props;
 
   const [page, setPage] = useState(startCountInZero ? 0 : 1);
@@ -54,7 +55,7 @@ const Pagination: React.ForwardRefRenderFunction<
 
   return (
     <Container ref={ref}>
-      <PreviousButton onClick={goBack} {...props}>
+      <PreviousButton onClick={goBack} bgType={bgType} {...props}>
         Previous
       </PreviousButton>
       {new Array(pages > 0 ? pages : 0).fill(0).map((v, i) => (
@@ -63,12 +64,13 @@ const Pagination: React.ForwardRefRenderFunction<
           buttonPage={startCountInZero ? i : i + 1}
           key={i}
           onClick={() => onChange(i === 0 ? (startCountInZero ? i : ++i) : i)}
+          bgType={bgType}
           {...props}
         >
           {startCountInZero ? i : ++i}
         </PageButton>
       ))}
-      <NextButton onClick={goForward} {...props}>
+      <NextButton onClick={goForward} bgType={bgType} {...props}>
         Next
       </NextButton>
     </Container>
