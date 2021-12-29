@@ -9,7 +9,7 @@ export default {
 export const All = () => {
   return (
     <>
-      <Spinner type="default" />
+      <Spinner type="primary" />
       <Spinner type="danger" />
       <Spinner type="info" />
       <Spinner type="light" />
