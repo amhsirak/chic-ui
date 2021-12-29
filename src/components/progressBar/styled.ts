@@ -14,7 +14,7 @@ interface StyledLoadingTextProps {
 export const StyledProgressBar = styled.div<StyledProgressBarProps>`
   display: inline-block;
   height: 25px;
-  background-color: ${(pr) => typeColors[pr.type!].regular};
+  background-color: ${(pr) => typeColors[pr.type!].bgColor};
   width: ${(pr) => pr.width}%;
   ${(pr) => pr.animated && `transition: width 1s ease-in-out`};
   border-radius: 8px;

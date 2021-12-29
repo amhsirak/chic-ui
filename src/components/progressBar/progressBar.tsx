@@ -19,7 +19,7 @@ const ProgressBar: React.ForwardRefRenderFunction<
 > = (props) => {
   const {
     progress = 70,
-    type = 'default',
+    type = 'primary',
     showProgress = true,
     animated = false
   } = props;
