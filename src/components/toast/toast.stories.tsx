@@ -1,60 +1,19 @@
-import { Meta, Story } from '@storybook/react';
-import Toast, { ToastProps } from './toast';
+import { Meta } from '@storybook/react';
+import Toast  from '.';
 
 export default {
   title: 'Components/Toast',
-  component: Toast,
-  argTypes: {
-    type: {
-      options: ['success', 'info', 'warning', 'error'],
-      control: { type: 'radio' }
-    },
-    title: {
-      control: {
-        type: 'text'
-      }
-    },
-    message: {
-      control: {
-        type: 'text'
-      }
-    }
-  },
-  args: {
-    type: 'success',
-    title: 'Toast title',
-    message: 'A description message'
-  }
+  component: Toast
 } as Meta;
 
-const Template: Story<ToastProps> = (args) => <Toast {...args} />;
+export const All = () => {
 
-export const Success = Template.bind({});
-export const Info = Template.bind({});
-export const Warning = Template.bind({});
-export const Error = Template.bind({});
-
-Success.args = {
-  title: 'Success toast',
-  message: 'A new toast has been created',
-  type: 'success',
-  onClose: () => console.log('Toast closed')
-};
-
-Info.args = {
-  title: 'Info toast',
-  message: 'Your toast is ready to be displayed',
-  type: 'info'
-};
-
-Warning.args = {
-  title: 'Warning toast',
-  message: 'A warning toast for you',
-  type: 'warning'
-};
-
-Error.args = {
-  title: 'Error toast',
-  message: 'An error has occured',
-  type: 'error'
+  return (
+    <>
+      <Toast type="danger" title="LOGIN FAILED" message="Please enter correct credentials.Please enter correct credentialsPlease enter correct credentialsPlease enter correct credentialsPlease enter correct credentials" />
+      <Toast type="info" title="Info Toast" message="Some information" />
+      <Toast type="success" title="Success Toast" message="Success yaayyy" />
+      <Toast type="warning" title="Warning Toast" message="Warning warning warning" />
+    </>
+  );
 };

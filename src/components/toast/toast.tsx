@@ -1,39 +1,31 @@
-import React, { ReactElement } from 'react';
-import check from './icons/check.svg';
-import error from './icons/error.svg';
-import info from './icons/info.svg';
-import warning from './icons/warning.svg';
-import { ToastElement, ToastImage, ToastMessage, ToastTitle } from './styled';
+import { ReactElement } from 'react';
+import { ToastElement, ToastIcon, ToastMessage, ToastTitle } from './styled';
+import { themeType, theme } from 'config/themes';
 
 export interface ToastProps {
   title: string;
   message?: string;
-  type: 'success' | 'error' | 'info' | 'warning';
+  type?: themeType;
   onClose?: () => void;
+  icon?: React.ElementType & React.ReactNode;
 }
 
-const toastAlternatives = {
-  success: { backgroundColor: '#5cb85c', icon: check },
-  error: { backgroundColor: '#d9534f', icon: error },
-  info: { backgroundColor: '#5bc0de', icon: info },
-  warning: { backgroundColor: '#f0ad4e', icon: warning }
-};
 function Toast({
   title,
   message = '',
-  type,
+  type = 'primary',
+  icon,
   onClose = () => {}
 }: ToastProps): ReactElement {
   return (
     <ToastElement
       style={{
-        backgroundColor: toastAlternatives[type].backgroundColor
+        backgroundColor: theme[type].bgColor,
+        color:theme[type].color
       }}
     >
       <button onClick={() => onClose()}>X</button>
-      <ToastImage>
-        <img src={toastAlternatives[type].icon} alt="" />
-      </ToastImage>
+      { icon && <ToastIcon as={icon} /> }
       <div>
         <ToastTitle>{title}</ToastTitle>
         <ToastMessage>{message}</ToastMessage>
