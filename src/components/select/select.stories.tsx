@@ -21,7 +21,7 @@ const Template: Story<SelectProps<string[]>> = (args) => {
 
 export const Default = Template.bind({});
 Default.args = {
-  width: '200px',
+  width: '400px',
   placeholder: 'Select a country'
 };
 

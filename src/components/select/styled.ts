@@ -8,7 +8,8 @@ interface SelectWrapperProps {
 }
 
 export const SelectWrapper = styled.div<SelectWrapperProps>`
-  width: ${(pr) => pr.width};
+  max-width: ${(pr) => pr.width};
+  width: 100%;
   display: flex;
   flex-direction: column;
 `;
@@ -21,10 +22,10 @@ export const SelectOption = styled.li<SelectOptionProps>`
   list-style: none;
   border-radius: 4px;
   background-color: ${(pr) =>
-    pr.selected ? 'rgba(144, 202, 249, 0.13)' : '#f0f3f5'};
+    pr.selected ? 'rgba(144, 202, 249, 0.13)' : '#EEEEEE'};
   padding: 8px;
   &:hover {
-    background-color: #d1d1d1;
+    background-color: #FFFF;
   }
 `;
 
@@ -43,7 +44,7 @@ export const StyledSelectDiv = styled.div<StyledSelectDivProps>`
   border-radius: 8px;
   transition: 0.1s ease-out;
   box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : 'transparent')};
-  background-color: ${(pr) => (pr.error ? 'ffe3e6' : '#EEEEEE')};
+  background-color: #EEEEEE;
   height: ${(pr) => heights[pr.innerSize]}px;
   &:focus {
     box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : '#000')};
