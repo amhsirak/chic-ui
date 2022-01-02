@@ -1,5 +1,5 @@
-import Toast from './toast';
+import { toast } from './toastmanager';
 
-export * from './toast';
+export * from './toastmanager';
 
-export default Toast;
+export default toast;
