@@ -1,7 +1,10 @@
 import styled from 'styled-components';
+import { ToastProps } from './toast';
+import { theme as typeColors } from 'config/themes';
 
-export const ToastElement = styled.div`
-  background: #fff;
+export const ToastElement = styled.div<ToastProps>`
+  background-color: ${(pr) => typeColors[pr.type!].bgColor};
+  color: ${(pr) => typeColors[pr.type!].color};
   transition: 0.3s ease;
   position: relative;
   pointer-events: auto;
@@ -28,7 +31,7 @@ export const ToastElement = styled.div`
     top: -0.3em;
     float: right;
     font-weight: 700;
-    color: #fff;
+    color: ${(pr) => typeColors[pr.type!].color};
     outline: none;
     border: none;
     text-shadow: 0 1px 0 #fff;
@@ -44,7 +47,7 @@ export const ToastElement = styled.div`
 
 export const ToastTitle = styled.p`
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left;
   margin-top: 0;
   margin-bottom: 6px;
