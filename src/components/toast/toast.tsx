@@ -5,7 +5,7 @@ import {
   ToastMessage,
   ToastIcon,
 } from 'components/toast/styled';
-import { themeType, theme } from 'config/themes';
+import { themeType } from 'config/themes';
 
 export interface ToastProps {
   id: string;
@@ -18,7 +18,15 @@ export interface ToastProps {
 }
 
 const Toast: React.FC<ToastProps> = (props) => {
-  const { close, message, title, duration = 0, id, type='primary', icon } = props;
+  const {
+    close,
+    message,
+    title,
+    duration = 0,
+    id,
+    type = 'primary',
+    icon
+  } = props;
 
   useEffect(() => {
     if (!duration) return;
@@ -27,25 +35,28 @@ const Toast: React.FC<ToastProps> = (props) => {
       close();
     }, duration);
 
+    console.log('RENDERED')
+
     return () => clearTimeout(timer);
   }, [close, duration]);
 
   return (
-    <div>
-        <ToastElement  
-            style={{
-              backgroundColor: theme[type].bgColor,
-              color:theme[type].color
-            }}
-            >
-              <button onClick={close}>X</button>
-              { icon && <ToastIcon as={icon} /> }
-              <div>
-                <ToastTitle>{title}</ToastTitle>
-                <ToastMessage>{message}</ToastMessage>
-              </div>
-            </ToastElement>
-    </div>
+      <ToastElement
+        close={close}
+        message={message}
+        title={title}
+        duration={duration}
+        id={id}
+        type={type}
+        icon={icon}
+      >
+        <button onClick={close}>X</button>
+        {icon && <ToastIcon as={icon} />}
+        <div>
+          <ToastTitle>{title}</ToastTitle>
+          <ToastMessage>{message}</ToastMessage>
+        </div>
+      </ToastElement>
   );
 };
 
