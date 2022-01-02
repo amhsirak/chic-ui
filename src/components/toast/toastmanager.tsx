@@ -20,6 +20,10 @@ export class ToastManager {
     const body = document.getElementsByTagName('body')[0] as HTMLBodyElement;
     const toastContainer = document.createElement('div') as HTMLDivElement;
     toastContainer.id = 'main-toast-container';
+    toastContainer.style.position = 'fixed';
+    toastContainer.style.top = '10px';
+    toastContainer.style.right = '10px';
+    toastContainer.style.zIndex = '1000';
     body.insertAdjacentElement('beforeend', toastContainer);
     this.containerRef = toastContainer;
   }
