@@ -34,5 +34,5 @@ Raise an [Issue](https://github.com/karishmashuklaa/chic-ui/issues) if you find 
 <a href="https://github.com/karishmashuklaa/chic-ui/blob/feature/LICENSE">MIT</a>
 
 <hr>
-MIT 2021 <a href="https://github.com/karishmashuklaa/">Karishma Shukla</a>
+Copyright 2021 <a href="https://github.com/karishmashuklaa/">Karishma Shukla</a>
 
