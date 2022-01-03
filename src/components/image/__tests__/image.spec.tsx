@@ -1,5 +1,5 @@
 import Image from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Image Component', () => {
   it('Renders Correctly', () => {

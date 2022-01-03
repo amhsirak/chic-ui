@@ -1,4 +1,4 @@
-import { themeType } from 'config/themes';
+import { themeType } from '../../config/themes';
 interface StyledProgressBarProps {
     type?: themeType;
     animated?: boolean;

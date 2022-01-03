@@ -1,5 +1,5 @@
-import { ComponentSize } from 'config/sizes';
-import { themeType } from 'config/themes';
+import { ComponentSize } from '../../config/sizes';
+import { themeType } from '../../config/themes';
 interface SwitchWrapperProps {
     type: themeType;
     size: ComponentSize;

@@ -1,5 +1,5 @@
-import { ComponentSize } from 'config/sizes';
-import CrossIcon from 'icons/Cross';
+import { ComponentSize } from '../../config/sizes';
+import CrossIcon from '../../icons/Cross';
 interface StyledWrapperProps {
     width: string;
     innerSize: ComponentSize;

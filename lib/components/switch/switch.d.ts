@@ -1,6 +1,6 @@
 import React from 'react';
-import { ComponentSize } from 'config/sizes';
-import { themeType } from 'config/themes';
+import { ComponentSize } from '../../config/sizes';
+import { themeType } from '../../config/themes';
 export interface SwitchProps {
     size?: ComponentSize;
     type?: themeType;

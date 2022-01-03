@@ -1,5 +1,5 @@
 import Link from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Link Component', () => {
   it('Renders Correctly', () => {

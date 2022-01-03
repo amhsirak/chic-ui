@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentSize } from 'config/sizes';
+import { ComponentSize } from '../../config/sizes';
 export interface SelectProps<T> {
     className?: string;
     size?: ComponentSize;

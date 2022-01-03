@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { ToastProps } from './toast';
-import { theme as typeColors } from 'config/themes';
+import { theme as typeColors } from '../../config/themes';
 
 export const ToastElement = styled.div<ToastProps>`
   background-color: ${(pr) => typeColors[pr.type!].bgColor};

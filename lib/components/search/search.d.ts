@@ -1,5 +1,5 @@
 import React, { ChangeEventHandler } from 'react';
-import { ComponentSize } from 'config/sizes';
+import { ComponentSize } from '../../config/sizes';
 export interface SearchProps {
     className?: string;
     size?: ComponentSize;

@@ -1,6 +1,6 @@
 import CardGroup from '..';
-import { Card } from 'components';
-import { render } from 'test/utils';
+import { Card } from '../../card';
+import { render } from '../../../test/utils';
 
 describe('Card Group Component', () => {
   it('Renders Correctly', () => {

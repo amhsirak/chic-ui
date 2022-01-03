@@ -4,8 +4,8 @@ import {
   ToastTitle,
   ToastMessage,
   ToastIcon
-} from 'components/toast/styled';
-import { themeType } from 'config/themes';
+} from './styled';
+import { themeType } from '../../config/themes';
 
 export interface ToastProps {
   id: string;

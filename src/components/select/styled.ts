@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { ComponentSize, heights } from 'config/sizes';
-import SvgArrowDown from 'icons/ArrowDown';
-import Cross from 'icons/Cross';
+import { ComponentSize, heights } from '../../config/sizes';
+import SvgArrowDown from '../../icons/ArrowDown';
+import Cross from '../../icons/Cross';
 
 interface SelectWrapperProps {
   width: string;

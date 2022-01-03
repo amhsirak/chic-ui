@@ -1,5 +1,5 @@
 import Skeleton from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Skeleton Component', () => {
   it('Renders Correctly', () => {

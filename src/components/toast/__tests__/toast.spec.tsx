@@ -1,5 +1,5 @@
 import toast from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Toast Component', () => {
   it('Renders Correctly', () => {

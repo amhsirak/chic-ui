@@ -1,6 +1,6 @@
 import Badge from '..';
-import { Avatar } from 'components';
-import { render } from 'test/utils';
+import { Avatar } from '../../avatar';
+import { render } from '../../../test/utils';
 
 describe('Badge Component', () => {
   it('Renders Correctly', () => {

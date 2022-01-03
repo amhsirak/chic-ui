@@ -1,5 +1,5 @@
 import Avatar from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Avatar Component', () => {
   it('Renders Correctly', () => {

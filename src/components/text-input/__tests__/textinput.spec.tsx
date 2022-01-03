@@ -1,5 +1,5 @@
 import TextInput from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('TextInput Component', () => {
   it('Renders Correctly', () => {

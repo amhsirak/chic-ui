@@ -1,6 +1,6 @@
 import Button from '..';
-import { render } from 'test/utils';
-import SearchIcon from 'icons/Search';
+import { render } from '../../../test/utils';
+import SearchIcon from '../../../icons/Search';
 
 describe('Button Component', () => {
   it('Renders Correctly', () => {

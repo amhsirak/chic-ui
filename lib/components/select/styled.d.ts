@@ -1,6 +1,6 @@
-import { ComponentSize } from 'config/sizes';
-import SvgArrowDown from 'icons/ArrowDown';
-import Cross from 'icons/Cross';
+import { ComponentSize } from '../../config/sizes';
+import SvgArrowDown from '../../icons/ArrowDown';
+import Cross from '../../icons/Cross';
 interface SelectWrapperProps {
     width: string;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { themeType, ThemeValues } from 'config/themes';
+import { themeType, ThemeValues } from '../../config/themes';
 export interface PaginationProps {
     pages: number;
     startCountInZero?: boolean;

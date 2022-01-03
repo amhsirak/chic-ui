@@ -1,6 +1,6 @@
 import React, { ElementType, MouseEventHandler, ReactNode } from 'react';
-import { ComponentSize } from 'config/sizes';
-import { themeType } from 'config/themes';
+import { ComponentSize } from '../../config/sizes';
+import { themeType } from '../../config/themes';
 interface BaseButtonProps {
     type?: themeType;
     icon?: ElementType;
