@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skeleton Component Renders Correctly 1`] = `
+Array [
+  <div
+    className="sc-bdfBQB dzfvNA"
+    height={100}
+    width={100}
+  />,
+  <div
+    className="sc-bdfBQB gIIwQU"
+    height={60}
+    width={80}
+  />,
+  <div
+    className="sc-bdfBQB bDFWYu"
+    height={100}
+    width={100}
+  />,
+]
+`;
