@@ -1,10 +1,5 @@
-import check from '../icons/check.svg';
-import error from '../icons/error.svg';
-import info from '../icons/info.svg';
-import warning from '../icons/warning.svg';
-
 export type themeType =
-  | 'default'
+  | 'primary'
   | 'secondary'
   | 'danger'
   | 'warning'
@@ -13,78 +8,47 @@ export type themeType =
   | 'light';
 
 export interface ThemeValues {
-  regular: string; 
-  hover: string; 
-  color?: string;
+  bgColor: string;
+  hover: string;
+  color: string;
 }
 
 export type Theme = Record<themeType, ThemeValues>;
 
 export const theme: Theme = {
-  default: {
-    regular: '#1F51FF',
+  primary: {
+    bgColor: '#1F51FF',
     hover: '#1d47db',
     color: '#ffffff'
   },
   secondary: {
-    regular: '#35212A',
+    bgColor: '#35212A',
     hover: '#2b1b22',
     color: '#ffffff'
   },
   danger: {
-    regular: '#FF0075',
+    bgColor: '#FF0075',
     hover: '#de0066',
     color: '#ffffff'
   },
   warning: {
-    regular: '#f08e0a',
+    bgColor: '#f08e0a',
     hover: '#e08509',
     color: '#ffffff'
   },
   success: {
-    regular: '#00bf87',
+    bgColor: '#00bf87',
     hover: '#02a676',
     color: '#ffffff'
   },
   info: {
-    regular: '#24c4e0',
+    bgColor: '#24c4e0',
     hover: '#22b9d4',
     color: '#ffffff'
   },
   light: {
-    regular: '#f2f2f2',
+    bgColor: '#f2f2f2',
     hover: '#ebebeb',
     color: '#000000'
   }
 };
-
-// For Alert Component
-export type alertType = 'danger' | 'warning' | 'success' | 'info';
-export interface AlertValues {
-  regular: string; 
-  icon?: string;
-}
-export type AlertTheme = Record<alertType, AlertValues>;
-export const alertTheme: AlertTheme = {
-  danger: {
-    regular: '#FF0075',
-    icon: error
-  },
-  warning: {
-    regular: '#f08e0a',
-    icon: warning
-  },
-  success: {
-    regular: '#00bf87',
-    icon: check
-  },
-  info: {
-    regular: '#24c4e0',
-    icon: info
-  }
-};
-
-
-
-
-

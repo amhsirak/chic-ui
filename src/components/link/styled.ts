@@ -23,12 +23,11 @@ export const StyledLink = styled.a<StyledLinkProps>`
     color: #6874cc;
   }
   ${(pr) =>
-    pr.disabled
-      ? `
+    pr.disabled &&
+    `
         cursor: not-allowed;
         &, &:focus, &:visited, &:hover {
             color: #5e5e5e;
         }
-    `
-      : ''}
+    `}
 `;

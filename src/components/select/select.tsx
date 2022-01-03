@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ComponentSize } from '../../config/sizes';
+import { ComponentSize } from 'config/sizes';
 import {
   SelectWrapper,
   SelectOption,
@@ -30,7 +30,7 @@ const Select: React.ForwardRefRenderFunction<
 > = (
   {
     className,
-    size,
+    size = 'default',
     disabled,
     error,
     multiSelect,
@@ -122,7 +122,7 @@ const Select: React.ForwardRefRenderFunction<
         tabIndex={disabled ? undefined : 0}
         disabled={disabled || false}
         error={error || false}
-        innerSize={size || 'small'}
+        innerSize={size}
         onClick={() => !disabled && setShowOptions(!showOptions)}
       >
         <div>{showSelectedOptionValue()}</div>

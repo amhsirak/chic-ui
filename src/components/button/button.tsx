@@ -1,8 +1,8 @@
 import React, { ElementType, MouseEventHandler, ReactNode } from 'react';
 import { StyledButton, StyledIcon } from './styled';
-import { ComponentSize } from '../../config/sizes';
-import { themeType } from '../../config/themes';
-import Spinner from '../spinner';
+import { ComponentSize } from 'config/sizes';
+import { themeType } from 'config/themes';
+import Spinner from 'components/spinner';
 
 interface BaseButtonProps {
   type?: themeType;
@@ -37,7 +37,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
   ref
 ) => {
   const {
-    type = 'default',
+    type = 'primary',
     icon,
     size = 'default',
     className,
@@ -60,12 +60,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
   };
 
   const spinnerStyles = {
-    size:
-        size === 'large'
-        ? 25
-        : size === 'default'
-        ? 20
-        : 15,
+    size: size === 'large' ? 25 : size === 'default' ? 20 : 15,
     innerType: 'default'
   };
 

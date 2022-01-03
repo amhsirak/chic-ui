@@ -1,6 +1,6 @@
 import React, { ElementType, ReactNode } from 'react';
 import { StyledTag } from './styled';
-import { themeType } from '../../config/themes';
+import { themeType } from 'config/themes';
 
 export interface BaseTagProps {
   type?: themeType;
@@ -17,7 +17,7 @@ export type TagProps = {
 
 const Tag: React.ForwardRefRenderFunction<unknown, TagProps> = (props, ref) => {
   const {
-    type = 'default',
+    type = 'primary',
     rounded = false,
     className,
     children,

@@ -15,7 +15,6 @@ interface BreadcrumbSeparatorProps {
   children?: ReactNode;
 }
 
-// Main component
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ separator, ...props }) => {
   let children = React.Children.toArray(props.children);
 

@@ -7,7 +7,7 @@ export interface LinkProps
   className?: string;
   children: ReactNode;
   as?: ElementType;
-  href?: string;
+  href: string;
 }
 
 const Link: React.ForwardRefRenderFunction<HTMLAnchorElement, LinkProps> = (

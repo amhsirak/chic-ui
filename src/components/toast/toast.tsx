@@ -1,45 +1,66 @@
-import React, { ReactElement } from 'react';
-import check from './icons/check.svg';
-import error from './icons/error.svg';
-import info from './icons/info.svg';
-import warning from './icons/warning.svg';
-import { ToastElement, ToastImage, ToastMessage, ToastTitle } from './styled';
+import React, { useEffect } from 'react';
+import {
+  ToastElement,
+  ToastTitle,
+  ToastMessage,
+  ToastIcon
+} from 'components/toast/styled';
+import { themeType } from 'config/themes';
 
 export interface ToastProps {
+  id: string;
+  close: () => void;
+  type?: themeType;
   title: string;
   message?: string;
-  type: 'success' | 'error' | 'info' | 'warning';
-  onClose?: () => void;
+  icon?: React.ElementType;
+  duration?: number;
 }
 
-const toastAlternatives = {
-  success: { backgroundColor: '#5cb85c', icon: check },
-  error: { backgroundColor: '#d9534f', icon: error },
-  info: { backgroundColor: '#5bc0de', icon: info },
-  warning: { backgroundColor: '#f0ad4e', icon: warning }
-};
-function Toast({
-  title,
-  message = '',
-  type,
-  onClose = () => {}
-}: ToastProps): ReactElement {
+const Toast: React.FC<ToastProps> = (props) => {
+  const {
+    close,
+    message,
+    title,
+    duration = 0,
+    id,
+    type = 'primary',
+    icon
+  } = props;
+
+  useEffect(() => {
+    if (!duration) return;
+
+    const timer = setTimeout(() => {
+      close();
+    }, duration);
+
+    console.log('RENDERED');
+
+    return () => clearTimeout(timer);
+  }, [close, duration]);
+
   return (
     <ToastElement
-      style={{
-        backgroundColor: toastAlternatives[type].backgroundColor
-      }}
+      close={close}
+      message={message}
+      title={title}
+      duration={duration}
+      id={id}
+      type={type}
+      icon={icon}
     >
-      <button onClick={() => onClose()}>X</button>
-      <ToastImage>
-        <img src={toastAlternatives[type].icon} alt="" />
-      </ToastImage>
+      <button onClick={close}>X</button>
+      {icon && <ToastIcon as={icon} />}
       <div>
         <ToastTitle>{title}</ToastTitle>
         <ToastMessage>{message}</ToastMessage>
       </div>
     </ToastElement>
   );
-}
+};
 
-export default Toast;
+const shouldRerender = (prevProps: ToastProps, nextProps: ToastProps) => {
+  return prevProps.id === nextProps.id;
+};
+export default React.memo(Toast, shouldRerender);

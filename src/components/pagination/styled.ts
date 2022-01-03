@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { PaginationProps } from './pagination';
-import { theme as typeColors } from '../../config/themes';
+import { theme as typeColors } from 'config/themes';
 
 export const Container = styled.div``;
 
@@ -18,7 +18,7 @@ export const PageButton = styled.button<PageButtonProps>`
       ? activeColor
       : customBg
       ? customBg.color
-      : typeColors[bgType].color};
+      : typeColors[bgType!].color};
   background-color: ${({
     bgType,
     customBg,
@@ -29,8 +29,8 @@ export const PageButton = styled.button<PageButtonProps>`
     !isNaN(activePage!) && activePage === buttonPage
       ? activeBg
       : customBg
-      ? customBg.regular
-      : typeColors[bgType].regular};
+      ? customBg.bgColor
+      : typeColors[bgType!].bgColor};
   &:hover {
     background-color: ${({
       bgType,
@@ -43,14 +43,14 @@ export const PageButton = styled.button<PageButtonProps>`
         ? activeBg
         : customBg
         ? customBg.hover
-        : typeColors[customBg ?? bgType].hover};
+        : typeColors[customBg ?? bgType!].hover};
 
     color: ${({ activeHoverColor, activePage, buttonPage, customBg, bgType }) =>
       activeHoverColor && !isNaN(activePage!) && activePage === buttonPage
         ? activeHoverColor
         : customBg
         ? customBg.color
-        : typeColors[bgType].color};
+        : typeColors[bgType!].color};
   }
 `;
 

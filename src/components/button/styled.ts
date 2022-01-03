@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { ComponentSize, heights, sidePaddings } from '../../config/sizes';
-import { themeType, theme as typeColors } from '../../config/themes';
+import { ComponentSize, heights, sidePaddings } from 'config/sizes';
+import { themeType, theme as typeColors } from 'config/themes';
 
 interface StyledButtonProps {
   innerType: themeType;
@@ -22,15 +22,16 @@ export const StyledButton = styled.button<StyledButtonProps>`
   cursor: pointer;
   width: auto;
   padding: 0 ${(pr) => sidePaddings[pr.size]}px;
+  margin-right: 3px;
   height: ${(pr) => heights[pr.size]}px;
-  background-color: ${(pr) => typeColors[pr.innerType].regular};
+  background-color: ${(pr) => typeColors[pr.innerType].bgColor};
   color: ${(pr) => typeColors[pr.innerType].color};
   &:hover {
     background-color: ${(pr) => typeColors[pr.innerType].hover};
   }
   &:focus {
     box-shadow: 0 0 0 1px #fff,
-      0 0 0 2px ${(pr) => typeColors[pr.innerType].regular};
+      0 0 0 2px ${(pr) => typeColors[pr.innerType].bgColor};
   }
 
   // Add margin for icon and loading

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { ComponentSize, heights, sidePaddings } from '../../config/sizes';
-import CrossIcon from '../../icons/Cross';
+import { ComponentSize, heights, sidePaddings } from 'config/sizes';
+import CrossIcon from 'icons/Cross';
 
 interface StyledWrapperProps {
   width: string;
@@ -10,7 +10,7 @@ interface StyledWrapperProps {
 export const StyledWrapper = styled.div<StyledWrapperProps>`
   position: relative;
   height: ${(pr) => heights[pr.innerSize]}px;
-  width: ${(pr) => pr.width};
+  max-width: ${(pr) => pr.width};
 `;
 
 interface StyledTextInputProps {
@@ -39,7 +39,7 @@ export const StyledTextInput = styled.input<StyledTextInputProps>`
     sidePaddings[pr.innerSize] +
     (pr.withIcon ? sidePaddings[pr.innerSize] : 0)}px;
   height: ${(pr) => heights[pr.innerSize]}px;
-  width: ${(pr) => pr.width};
+  width: 100%;
   box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : 'transparent')};
   background-color: ${(pr) => (pr.error ? 'ffe3e6' : '#EEEEEE')};
   &:focus {
@@ -48,8 +48,8 @@ export const StyledTextInput = styled.input<StyledTextInputProps>`
 
   // Disabled
   ${(pr) =>
-    pr.disabled
-      ? `
+    pr.disabled &&
+    `
         background-color: #a6a6a6;
         color: #5e5e5e;
         cursor: not-allowed;
@@ -58,8 +58,7 @@ export const StyledTextInput = styled.input<StyledTextInputProps>`
             background-color: #a6a6a6 !important;
             color: #5e5e5e !important;
         }
-    `
-      : ''}
+    `}
 `;
 
 interface StyledIconProps {

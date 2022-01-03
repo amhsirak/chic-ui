@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+import { ToastProps } from './toast';
+import { theme as typeColors } from 'config/themes';
 
-
-export const ToastElement = styled.div`
-  background: #fff;
+export const ToastElement = styled.div<ToastProps>`
+  background-color: ${(pr) => typeColors[pr.type!].bgColor};
+  color: ${(pr) => typeColors[pr.type!].color};
   transition: 0.3s ease;
   position: relative;
   pointer-events: auto;
@@ -10,19 +12,16 @@ export const ToastElement = styled.div`
   margin: 0 0 6px;
   padding: 30px;
   margin-bottom: 15px;
-  width: 300px;
   max-height: 100px;
-  border-radius: 3px 3px 3px 3px;
-  box-shadow: 0 0 10px #999;
-  color: #fff;
+  border-radius: 8px;
   opacity: 0.9;
   background-position: 15px;
   background-repeat: no-repeat;
   min-height: 50px;
-  width: 365px;
+  max-width: 380px;
   padding: 20px 15px 10px 10px;
   &:hover {
-    box-shadow: 0 0 12px #fff;
+    // box-shadow: 0 0 3px #fff;
     opacity: 1;
     cursor: pointer;
   }
@@ -32,7 +31,7 @@ export const ToastElement = styled.div`
     top: -0.3em;
     float: right;
     font-weight: 700;
-    color: #fff;
+    color: ${(pr) => typeColors[pr.type!].color};
     outline: none;
     border: none;
     text-shadow: 0 1px 0 #fff;
@@ -48,7 +47,7 @@ export const ToastElement = styled.div`
 
 export const ToastTitle = styled.p`
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left;
   margin-top: 0;
   margin-bottom: 6px;
@@ -64,12 +63,10 @@ export const ToastMessage = styled.p`
   text-overflow: ellipsis;
   white-space: nowrap;
 `;
-export const ToastImage = styled.div`
+export const ToastIcon = styled.div`
   float: left;
   margin-right: 15px;
-  height: 100%;
-  img {
-    width: 30px;
-    height: 30px;
-  }
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
 `;

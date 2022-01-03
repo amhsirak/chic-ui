@@ -7,4 +7,7 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         font-family: 'Arial';
     }
+    a {
+        text-decoration: none;
+    }
 `;

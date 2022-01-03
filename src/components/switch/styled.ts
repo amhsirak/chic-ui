@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { ComponentSize, heights, switchPaddingNumbers } from '../../config/sizes';
-import { themeType, theme as typeColors } from '../../config/themes';
+import { ComponentSize, heights, switchPaddingNumbers } from 'config/sizes';
+import { themeType, theme as typeColors } from 'config/themes';
 
 interface SwitchWrapperProps {
   type: themeType;
@@ -14,12 +14,12 @@ function getBackgroundColor(
   pr: Pick<SwitchWrapperProps, 'disabled' | 'checked' | 'type'>
 ): string {
   if (pr.disabled) {
-    return typeColors['light'].regular;
+    return typeColors['light'].bgColor;
   }
   if (!pr.checked) {
     return typeColors['light'].hover;
   }
-  return typeColors[pr.type].regular;
+  return typeColors[pr.type].bgColor;
 }
 
 export const SwitchWrapper = styled.div<SwitchWrapperProps>`
@@ -44,15 +44,11 @@ interface SwitchToggleProps {
 
 export const SwitchToggle = styled.div<SwitchToggleProps>`
   aspect-ratio: 1;
-  width: ${(pr) =>
-    heights[pr.size] - switchPaddingNumbers[pr.padding] * 2}px;
-  height: ${(pr) =>
-    heights[pr.size] - switchPaddingNumbers[pr.padding] * 2}px;
+  width: ${(pr) => heights[pr.size] - switchPaddingNumbers[pr.padding] * 2}px;
+  height: ${(pr) => heights[pr.size] - switchPaddingNumbers[pr.padding] * 2}px;
   background-color: ${(pr) => (pr.disabled ? '#c0c0c0' : '#fff')};
   transition: all 250ms ease-in-out;
-  transform: translateX(
-    ${(pr) => (pr.checked ? heights[pr.size] : 0)}px
-  );
+  transform: translateX(${(pr) => (pr.checked ? heights[pr.size] : 0)}px);
   border-radius: ${(pr) => heights[pr.size] / 2}px;
 `;
 

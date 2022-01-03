@@ -1,44 +1,60 @@
 import styled from 'styled-components';
 import { StyledCardProps } from '.';
-import { theme as typeColors } from '../../config/themes';
+import { theme as typeColors } from 'config/themes';
 
-export const StyledCard = styled.div<StyledCardProps>`
-  display: inline-block;
-  box-sizing: border-box;
-  color: ${pr => pr.type ? typeColors[pr.type].color : '#00000'};
+export const StyledCard = styled.div`
+  display: flex;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  @media (min-width: 40rem) {
+    width: 50%;
+  }
+  @media (min-width: 56rem) {
+    width: 33.3%;
+  }
+`;
+
+export const StyledCardItem = styled.div<StyledCardProps>`
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 8px;
+  color: ${(pr) => (pr.type ? typeColors[pr.type].color : '#00000')};
   text-decoration: none;
-  padding-bottom: 40px;
   font-size: 15px;
-  background-color: ${pr => pr.type ? typeColors[pr.type].regular : '#ffff'};
-  height: ${(pr) => pr.height};
-  width: ${(pr) => pr.width};
-  -webkit-box-shadow: 5px 5px 15px 5px #ADADAD; 
-  box-shadow: 5px 5px 15px 5px #ADADAD;
+  background-color: ${(pr) => pr.type && typeColors[pr.type].hover};
+  width: 100%;
 `;
 
 export const StyledImage = styled.img`
-  height: 60%;
-  width: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-size: cover;
 `;
 
 export const StyledTitle = styled.h2`
+  font-weight: 800;
   margin: auto 17px;
   margin-top: 1rem;
 `;
 
-export const StyledSubTitle = styled.h4`
+export const StyledSubTitle = styled.h5`
   margin: auto 17px;
   margin-top: 0.5rem;
 `;
 
 export const StyledDescription = styled.p`
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
   margin: auto 17px;
   margin-top: 0.5rem;
 `;
 
 export const StyledFooter = styled.div<StyledCardProps>`
-  color: ${pr => pr.type ? typeColors[pr.type].color : '#00000'};
+  color: ${(pr) => (pr.type ? typeColors[pr.type].color : '#00000')};
   text-align: center;
   display: flexbox;
   justify-content: space-between;
@@ -48,6 +64,7 @@ export const StyledFooter = styled.div<StyledCardProps>`
 export const StyledFooterText = styled.p`
   text-align: left;
   margin: auto 0px;
+  font-size: 14px;
 `;
 
 export const StyledFooterLink = styled.a<StyledCardProps>`
@@ -64,4 +81,3 @@ export const StyledFooterLink = styled.a<StyledCardProps>`
     color: #6874cc;
   }
 `;
-

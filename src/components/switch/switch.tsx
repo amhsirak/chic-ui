@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
-import { ComponentSize } from '../../config/sizes';
+import { ComponentSize } from 'config/sizes';
 import { SwitchToggle, SwitchWrapper } from './styled';
-import { themeType } from '../../config/themes';
+import { themeType } from 'config/themes';
 
 export interface SwitchProps {
   size?: ComponentSize;
@@ -19,7 +19,7 @@ export const Switch: React.ForwardRefRenderFunction<
 > = (props, ref) => {
   const {
     size = 'default',
-    type = 'default',
+    type = 'primary',
     padding = 'default',
     checked = false,
     disabled = false,

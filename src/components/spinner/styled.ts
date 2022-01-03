@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { spinnerWidth } from './sizes';
-import { themeType, theme as typeColors } from '../../config/themes';
+import { themeType, theme as typeColors } from 'config/themes';
 
 interface StyledSpinnerProps {
   innerType: themeType;
@@ -13,11 +13,14 @@ export const StyledSpinner = styled.span<StyledSpinnerProps>`
   display: block;
   border: ${(pr) => spinnerWidth(pr.size)}px solid transparent;
   border-top: ${(pr) => spinnerWidth(pr.size)}px solid
-    ${(pr) => (pr.innerType === 'light' ? '#d4d4d4' : typeColors[pr.innerType].hover)};
+    ${(pr) =>
+      pr.innerType === 'light' ? '#d4d4d4' : typeColors[pr.innerType].hover};
   border-right: ${(pr) => spinnerWidth(pr.size)}px solid
-  ${(pr) => (pr.innerType === 'light' ? '#d4d4d4' : typeColors[pr.innerType].hover)};
+    ${(pr) =>
+      pr.innerType === 'light' ? '#d4d4d4' : typeColors[pr.innerType].hover};
   border-bottom: ${(pr) => spinnerWidth(pr.size)}px solid
-  ${(pr) => (pr.innerType === 'light' ? '#d4d4d4' : typeColors[pr.innerType].hover)};
+    ${(pr) =>
+      pr.innerType === 'light' ? '#d4d4d4' : typeColors[pr.innerType].hover};
   border-radius: 50%;
   width: ${(pr) => pr.size}px;
   height: ${(pr) => pr.size}px;

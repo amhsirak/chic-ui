@@ -12,15 +12,15 @@ export const Avatar: React.ForwardRefRenderFunction<
   HTMLSpanElement,
   AvatarProps
 > = (props, ref) => {
-  const {
-    src,
-    className,
-    name,
-    isActive = false,
-    ...rest
-  } = props;
+  const { src, className, name, isActive = false, ...rest } = props;
   return (
-    <StyledAvatar src={src} ref={ref} isActive={isActive} {...rest}>
+    <StyledAvatar
+      src={src}
+      ref={ref}
+      isActive={isActive}
+      className={className}
+      name={name}
+    >
       {src ? (
         <StyledImage alt={name} src={src} {...rest} />
       ) : (

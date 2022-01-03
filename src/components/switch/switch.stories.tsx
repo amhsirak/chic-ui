@@ -53,8 +53,8 @@ export const All = () => {
       <SectionHeader>Types</SectionHeader>
       <SwitchRow>
         <LabeledSwitch>
-          <Switch checked={checked} onChange={onChange} type={'default'} />
-          <SwitchLabel>default</SwitchLabel>
+          <Switch checked={checked} onChange={onChange} type={'primary'} />
+          <SwitchLabel>primary</SwitchLabel>
         </LabeledSwitch>
         <LabeledSwitch>
           <Switch checked={checked} onChange={onChange} type={'success'} />
