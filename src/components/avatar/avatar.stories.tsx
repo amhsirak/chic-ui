@@ -21,9 +21,9 @@ export const AllAvatars = () => {
   return (
     <>
       <AvatarRow>
-        <Avatar src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" />
+        <Avatar src="chic_copy.png" />
         <Avatar
-          src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
+          src="chic_copy.png"
           isActive
         />
       </AvatarRow>
@@ -32,10 +32,10 @@ export const AllAvatars = () => {
         <Avatar name="KS" isActive />
       </AvatarRow>
       <Badge type="danger" offset={[-13, 11]} count={3} showCount>
-        <Avatar src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" />
+        <Avatar src="chic_copy.png" />
       </Badge>
       <Badge type="success" offset={[-13, 11]} count={0} showZero>
-        <Avatar src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" />
+        <Avatar src="chic_copy.png" />
       </Badge>
     </>
   );

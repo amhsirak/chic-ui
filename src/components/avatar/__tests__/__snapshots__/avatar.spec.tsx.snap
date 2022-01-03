@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar Component Renders Correctly 1`] = `
+Array [
+  <div>
+    <span
+      className="sc-bdfBQB XaKyK"
+      src="chic_copy.png"
+    >
+      <img
+        className="sc-gsTEea bnGJKc"
+        src="chic_copy.png"
+      />
+    </span>
+    <span
+      className="sc-bdfBQB gRmemi"
+      src="chic_copy.png"
+    >
+      <img
+        className="sc-gsTEea bnGJKc"
+        src="chic_copy.png"
+      />
+    </span>
+  </div>,
+  <div>
+    <span
+      className="sc-bdfBQB XaKyK"
+      name="KS"
+    >
+      <span
+        className="sc-dlfnuX ibWqje"
+      >
+        KS
+      </span>
+    </span>
+    <span
+      className="sc-bdfBQB gRmemi"
+      name="KS"
+    >
+      <span
+        className="sc-dlfnuX ibWqje"
+      >
+        KS
+      </span>
+    </span>
+  </div>,
+]
+`;
