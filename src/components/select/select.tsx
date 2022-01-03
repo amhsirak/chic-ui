@@ -130,7 +130,6 @@ const Select: React.ForwardRefRenderFunction<
       </StyledSelectDiv>
       {showOptions && (
         <SelectOptionWrapper>
-          <ul>
             {data &&
               data.map((option, index) => (
                 <SelectOption
@@ -153,7 +152,6 @@ const Select: React.ForwardRefRenderFunction<
                   {dataKey && dataName ? option[dataName] : option}
                 </SelectOption>
               ))}
-          </ul>
         </SelectOptionWrapper>
       )}
     </SelectWrapper>

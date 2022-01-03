@@ -8,8 +8,8 @@ interface SelectWrapperProps {
 }
 
 export const SelectWrapper = styled.div<SelectWrapperProps>`
-  max-width: ${(pr) => pr.width};
-  width: 100%;
+  position: relative;
+  width: ${(pr) => pr.width};
   display: flex;
   flex-direction: column;
 `;
@@ -20,12 +20,12 @@ interface SelectOptionProps {
 
 export const SelectOption = styled.li<SelectOptionProps>`
   list-style: none;
-  border-radius: 4px;
+  border-radius: 2px;
   background-color: ${(pr) =>
-    pr.selected ? 'rgba(144, 202, 249, 0.13)' : '#EEEEEE'};
+    pr.selected ? 'rgba(144, 202, 249, 0.6)' : '#EEEEEE'};
   padding: 8px;
   &:hover {
-    background-color: #ffff;
+    background-color: #E0E0E0;
   }
 `;
 
@@ -44,12 +44,11 @@ export const StyledSelectDiv = styled.div<StyledSelectDivProps>`
   border-radius: 8px;
   transition: 0.1s ease-out;
   box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : 'transparent')};
-  background-color: #eeeeee;
+  background-color: ${(pr) => (pr.error ? 'ffe3e6' : '#EEEEEE')};
   height: ${(pr) => heights[pr.innerSize]}px;
   &:focus {
     box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : '#000')};
   }
-
   //Disabled
   ${(pr) =>
     pr.disabled &&
@@ -57,7 +56,6 @@ export const StyledSelectDiv = styled.div<StyledSelectDivProps>`
         background-color: #a6a6a6;
         color: #5e5e5e;
         cursor: not-allowed;
-
         &:hover {
             background-color: #a6a6a6 !important;
             color: #5e5e5e !important;
@@ -65,12 +63,15 @@ export const StyledSelectDiv = styled.div<StyledSelectDivProps>`
     `}
 `;
 
-export const SelectOptionWrapper = styled.div`
-  background-color: rgba(144, 202, 249, 0.16);
-  max-height: 240px;
+export const SelectOptionWrapper = styled.ul`
+  margin: 0;
+  background-color: #fffff;
+  width: 100%;
   &:hover {
     cursor: pointer;
   }
+  padding: 0.5rem;
+	max-height: 250px;
 `;
 
 export const ArrowDown = styled(SvgArrowDown)`
