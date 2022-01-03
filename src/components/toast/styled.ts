@@ -12,17 +12,16 @@ export const ToastElement = styled.div<ToastProps>`
   margin: 0 0 6px;
   padding: 30px;
   margin-bottom: 15px;
-  max-height: 100px;
+  max-height: auto;
   border-radius: 8px;
-  opacity: 0.9;
+  opacity: 1;
   background-position: 15px;
   background-repeat: no-repeat;
   min-height: 50px;
   max-width: 380px;
   padding: 20px 15px 10px 10px;
   &:hover {
-    // box-shadow: 0 0 3px #fff;
-    opacity: 1;
+    opacity: 0.9;
     cursor: pointer;
   }
   button {
@@ -57,11 +56,8 @@ export const ToastTitle = styled.p`
 export const ToastMessage = styled.p`
   margin: 0;
   text-align: left;
-  height: 18px;
+  height: auto;
   margin-left: -1px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 `;
 export const ToastIcon = styled.div`
   float: left;
