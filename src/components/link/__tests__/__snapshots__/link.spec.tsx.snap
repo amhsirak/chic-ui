@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Component Renders Correctly 1`] = `
+Array [
+  <a
+    className="sc-bdfBQB hfJzcz"
+    disabled={false}
+    href="https://github.com/karishmashuklaa/chic-ui"
+  >
+    Link to Chic-UI Repository
+  </a>,
+  <p
+    className="sc-bdfBQB kihIlz"
+    disabled={true}
+    href="https://github.com/karishmashuklaa/chic-ui"
+  >
+    Disabled Link to Chic-UI Repository
+  </p>,
+]
+`;
