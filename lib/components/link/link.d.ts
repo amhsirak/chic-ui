@@ -4,7 +4,7 @@ export interface LinkProps extends Omit<HTMLAttributes<HTMLAnchorElement>, 'as' 
     className?: string;
     children: ReactNode;
     as?: ElementType;
-    href?: string;
+    href: string;
 }
 declare const _default: React.ForwardRefExoticComponent<LinkProps & React.RefAttributes<HTMLAnchorElement>>;
 export default _default;

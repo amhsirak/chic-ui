@@ -1,1 +1,1 @@
-{"version":3,"file":"styled.d.ts","sourceRoot":"","sources":["../../../src/components/badge/styled.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,SAAS,EAAE,MAAM,SAAS,CAAC;AA6BpC,UAAU,gBAAgB;IACtB,SAAS,EAAE,SAAS,CAAC;IACrB,QAAQ,EAAE,OAAO,CAAC;IAClB,OAAO,EAAE,OAAO,CAAC;CACpB;AAGD,eAAO,MAAM,WAAW,mFAiBvB,CAAC"}
+{"version":3,"file":"styled.d.ts","sourceRoot":"","sources":["../../../src/components/badge/styled.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,UAAU,EAAE,MAAM,SAAS,CAAC;AAGrC,eAAO,MAAM,OAAO,oEAGnB,CAAC;AAMF,eAAO,MAAM,WAAW,6HAgCvB,CAAC"}
