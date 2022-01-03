@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput Component Renders Correctly 1`] = `
+Array [
+  <div
+    className="sc-bdfBQB ejubtU"
+    width="100%"
+  >
+    <input
+      className="sc-gsTEea itIBF"
+      disabled={false}
+      placeholder="Type something..."
+      readOnly={false}
+      type="text"
+      width="100%"
+    />
+    <div
+      className="sc-dlfnuX hDRiyF"
+    />
+  </div>,
+  <div
+    className="sc-bdfBQB hSRKwF"
+    width="200px"
+  >
+    <input
+      className="sc-gsTEea llmnwW"
+      disabled={false}
+      placeholder="Type something..."
+      readOnly={false}
+      type="text"
+      width="200px"
+    />
+    <div
+      className="sc-dlfnuX eHLKRu"
+    />
+  </div>,
+  <div
+    className="sc-bdfBQB dBKsns"
+    width="400px"
+  >
+    <input
+      className="sc-gsTEea grXQha"
+      disabled={false}
+      placeholder="Error Erorrr!"
+      readOnly={false}
+      type="text"
+      width="400px"
+    />
+    <div
+      className="sc-dlfnuX fFYkVR"
+    />
+  </div>,
+  <div
+    className="sc-bdfBQB dBKsns"
+    width="400px"
+  >
+    <input
+      className="sc-gsTEea glruUk"
+      disabled={true}
+      placeholder="Disabled Input"
+      readOnly={false}
+      type="text"
+      width="400px"
+    />
+    <div
+      className="sc-dlfnuX fFYkVR"
+    />
+  </div>,
+]
+`;
