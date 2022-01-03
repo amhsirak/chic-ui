@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Story, Meta } from '@storybook/react';
 import TextInput, { TextInputProps } from '.';
-import styled from 'styled-components';
 import SearchIcon from '../../icons/Search';
 
 export default {
@@ -67,11 +66,11 @@ export const Clearable = () => {
 export const Sizes = () => {
   return (
     <>
-        <TextInput placeholder="large" size="large" />
-        <br/>
-        <TextInput placeholder="default" size="default" />
-        <br/>
-        <TextInput placeholder="small" size="small" />
+      <TextInput placeholder="large" size="large" />
+      <br />
+      <TextInput placeholder="default" size="default" />
+      <br />
+      <TextInput placeholder="small" size="small" />
     </>
   );
 };

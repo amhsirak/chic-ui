@@ -66,7 +66,7 @@ export const ToastMessage = styled.p`
 export const ToastIcon = styled.div`
   float: left;
   margin-right: 15px;
-  margin-top: 5px; 
+  margin-top: 5px;
   width: 25px;
   height: 25px;
 `;

@@ -8,6 +8,10 @@ export { default as Button } from './button';
 
 export { default as Card } from './card';
 
+export { default as CardGroup } from './cardgroup';
+
+export { default as Divider } from './divider';
+
 export { default as Image } from './image';
 
 export { default as Link } from './link';
@@ -22,8 +26,6 @@ export { default as Select } from './select';
 
 export { default as Skeleton } from './skeleton';
 
-export { default as Slider } from './slider';
-
 export { default as Spinner } from './spinner';
 
 export { default as Switch } from './switch';
@@ -32,6 +34,6 @@ export { default as Tag } from './tag';
 
 export { default as TextInput } from './text-input';
 
-export { default as Tooltip } from './tooltip';
+export { default as toast } from './toast';
 
-
+export { default as ThemeProvier } from './themeprovider';

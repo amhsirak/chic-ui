@@ -5,6 +5,6 @@ interface SearchWrapperProps {
 }
 
 export const SearchWrapper = styled.div<SearchWrapperProps>`
-  width: ${(pr) => pr.width};
   display: flex;
+  max-width: ${(pr) => pr.width};
 `;

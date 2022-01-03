@@ -1,7 +1,6 @@
 import { Meta } from '@storybook/react/types-6-0';
 import Toast from './toast';
 import { toast } from './toastmanager';
-import SearchIcon from '../../icons/Search';
 
 export default {
   title: 'Components/Toast',
@@ -17,7 +16,7 @@ export const Trying = () => {
       onClick={() =>
         toast.open({
           title: 'Toast title',
-          message: 'Toast body',
+          message: 'HIIII',
           type: 'secondary',
           duration: 3000
         })

@@ -21,7 +21,7 @@ export const StyledAvatar = styled.span<StyledAvatarProps>`
 const isActiveProp = css`
   background: #262526;
   &::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     z-index: -1;

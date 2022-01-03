@@ -18,7 +18,8 @@
     "declarationMap": true,
     "sourceMap": true,
     "noFallthroughCasesInSwitch": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": "src"
   },
   "include": ["src"],
   "exclude": [

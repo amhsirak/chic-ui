@@ -44,23 +44,19 @@ export const Card: React.ForwardRefRenderFunction<
 
   return (
     <StyledCard>
-       <StyledCardItem
-      className={className}
-      ref={ref}
-      type={type}
-    >
-      {src && <StyledImage src={src} width={'100%'} height={'100%'} />}
-      {title && <StyledTitle children={title} />}
-      {subTitle && <StyledSubTitle children={subTitle} />}
-      {description && <StyledDescription children={description} />}
-      {footer && (
-        <StyledFooter>
-          <StyledFooterText children={footer} />
-          {href && <StyledFooterLink href={href} children={hrefText} />}
-        </StyledFooter>
-      )}
-      {children}
-    </StyledCardItem>
+      <StyledCardItem className={className} ref={ref} type={type}>
+        {src && <StyledImage src={src} width={'100%'} height={'100%'} />}
+        {title && <StyledTitle children={title} />}
+        {subTitle && <StyledSubTitle children={subTitle} />}
+        {description && <StyledDescription children={description} />}
+        {footer && (
+          <StyledFooter>
+            <StyledFooterText children={footer} />
+            {href && <StyledFooterLink href={href} children={hrefText} />}
+          </StyledFooter>
+        )}
+        {children}
+      </StyledCardItem>
     </StyledCard>
   );
 };

@@ -25,7 +25,7 @@ export const SelectOption = styled.li<SelectOptionProps>`
     pr.selected ? 'rgba(144, 202, 249, 0.13)' : '#EEEEEE'};
   padding: 8px;
   &:hover {
-    background-color: #FFFF;
+    background-color: #ffff;
   }
 `;
 
@@ -44,7 +44,7 @@ export const StyledSelectDiv = styled.div<StyledSelectDivProps>`
   border-radius: 8px;
   transition: 0.1s ease-out;
   box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : 'transparent')};
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   height: ${(pr) => heights[pr.innerSize]}px;
   &:focus {
     box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : '#000')};

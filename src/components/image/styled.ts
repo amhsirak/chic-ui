@@ -15,11 +15,11 @@ export const StyledImage = styled.img<ImageProps>`
   max-width: ${(pr) => pr.width};
 
   // Rounded
-  ${(pr) => (pr.rounded && `border-radius: 8px;`)}
+  ${(pr) => pr.rounded && `border-radius: 8px;`}
 
   // Circle
-    ${(pr) => (pr.circle && `border-radius: 50%;`)}
+    ${(pr) => pr.circle && `border-radius: 50%;`}
 
     // Outline
-    ${(pr) => (pr.outline && `background: #fff; padding: 1rem;`)}
+    ${(pr) => pr.outline && `background: #fff; padding: 1rem;`}
 `;

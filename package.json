@@ -103,6 +103,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-only-warn": "^1.0.3",
     "eslint-plugin-react": "^7.26.1",
+    "i": "^0.3.7",
+    "npm": "^8.1.4",
     "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

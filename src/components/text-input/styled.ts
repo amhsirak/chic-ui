@@ -48,8 +48,8 @@ export const StyledTextInput = styled.input<StyledTextInputProps>`
 
   // Disabled
   ${(pr) =>
-    pr.disabled
-      && `
+    pr.disabled &&
+    `
         background-color: #a6a6a6;
         color: #5e5e5e;
         cursor: not-allowed;

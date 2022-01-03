@@ -45,9 +45,9 @@ CustomOptions.args = {
   activeBg: 'red',
   startCountInZero: true,
   customBg: {
-    bgColor: 'purple',
+    bgColor: 'grey',
     hover: 'black',
-    color: 'red'
+    color: 'yellow'
   },
   activeHoverColor: 'white',
   whenPreviousPage: (page) =>
