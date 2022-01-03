@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { themeType } from 'config/themes';
+import { themeType } from '../../config/themes';
 import {
   StyledCard,
   StyledCardItem,

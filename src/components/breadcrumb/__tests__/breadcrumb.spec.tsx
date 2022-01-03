@@ -1,5 +1,5 @@
 import Breadcrumb from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Breadcrumb Component', () => {
   it('Renders Correctly', () => {

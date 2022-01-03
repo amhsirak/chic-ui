@@ -1,5 +1,5 @@
 import Divider from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Divider Component', () => {
   it('Renders Correctly', () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Toast, { ToastProps } from './toast';
-import { themeType } from 'config/themes';
+import { themeType } from '../../config/themes';
 
 interface ToastOptions {
   id?: string;

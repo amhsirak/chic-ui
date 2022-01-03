@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { Wrapper, StyledBadge } from './styled';
-import { themeType } from 'config/themes';
+import { themeType } from '../../config/themes';
 
 export type BadgeProps = {
   count?: number;

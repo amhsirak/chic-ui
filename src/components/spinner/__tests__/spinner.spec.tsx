@@ -1,5 +1,5 @@
 import Spinner from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Spinner Component', () => {
   it('Renders Correctly', () => {

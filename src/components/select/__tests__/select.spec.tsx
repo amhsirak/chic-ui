@@ -1,5 +1,5 @@
 import Select from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Select Component', () => {
   it('Renders Correctly', () => {

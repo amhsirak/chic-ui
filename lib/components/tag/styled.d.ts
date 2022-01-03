@@ -1,4 +1,4 @@
-import { themeType } from 'config/themes';
+import { themeType } from '../../config/themes';
 interface StyledTagProps {
     innerType: themeType;
     withText: boolean;

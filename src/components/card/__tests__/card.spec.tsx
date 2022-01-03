@@ -1,5 +1,5 @@
 import Card from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Card Component', () => {
   it('Renders Correctly', () => {

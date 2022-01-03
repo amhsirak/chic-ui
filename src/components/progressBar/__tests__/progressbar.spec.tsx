@@ -1,5 +1,5 @@
 import ProgressBar from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('ProgressBar Component', () => {
   it('Renders Correctly', () => {

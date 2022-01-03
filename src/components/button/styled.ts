@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { ComponentSize, heights, sidePaddings } from 'config/sizes';
-import { themeType, theme as typeColors } from 'config/themes';
+import { ComponentSize, heights, sidePaddings } from '../../config/sizes';
+import { themeType, theme as typeColors } from '../../config/themes';
 
 interface StyledButtonProps {
   innerType: themeType;

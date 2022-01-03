@@ -1,5 +1,5 @@
 import Pagination from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Pagination Component', () => {
   it('Renders Correctly', () => {

@@ -1,5 +1,5 @@
 import React, { ElementType, ReactNode } from 'react';
-import { themeType } from 'config/themes';
+import { themeType } from '../../config/themes';
 export interface BaseTagProps {
     type?: themeType;
     rounded?: boolean;

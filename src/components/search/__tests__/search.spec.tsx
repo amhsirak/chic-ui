@@ -1,5 +1,5 @@
 import Search from '..';
-import { render } from 'test/utils';
+import { render } from '../../../test/utils';
 
 describe('Search Component', () => {
   it('Renders Correctly', () => {
