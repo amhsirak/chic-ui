@@ -1,1 +1,0 @@
-{"version":3,"file":"Download.js","sourceRoot":"","sources":["../../src/icons/Download.tsx"],"names":[],"mappings":";;;;;;;;;;;AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAE/B,SAAS,WAAW,CAAC,KAAoC;IACvD,OAAO,CACL,sCAAK,KAAK,EAAC,4BAA4B,EAAC,OAAO,EAAC,aAAa,IAAK,KAAK;QACrE,8BAAM,CAAC,EAAC,kPAAkP,GAAG;QAC7P,8BAAM,CAAC,EAAC,4LAA4L,GAAG,CACnM,CACP,CAAC;AACJ,CAAC;AAED,eAAe,WAAW,CAAC"}

@@ -1,18 +1,15 @@
-import React, { ElementType, ReactNode } from 'react';
-export declare type BadgeType = 'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'light';
-export interface BaseBadgeProps {
-    type?: string;
-    rounded?: boolean;
-    className?: string;
-    children?: ReactNode;
-}
+import React from 'react';
+import { themeType } from 'config/themes';
 export declare type BadgeProps = {
-    as?: ElementType;
-    to?: string;
-} & BaseBadgeProps;
-declare const _default: React.ForwardRefExoticComponent<{
-    as?: React.ElementType<any> | undefined;
-    to?: string | undefined;
-} & BaseBadgeProps & React.RefAttributes<unknown>>;
+    count?: number;
+    limit?: number;
+    type?: themeType;
+    showZero?: boolean;
+    showCount?: boolean;
+    offset?: [number, number];
+};
+declare const _default: React.ForwardRefExoticComponent<BadgeProps & {
+    children?: React.ReactNode;
+} & React.RefAttributes<HTMLDivElement>>;
 export default _default;
 //# sourceMappingURL=badge.d.ts.map

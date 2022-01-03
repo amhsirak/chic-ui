@@ -1,14 +1,15 @@
-import React, { ElementType, MouseEventHandler, ReactNode } from "react";
-import { ComponentSize } from "../../config/sizes";
-export declare type ButtonType = 'default' | 'secondary' | 'danger' | 'warning' | 'success' | 'light';
+import React, { ElementType, MouseEventHandler, ReactNode } from 'react';
+import { ComponentSize } from 'config/sizes';
+import { themeType } from 'config/themes';
 interface BaseButtonProps {
-    type?: ButtonType;
+    type?: themeType;
     icon?: ElementType;
     size?: ComponentSize;
     className?: string;
     children?: ReactNode;
     disabled?: boolean;
     loading?: boolean;
+    search?: boolean;
 }
 declare type HTMLButtonProps = {
     onClick?: MouseEventHandler<HTMLButtonElement>;

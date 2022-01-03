@@ -1,6 +1,6 @@
-import { SpinnerType } from './spinner';
+import { themeType } from 'config/themes';
 interface StyledSpinnerProps {
-    innerType: SpinnerType;
+    innerType: themeType;
     size: number;
 }
 export declare const StyledSpinner: import("styled-components").StyledComponent<"span", any, StyledSpinnerProps, never>;

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag Component Renders Correctly 1`] = `
+Array [
+  <span
+    className="sc-bdfBQB fJGVPK"
+    type="span"
+  />,
+  <span
+    className="sc-bdfBQB eIbEGS"
+    type="span"
+  />,
+  <span
+    className="sc-bdfBQB hzBuei"
+    type="span"
+  />,
+  <span
+    className="sc-bdfBQB eTRHlG"
+    type="span"
+  />,
+  <span
+    className="sc-bdfBQB dzhmLb"
+    type="span"
+  />,
+  <span
+    className="sc-bdfBQB cDzqLq"
+    type="span"
+  />,
+  <span
+    className="sc-bdfBQB iVxUBU"
+    type="span"
+  />,
+]
+`;

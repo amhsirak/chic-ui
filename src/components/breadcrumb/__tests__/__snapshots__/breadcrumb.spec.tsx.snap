@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb Component Renders Correctly 1`] = `
+<ol
+  className="sc-bdfBQB RJtEk"
+>
+  <li
+    className="breadcrumb-item"
+  >
+    <div>
+      <a
+        href="https://www.google.com"
+      >
+        Google
+      </a>
+    </div>
+  </li>
+  <li
+    className="breadcrumb-separator"
+  >
+    /
+  </li>
+  <li
+    className="breadcrumb-item"
+  >
+    <div>
+      <a
+        href="https://facebook.com"
+      >
+        Facebook
+      </a>
+    </div>
+  </li>
+  <li
+    className="breadcrumb-separator"
+  >
+    /
+  </li>
+  <li
+    className="breadcrumb-item"
+  >
+    <div>
+      <a
+        href="https://twitter.com"
+      >
+        Twitter
+      </a>
+    </div>
+  </li>
+</ol>
+`;

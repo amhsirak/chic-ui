@@ -3,7 +3,6 @@ export interface AvatarProps {
     src?: string;
     className?: string;
     name?: string;
-    hasBadge?: boolean;
     isActive?: boolean;
 }
 export declare const Avatar: React.ForwardRefRenderFunction<HTMLSpanElement, AvatarProps>;

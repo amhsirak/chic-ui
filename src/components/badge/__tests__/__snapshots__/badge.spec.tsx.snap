@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge Component Renders Correctly 1`] = `
+<div>
+  <div
+    className="sc-bdfBQB ntxAg"
+  >
+    <span
+      className="sc-dlfnuX kcUYsq"
+      src="chic_copy.png"
+    >
+      <img
+        className="sc-hKgJUU fkNrNr"
+        src="chic_copy.png"
+      />
+    </span>
+    <div
+      className="sc-gsTEea blCbYG"
+      offset={
+        Array [
+          0,
+          0,
+        ]
+      }
+      type="danger"
+    >
+      3
+    </div>
+  </div>
+  <div
+    className="sc-bdfBQB ntxAg"
+  >
+    <span
+      className="sc-dlfnuX kcUYsq"
+      src="chic_copy.png"
+    >
+      <img
+        className="sc-hKgJUU fkNrNr"
+        src="chic_copy.png"
+      />
+    </span>
+    <div
+      className="sc-gsTEea kCJSgB"
+      offset={
+        Array [
+          -13,
+          11,
+        ]
+      }
+      type="success"
+    />
+  </div>
+</div>
+`;

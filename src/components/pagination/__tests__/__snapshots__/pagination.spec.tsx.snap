@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination Component Renders Correctly 1`] = `
+Array [
+  <div>
+    <div
+      className="sc-bdfBQB"
+    >
+      <button
+        className="sc-gsTEea sc-dlfnuX ilamKy bAGomm"
+        onClick={[Function]}
+      >
+        Previous
+      </button>
+      <button
+        className="sc-gsTEea gSoGVl"
+        onClick={[Function]}
+      >
+        0
+      </button>
+      <button
+        className="sc-gsTEea ilamKy"
+        onClick={[Function]}
+      >
+        1
+      </button>
+      <button
+        className="sc-gsTEea ilamKy"
+        onClick={[Function]}
+      >
+        2
+      </button>
+      <button
+        className="sc-gsTEea ilamKy"
+        onClick={[Function]}
+      >
+        3
+      </button>
+      <button
+        className="sc-gsTEea ilamKy"
+        onClick={[Function]}
+      >
+        4
+      </button>
+      <button
+        className="sc-gsTEea ilamKy"
+        onClick={[Function]}
+      >
+        5
+      </button>
+      <button
+        className="sc-gsTEea ilamKy"
+        onClick={[Function]}
+      >
+        6
+      </button>
+      <button
+        className="sc-gsTEea sc-hKgJUU ilamKy iXkjoo"
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </div>
+  </div>,
+  <div>
+    <div
+      className="sc-bdfBQB"
+    >
+      <button
+        className="sc-gsTEea sc-dlfnuX fODqpX bAGomm"
+        onClick={[Function]}
+      >
+        Previous
+      </button>
+      <button
+        className="sc-gsTEea gSoGVl"
+        onClick={[Function]}
+      >
+        1
+      </button>
+      <button
+        className="sc-gsTEea fODqpX"
+        onClick={[Function]}
+      >
+        2
+      </button>
+      <button
+        className="sc-gsTEea fODqpX"
+        onClick={[Function]}
+      >
+        3
+      </button>
+      <button
+        className="sc-gsTEea fODqpX"
+        onClick={[Function]}
+      >
+        4
+      </button>
+      <button
+        className="sc-gsTEea sc-hKgJUU fODqpX iXkjoo"
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </div>
+  </div>,
+]
+`;

@@ -1,0 +1,321 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch Component Renders Correctly 1`] = `
+Array [
+  <div
+    checked={false}
+    className="sc-bdfBQB juOrGw"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="primary"
+  >
+    <input
+      checked={false}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={false}
+      className="sc-gsTEea jnlVQm"
+      disabled={false}
+      size="default"
+      type="primary"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB goZhPU"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="primary"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea lgEXJe"
+      disabled={false}
+      size="default"
+      type="primary"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB cgYngc"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="success"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea lgEXJe"
+      disabled={false}
+      size="default"
+      type="success"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB dJRCft"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="secondary"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea lgEXJe"
+      disabled={false}
+      size="default"
+      type="secondary"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB liNOjh"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="warning"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea lgEXJe"
+      disabled={false}
+      size="default"
+      type="warning"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB cCKlOt"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="danger"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea lgEXJe"
+      disabled={false}
+      size="default"
+      type="danger"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB dpxmGf"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="info"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea lgEXJe"
+      disabled={false}
+      size="default"
+      type="info"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB nLcLX"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="light"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea lgEXJe"
+      disabled={false}
+      size="default"
+      type="light"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB dyTvpP"
+    disabled={true}
+    onClick={[Function]}
+    size="default"
+    type="primary"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea kOcVAn"
+      disabled={true}
+      size="default"
+      type="primary"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB dntJUy"
+    disabled={false}
+    onClick={[Function]}
+    size="small"
+    type="primary"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea kXCKto"
+      disabled={false}
+      size="small"
+      type="primary"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB goZhPU"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="primary"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea lgEXJe"
+      disabled={false}
+      size="default"
+      type="primary"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB emfJMa"
+    disabled={false}
+    onClick={[Function]}
+    size="large"
+    type="primary"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea CjJWF"
+      disabled={false}
+      size="large"
+      type="primary"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB eQaURv"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="primary"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea kOmqQO"
+      disabled={false}
+      size="default"
+      type="primary"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB goZhPU"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="primary"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea lgEXJe"
+      disabled={false}
+      size="default"
+      type="primary"
+    />
+  </div>,
+  <div
+    checked={true}
+    className="sc-bdfBQB kKyxWe"
+    disabled={false}
+    onClick={[Function]}
+    size="default"
+    type="primary"
+  >
+    <input
+      checked={true}
+      hidden={true}
+      type="checkbox"
+    />
+    <div
+      checked={true}
+      className="sc-gsTEea bqOBIy"
+      disabled={false}
+      size="default"
+      type="primary"
+    />
+  </div>,
+]
+`;

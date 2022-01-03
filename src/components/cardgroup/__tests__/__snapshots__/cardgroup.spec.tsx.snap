@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Group Component Renders Correctly 1`] = `
+<div
+  className="sc-bdfBQB bnRANJ"
+>
+  <div
+    className="sc-jrAFXE gJbdtU"
+  >
+    <div
+      className="sc-kEjbQP ehWzNF"
+      type="secondary"
+    >
+      <h2
+        className="sc-crrszt gpdIdo"
+      >
+        Title
+      </h2>
+      <h5
+        className="sc-dQoVA dvXURs"
+      >
+        Subtitle
+      </h5>
+      <p
+        className="sc-bqyKOL jhGSPc"
+      >
+        Lorem ipsum dolor sit amet, consectetur
+      </p>
+      <div
+        className="sc-kstqJO lhaulb"
+      >
+        <p
+          className="sc-hBEYId fPQBgu"
+        >
+          Footer
+        </p>
+        <a
+          className="sc-fodVek bxlGRR"
+          href="https://github.com/karishmashuklaa/chic-ui"
+        >
+          Visit site
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

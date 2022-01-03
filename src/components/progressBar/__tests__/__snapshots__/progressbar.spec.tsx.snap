@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar Component Renders Correctly 1`] = `
+Array [
+  <div
+    className="sc-gsTEea kDUPfF"
+  >
+    <div
+      className="sc-bdfBQB ePBJvV"
+      type="danger"
+      width={80}
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <span
+          className="sc-dlfnuX eNxsCi"
+          type="danger"
+        >
+          80
+          % 
+        </span>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="sc-gsTEea kDUPfF"
+  >
+    <div
+      className="sc-bdfBQB gqPdhi"
+      type="success"
+      width={60}
+    />
+  </div>,
+  <div
+    className="sc-gsTEea kDUPfF"
+  >
+    <div
+      className="sc-bdfBQB VfOvq"
+      type="primary"
+      width={40}
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <span
+          className="sc-dlfnuX eNxsCi"
+          type="primary"
+        >
+          40
+          % 
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;

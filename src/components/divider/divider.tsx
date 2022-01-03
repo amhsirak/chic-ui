@@ -10,12 +10,13 @@ export interface DividerProps {
 }
 
 const Divider: React.ForwardRefRenderFunction<HTMLHRElement, DividerProps> = (
-  props
+  props, ref
 ) => {
   const { type = 'secondary', className, dashed, thickness = 0.5 } = props;
 
   return (
     <StyledDivider
+      ref={ref}
       className={className}
       type={type}
       dashed={dashed}

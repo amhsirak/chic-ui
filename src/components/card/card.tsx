@@ -44,7 +44,7 @@ export const Card: React.ForwardRefRenderFunction<
 
   return (
     <StyledCard>
-      <StyledCardItem className={className} ref={ref} type={type}>
+      <StyledCardItem className={className} ref={ref as React.MutableRefObject<HTMLDivElement>} type={type}>
         {src && <StyledImage src={src} width={'100%'} height={'100%'} />}
         {title && <StyledTitle children={title} />}
         {subTitle && <StyledSubTitle children={subTitle} />}

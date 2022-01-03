@@ -27,7 +27,7 @@ export const Cards = () => {
       <Card
         type="success"
         title="Meet Green Kitty"
-        src="https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF-1200-80.jpg"
+        src="chic_copy.png"
         subTitle="By Chic UI"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         footer="Written on 22/12/2021"
@@ -36,7 +36,7 @@ export const Cards = () => {
       <Card
         type="secondary"
         title="Facts About Cats"
-        src="https://www.washingtonian.com/wp-content/uploads/2020/03/sandie-clarke-C8uGiOanMY4-unsplash-2048x1365.jpg"
+        src="chic_copy.png"
         subTitle="By Chic UI"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
         footer="Written on 22/12/2021"
@@ -45,7 +45,7 @@ export const Cards = () => {
       <Card
         type="danger"
         title="Cat Cat Cat!"
-        src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"
+        src="chic_copy.png"
         subTitle="By Chic UI"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
         footer="Written on 22/12/2021"

@@ -1,7 +1,7 @@
-import React from "react";
-export declare type SpinnerType = 'blue' | 'secondary' | 'danger' | 'warning' | 'success' | 'default';
+import React from 'react';
+import { themeType } from 'config/themes';
 export interface SpinnerProps {
-    type?: SpinnerType;
+    type?: themeType;
     size?: number;
     className?: string;
 }

@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
+import { themeType } from 'config/themes';
 export interface StyledCardProps {
-    width?: string;
-    height?: string;
+    children?: ReactNode;
+    href?: string;
     className?: string;
-    src: string;
+    src?: string;
+    title?: string;
+    subTitle?: ReactNode;
+    footer?: ReactNode;
+    description?: string;
+    hrefText?: string;
+    type?: themeType;
 }
-export declare const Image: React.ForwardRefRenderFunction<HTMLDivElement, StyledCardProps>;
+export declare const Card: React.ForwardRefRenderFunction<HTMLDivElement, StyledCardProps>;
 declare const _default: React.ForwardRefExoticComponent<StyledCardProps & React.RefAttributes<HTMLDivElement>>;
 export default _default;
-//# sourceMappingURL=image.d.ts.map
+//# sourceMappingURL=card.d.ts.map

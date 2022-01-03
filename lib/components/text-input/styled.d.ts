@@ -1,5 +1,5 @@
-import { ComponentSize } from '../../config/sizes';
-import CrossIcon from '../../icons/Cross';
+import { ComponentSize } from 'config/sizes';
+import CrossIcon from 'icons/Cross';
 interface StyledWrapperProps {
     width: string;
     innerSize: ComponentSize;
@@ -12,6 +12,7 @@ interface StyledTextInputProps {
     width: string;
     withIcon: boolean;
     withCross: boolean;
+    isSearch: boolean;
 }
 export declare const StyledTextInput: import("styled-components").StyledComponent<"input", any, StyledTextInputProps, never>;
 interface StyledIconProps {

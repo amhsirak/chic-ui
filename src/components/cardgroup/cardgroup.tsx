@@ -8,10 +8,10 @@ export interface StyledCardGroupProps {
 export const CardGroup: React.ForwardRefRenderFunction<
   HTMLDivElement,
   StyledCardGroupProps
-> = (props) => {
+> = (props, ref) => {
   const { children } = props;
 
-  return <StyledCards>{children}</StyledCards>;
+  return <StyledCards ref={ref as React.MutableRefObject<HTMLDivElement>}>{children}</StyledCards>;
 };
 
 export default React.forwardRef<HTMLDivElement, StyledCardGroupProps>(

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner Component Renders Correctly 1`] = `
+Array [
+  <span
+    className="sc-bdfBQB hDjhaj"
+    size={40}
+  />,
+  <span
+    className="sc-bdfBQB bjKFrv"
+    size={50}
+  />,
+  <span
+    className="sc-bdfBQB eXZiUs"
+    size={50}
+  />,
+  <span
+    className="sc-bdfBQB bJSTre"
+    size={50}
+  />,
+  <span
+    className="sc-bdfBQB cWGJAL"
+    size={50}
+  />,
+  <span
+    className="sc-bdfBQB dJkocW"
+    size={50}
+  />,
+  <span
+    className="sc-bdfBQB biOdMA"
+    size={50}
+  />,
+]
+`;
