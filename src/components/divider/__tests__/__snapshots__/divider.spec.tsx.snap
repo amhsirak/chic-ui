@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider Component Renders Correctly 1`] = `
+Array [
+  <div>
+    <hr
+      className="sc-bdfBQB llzgni"
+      type="secondary"
+    />
+    <hr
+      className="sc-bdfBQB cMDGnu"
+      type="danger"
+    />
+    <hr
+      className="sc-bdfBQB iAuQuU"
+      type="info"
+    />
+    <hr
+      className="sc-bdfBQB hRmSIM"
+      type="light"
+    />
+    <hr
+      className="sc-bdfBQB llzgni"
+      type="secondary"
+    />
+    <hr
+      className="sc-bdfBQB eHGtSr"
+      type="success"
+    />
+    <hr
+      className="sc-bdfBQB jtxyWa"
+      type="warning"
+    />
+  </div>,
+  <div>
+    <hr
+      className="sc-bdfBQB fPkkHA"
+      type="secondary"
+    />
+    <hr
+      className="sc-bdfBQB jklyIY"
+      type="danger"
+    />
+    <hr
+      className="sc-bdfBQB hfnQgK"
+      type="info"
+    />
+    <hr
+      className="sc-bdfBQB hwqpRa"
+      type="light"
+    />
+    <hr
+      className="sc-bdfBQB fPkkHA"
+      type="secondary"
+    />
+    <hr
+      className="sc-bdfBQB cHICOZ"
+      type="success"
+    />
+    <hr
+      className="sc-bdfBQB dodOXU"
+      type="warning"
+    />
+  </div>,
+]
+`;
