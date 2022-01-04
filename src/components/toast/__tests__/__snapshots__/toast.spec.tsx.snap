@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Toast Component Renders Correctly 1`] = `
-<button
-  onClick={[Function]}
->
-  Show toast
-</button>
-`;
