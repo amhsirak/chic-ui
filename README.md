@@ -8,6 +8,8 @@
 
 Read Documentation here - https://chic-ui.vercel.app/
 
+Documentation GitHub Repository - https://github.com/karishmashuklaa/chic-ui-docs
+
 NPM Link - https://www.npmjs.com/package/chic-ui
 
 ## Installation
