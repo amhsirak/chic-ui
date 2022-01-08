@@ -34,5 +34,7 @@ export { default as Tag } from './tag';
 
 export { default as TextInput } from './text-input';
 
+export { default as Form } from './forms';
+
 export { default as ThemeProvider } from './themeprovider';
 
