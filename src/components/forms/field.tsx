@@ -4,7 +4,6 @@ import { composeValidators, isRequired } from './validators';
 
 type FieldProps = {
   name?: string | undefined;
-  placeholder?: string;
   label?: string;
   required?: boolean;
   children?: any;
@@ -14,7 +13,6 @@ type FieldProps = {
 
 function Field({
   name = '',
-  placeholder,
   type,
   label,
   required,
