@@ -43,7 +43,7 @@ const Template = () => {
           ]}
         />
 
-        <Form.RadioGroup label="Gender" name="gender" required>
+        <Form.RadioGroup label="Gender" name="gender">
           <Form.Radio value="male" label="Male" />
           <Form.Radio value="female" label="Female" />
         </Form.RadioGroup>
@@ -55,7 +55,7 @@ const Template = () => {
           rows={5}
         />
 
-        <Form.CheckboxGroup label="Internet">
+        <Form.CheckboxGroup label="Internet" required>
           <Form.Checkbox label="3G" value="3g" name="internet" id="3g" />
           <Form.Checkbox label="4G" value="4g" name="internet" id="4g" />
         </Form.CheckboxGroup>

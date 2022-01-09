@@ -1,6 +1,5 @@
 import React from 'react';
-import { useField } from 'react-final-form';
-import { Error, StyledField, StyledLabel } from '../styled';
+import { StyledField, StyledLabel } from '../styled';
 
 type RadioGroupProps = {
   name?: string;
@@ -16,8 +15,6 @@ const RadioGroup = ({
   required,
   ...restProps
 }: RadioGroupProps) => {
-  const { meta } = useField(name);
-
   return (
     <StyledField {...restProps}>
       {!!label && (
@@ -36,7 +33,6 @@ const RadioGroup = ({
           })
         )}
       </div>
-      {meta.error && meta.touched && <Error>{meta.error}</Error>}
     </StyledField>
   );
 };

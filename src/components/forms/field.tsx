@@ -29,7 +29,12 @@ function Field({
   });
 
   if (type === 'radio' || type === 'checkbox') {
-    return <>{children({ input, meta })}</>;
+    return (
+      <StyledField>
+        {children({ input, meta })}
+        {meta.error && <Error>{meta.error}</Error>}
+      </StyledField>
+    );
   }
 
   return (
