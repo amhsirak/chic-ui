@@ -6,15 +6,19 @@ export interface AvatarProps {
   className?: string;
   name?: string;
   isActive?: boolean;
+  height?: string;
+  width?: string
 }
 
 export const Avatar: React.ForwardRefRenderFunction<
   HTMLSpanElement,
   AvatarProps
 > = (props, ref) => {
-  const { src, className, name, isActive = false, ...rest } = props;
+  const { src, className, name, isActive = false, height, width, ...rest } = props;
   return (
     <StyledAvatar
+    height={height}
+      width={width}
       src={src}
       ref={ref}
       isActive={isActive}
