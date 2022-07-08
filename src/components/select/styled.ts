@@ -41,6 +41,7 @@ export const StyledSelectDiv = styled.div<StyledSelectDivProps>`
   justify-content: space-between;
   width: 100%;
   padding: 8px;
+  color: #000000;
   border-radius: 8px;
   transition: 0.1s ease-out;
   box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : 'transparent')};
