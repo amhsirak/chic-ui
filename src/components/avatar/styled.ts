@@ -6,13 +6,15 @@ interface StyledAvatarProps {
   name?: string;
   hasBadge?: boolean;
   isActive?: boolean;
+  width?: number;
+  height?: number;
 }
 
 export const StyledAvatar = styled.span<StyledAvatarProps>`
   display: block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: ${pr => pr.width}px;
+  height: ${pr => pr.height}px;
   padding: 5px;
   border-radius: 50%;
   ${(pr) => pr.isActive && isActiveProp};
