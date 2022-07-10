@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Component Renders Correctly 1`] = `
+<form
+  autoComplete="off"
+  onSubmit={[Function]}
+>
+  <div
+    className="sc-gsTEea ldJggX"
+  >
+    <label
+      className="sc-dlfnuX caUESl"
+      htmlFor="fullname"
+    >
+      Full name
+    </label>
+    <input
+      className="sc-hKgJUU gJnbEf"
+      id="fullname"
+      name="fullname"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Enter your full name"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="sc-gsTEea ldJggX"
+  >
+    <label
+      className="sc-dlfnuX caUESl"
+      htmlFor="email"
+    >
+      Email
+    </label>
+    <input
+      className="sc-hKgJUU gJnbEf"
+      id="email"
+      name="email"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Enter your email"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="sc-gsTEea ldJggX"
+  >
+    <label
+      className="sc-dlfnuX caUESl"
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <input
+      className="sc-hKgJUU gJnbEf"
+      id="password"
+      name="password"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Enter your password"
+      type="password"
+      value=""
+    />
+  </div>
+  <div
+    className="sc-gsTEea ldJggX"
+  >
+    <label
+      className="sc-dlfnuX caUESl"
+      htmlFor="gender"
+    >
+      Gender
+       (Optional)
+    </label>
+    <div
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        className="sc-gsTEea ldJggX"
+      >
+        <label
+          className="sc-eCstlR djNJYa"
+        >
+          <input
+            checked={false}
+            className="sc-jSgvzq boRgPJ"
+            name="gender"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+            value="male"
+          />
+          <span />
+          Male
+        </label>
+      </div>
+      <div
+        className="sc-gsTEea ldJggX"
+      >
+        <label
+          className="sc-eCstlR djNJYa"
+        >
+          <input
+            checked={false}
+            className="sc-jSgvzq boRgPJ"
+            name="gender"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+            value="female"
+          />
+          <span />
+          Female
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-gsTEea ldJggX"
+  >
+    <label
+      className="sc-dlfnuX caUESl"
+      htmlFor="bio"
+    >
+      Description
+       (Optional)
+    </label>
+    <textarea
+      className="sc-hKgJUU fEXmGq"
+      id="bio"
+      name="bio"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Enter your bio"
+      rows={5}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="sc-gsTEea ldJggX"
+  >
+    <label
+      className="sc-dlfnuX caUESl"
+      htmlFor="chk_group"
+    >
+      Internet
+    </label>
+    <div
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        className="sc-gsTEea ldJggX"
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "15px",
+            }
+          }
+        >
+          <input
+            checked={false}
+            className="sc-iBPTik gPelDo"
+            id="3g"
+            name="internet"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="checkbox"
+            value="3g"
+          />
+          <label
+            className="sc-gKseQn gHGxWx"
+            htmlFor="3g"
+          >
+            3G
+          </label>
+        </div>
+      </div>
+      <div
+        className="sc-gsTEea ldJggX"
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "15px",
+            }
+          }
+        >
+          <input
+            checked={false}
+            className="sc-iBPTik gPelDo"
+            id="4g"
+            name="internet"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="checkbox"
+            value="4g"
+          />
+          <label
+            className="sc-gKseQn gHGxWx"
+            htmlFor="4g"
+          >
+            4G
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="sc-fubCzh kBybUr"
+    disabled={false}
+    size="default"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
