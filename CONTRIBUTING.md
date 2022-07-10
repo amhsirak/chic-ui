@@ -25,6 +25,3 @@ If you are working on a new component, then follow the following folder structur
 - Please write comments wherever necessary.
 - Write unit tests wherever possible.
 - Please write proper commit messages explaining your changes.
-- If you are stuck or need help, please do contact me!
-
-Happy coding! :smiley_cat:
