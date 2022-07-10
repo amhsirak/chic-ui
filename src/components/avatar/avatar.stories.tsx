@@ -22,10 +22,7 @@ export const AllAvatars = () => {
     <>
       <AvatarRow>
         <Avatar src="chic_copy.png" />
-        <Avatar
-          src="chic_copy.png"
-          isActive
-        />
+        <Avatar src="chic_copy.png" isActive />
       </AvatarRow>
       <AvatarRow>
         <Avatar name="KS" />

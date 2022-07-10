@@ -7,21 +7,21 @@ type StyledInputProps = {
 };
 
 export const Error = styled.div`
-  font-size: .8rem;
-  color: #FF3C33;
+  font-size: 0.8rem;
+  color: #ff3c33;
   margin-top: 0.5rem;
 `;
 
 export const StyledField = styled.div`
   margin-bottom: 20px;
-`
+`;
 
 export const StyledLabel = styled.label`
   display: block;
   font-size: 13px;
   font-weight: normal;
   margin-bottom: 8px;
-`
+`;
 
 export const StyledInput = styled.input<StyledInputProps>`
   display: block;
@@ -29,7 +29,7 @@ export const StyledInput = styled.input<StyledInputProps>`
   border-radius: 0.25rem;
   border: 1px solid #d2d2d2;
   font-size: 14px;
-  color: #66686E;
+  color: #66686e;
   ${({ rows }) =>
     rows
       ? `
@@ -46,7 +46,7 @@ export const StyledInput = styled.input<StyledInputProps>`
   ${({ hasError }) => (hasError ? `border-color: #FF3C33;` : '')}
 
   ::placeholder {
-    color: #66686E;
+    color: #66686e;
   }
   :focus {
     border-color: #007bff;

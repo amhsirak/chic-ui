@@ -5,7 +5,7 @@ type CheckboxProps = {
   label: string;
   value: string | number;
   name: string;
-  id: string
+  id: string;
 };
 
 const Checkbox = ({ label, id, ...restProps }: CheckboxProps) => {
@@ -14,13 +14,8 @@ const Checkbox = ({ label, id, ...restProps }: CheckboxProps) => {
       {({ input }: any) => {
         return (
           <div style={{ marginBottom: '15px' }}>
-            <StyledCheckbox
-              id={id}
-              {...input}
-            />
-            <StyledLabelCheckbox htmlFor={id}>
-              {label}
-            </StyledLabelCheckbox>
+            <StyledCheckbox id={id} {...input} />
+            <StyledLabelCheckbox htmlFor={id}>{label}</StyledLabelCheckbox>
           </div>
         );
       }}

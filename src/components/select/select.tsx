@@ -130,28 +130,28 @@ const Select: React.ForwardRefRenderFunction<
       </StyledSelectDiv>
       {showOptions && (
         <SelectOptionWrapper>
-            {data &&
-              data.map((option, index) => (
-                <SelectOption
-                  selected={
-                    multiSelect &&
-                    selectedOption &&
-                    selectedOption.length > 0 &&
-                    (dataKey && dataName
-                      ? !!selectedOption.find(
-                          (opt: any) => opt[dataKey] === option[dataKey]
-                        )
-                      : selectedOption.includes(option))
-                  }
-                  key={`${option}_${index}`}
-                  onClick={(e) => {
-                    e.stopPropagation;
-                    onOptionSelect(dataKey ? option[dataKey] : option);
-                  }}
-                >
-                  {dataKey && dataName ? option[dataName] : option}
-                </SelectOption>
-              ))}
+          {data &&
+            data.map((option, index) => (
+              <SelectOption
+                selected={
+                  multiSelect &&
+                  selectedOption &&
+                  selectedOption.length > 0 &&
+                  (dataKey && dataName
+                    ? !!selectedOption.find(
+                        (opt: any) => opt[dataKey] === option[dataKey]
+                      )
+                    : selectedOption.includes(option))
+                }
+                key={`${option}_${index}`}
+                onClick={(e) => {
+                  e.stopPropagation;
+                  onOptionSelect(dataKey ? option[dataKey] : option);
+                }}
+              >
+                {dataKey && dataName ? option[dataName] : option}
+              </SelectOption>
+            ))}
         </SelectOptionWrapper>
       )}
     </SelectWrapper>

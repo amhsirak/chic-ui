@@ -10,7 +10,8 @@ export interface DividerProps {
 }
 
 const Divider: React.ForwardRefRenderFunction<HTMLHRElement, DividerProps> = (
-  props, ref
+  props,
+  ref
 ) => {
   const { type = 'secondary', className, dashed, thickness = 0.5 } = props;
 

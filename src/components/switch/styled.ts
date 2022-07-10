@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import { ComponentSize, heights, switchPaddingNumbers } from '../../config/sizes';
+import {
+  ComponentSize,
+  heights,
+  switchPaddingNumbers
+} from '../../config/sizes';
 import { themeType, theme as typeColors } from '../../config/themes';
 
 interface SwitchWrapperProps {

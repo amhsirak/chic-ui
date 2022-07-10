@@ -14,10 +14,18 @@ export const Avatar: React.ForwardRefRenderFunction<
   HTMLSpanElement,
   AvatarProps
 > = (props, ref) => {
-  const { src, className, name, isActive = false, height = 80, width = 80, ...rest } = props;
+  const {
+    src,
+    className,
+    name,
+    isActive = false,
+    height = 80,
+    width = 80,
+    ...rest
+  } = props;
   return (
     <StyledAvatar
-    height={height}
+      height={height}
       width={width}
       src={src}
       ref={ref}

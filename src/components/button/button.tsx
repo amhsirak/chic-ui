@@ -13,7 +13,7 @@ interface BaseButtonProps {
   disabled?: boolean;
   loading?: boolean;
   search?: boolean;
-  typeBtn?: "button" | "submit" | "reset";
+  typeBtn?: 'button' | 'submit' | 'reset';
 }
 
 type HTMLButtonProps = {
@@ -50,7 +50,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     as,
     to,
     search = false,
-    typeBtn = "button"
+    typeBtn = 'button'
   } = props;
 
   const styles = {

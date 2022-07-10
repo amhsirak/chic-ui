@@ -13,8 +13,8 @@ interface StyledAvatarProps {
 export const StyledAvatar = styled.span<StyledAvatarProps>`
   display: block;
   position: relative;
-  width: ${pr => pr.width}px;
-  height: ${pr => pr.height}px;
+  width: ${(pr) => pr.width}px;
+  height: ${(pr) => pr.height}px;
   padding: 5px;
   border-radius: 50%;
   ${(pr) => pr.isActive && isActiveProp};

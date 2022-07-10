@@ -10,7 +10,11 @@ function SubmitButton({ children }: SubmitButtonProps) {
   const { invalid, submitting } = useFormState();
 
   return (
-    <Button loading={submitting} disabled={submitting || invalid} typeBtn="submit">
+    <Button
+      loading={submitting}
+      disabled={submitting || invalid}
+      typeBtn="submit"
+    >
       {children}
     </Button>
   );
