@@ -43,4 +43,3 @@ export const isStrongPassword = (message: string) => (value: string) => {
   }
 };
 
-// more validates
