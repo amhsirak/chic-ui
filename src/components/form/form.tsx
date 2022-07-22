@@ -8,7 +8,7 @@ import SubmitButton from './submitButton';
 import RadioGroup from './Radio/radioGroup';
 import CheckboxGroup from './Checkbox/checkboxGroup';
 
-type FormProps<FormValues = unknown> = {
+interface FormProps<FormValues = unknown> {
   children: React.ReactNode;
   onSubmit: Config<FormValues, Partial<FormValues>>['onSubmit'];
 };
