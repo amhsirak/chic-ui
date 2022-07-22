@@ -2,15 +2,16 @@
 
 <a href="https://www.npmjs.org/package/chic-ui"><img src="https://img.shields.io/npm/v/chic-ui?style=for-the-badge&labelColor=black&logo=npm&label=chic-ui"></a>
 <a href="https://www.npmjs.org/package/chic-ui"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge&labelColor=black&logo=github"></a>
-<a href="https://github.com/karishmashuklaa/chic-ui/graphs/contributors"><img src="https://img.shields.io/github/contributors/karishmashuklaa/chic-ui?style=for-the-badge&labelColor=black&logo=github&color=222222"></a>
 
-**Simple and lightweight UI Component Library for React built using TypeScript and Styled Components.**
+**Simple and lightweight UI Component Library for React**
 
-Read Documentation here - https://chic-ui.vercel.app/
+## Built using
 
-Documentation GitHub Repository - https://github.com/karishmashuklaa/chic-ui-docs
+React • Styled Components • Storybook
 
-NPM Link - https://www.npmjs.com/package/chic-ui
+## Documentation
+
+https://chic-ui.vercel.app/
 
 ## Installation
 
@@ -18,23 +19,14 @@ NPM Link - https://www.npmjs.com/package/chic-ui
 npm i chic-ui
 ```
 
+## Contributions
 
-## 🙌 Contributions
-
-I would be extremely happy to have you contributing to Chic UI. **You can read Contribution guidelines in [CONTRIBUTING.md](CONTRIBUTING.md)**
-
-## Issues
-Raise an [Issue](https://github.com/karishmashuklaa/chic-ui/issues) if you find any bugs / got ideas. 
-
-## 💗 Contributors
+**You can read Contribution guidelines in [CONTRIBUTING.md](CONTRIBUTING.md)**
 
 <a href="https://github.com/karishmashuklaa/chic-ui/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=karishmashuklaa/chic-ui" />
 </a>
 
-## License 
-<a href="https://github.com/karishmashuklaa/chic-ui/blob/feature/LICENSE">MIT</a>
-
 <hr>
-Copyright 2021 <a href="https://github.com/karishmashuklaa/">Karishma Shukla</a>
+By <a href="https://github.com/karishmashuklaa/">Karishma Shukla</a> and <a href="https://github.com/karishmashuklaa/chic-ui/graphs/contributors"> Contributors</a>
 

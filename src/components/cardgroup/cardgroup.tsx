@@ -11,7 +11,11 @@ export const CardGroup: React.ForwardRefRenderFunction<
 > = (props, ref) => {
   const { children } = props;
 
-  return <StyledCards ref={ref as React.MutableRefObject<HTMLDivElement>}>{children}</StyledCards>;
+  return (
+    <StyledCards ref={ref as React.MutableRefObject<HTMLDivElement>}>
+      {children}
+    </StyledCards>
+  );
 };
 
 export default React.forwardRef<HTMLDivElement, StyledCardGroupProps>(

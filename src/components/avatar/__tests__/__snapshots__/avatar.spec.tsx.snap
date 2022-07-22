@@ -4,8 +4,10 @@ exports[`Avatar Component Renders Correctly 1`] = `
 Array [
   <div>
     <span
-      className="sc-bdfBQB XaKyK"
+      className="sc-bdfBQB gvmZcQ"
+      height={120}
       src="chic_copy.png"
+      width={100}
     >
       <img
         className="sc-gsTEea bnGJKc"
@@ -13,8 +15,10 @@ Array [
       />
     </span>
     <span
-      className="sc-bdfBQB gRmemi"
+      className="sc-bdfBQB fWIYqC"
+      height={80}
       src="chic_copy.png"
+      width={80}
     >
       <img
         className="sc-gsTEea bnGJKc"
@@ -24,8 +28,10 @@ Array [
   </div>,
   <div>
     <span
-      className="sc-bdfBQB XaKyK"
+      className="sc-bdfBQB cKpsBK"
+      height={80}
       name="KS"
+      width={80}
     >
       <span
         className="sc-dlfnuX ibWqje"
@@ -34,8 +40,10 @@ Array [
       </span>
     </span>
     <span
-      className="sc-bdfBQB gRmemi"
+      className="sc-bdfBQB fWIYqC"
+      height={80}
       name="KS"
+      width={80}
     >
       <span
         className="sc-dlfnuX ibWqje"

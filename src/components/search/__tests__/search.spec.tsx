@@ -9,7 +9,7 @@ describe('Search Component', () => {
           placeholder="Search something..."
           width="400px"
           value="Value"
-          onChange={e => alert(`Value Changed`)}
+          onChange={(e) => alert(`Value Changed`)}
         />
         ;
       </>

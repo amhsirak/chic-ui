@@ -25,7 +25,7 @@ export const SelectOption = styled.li<SelectOptionProps>`
     pr.selected ? 'rgba(144, 202, 249, 0.6)' : '#EEEEEE'};
   padding: 8px;
   &:hover {
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
   }
 `;
 
@@ -41,6 +41,7 @@ export const StyledSelectDiv = styled.div<StyledSelectDivProps>`
   justify-content: space-between;
   width: 100%;
   padding: 8px;
+  color: #000000;
   border-radius: 8px;
   transition: 0.1s ease-out;
   box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : 'transparent')};
@@ -71,7 +72,7 @@ export const SelectOptionWrapper = styled.ul`
     cursor: pointer;
   }
   padding: 0.5rem;
-	max-height: 250px;
+  max-height: 250px;
 `;
 
 export const ArrowDown = styled(SvgArrowDown)`
