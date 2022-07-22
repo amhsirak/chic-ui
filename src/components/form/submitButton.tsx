@@ -2,7 +2,7 @@ import { useFormState } from 'react-final-form';
 import Button from '../button';
 import React from 'react';
 
-type SubmitButtonProps = {
+interface SubmitButtonProps {
   children?: React.ReactNode;
 };
 
