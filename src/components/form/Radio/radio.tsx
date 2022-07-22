@@ -1,7 +1,7 @@
 import Field from '../field';
 import { StyledRadio, StyledLabelRadio } from '../styled';
 
-type RadioProps = {
+export interface RadioProps {
   label: string;
   value: string;
 };
