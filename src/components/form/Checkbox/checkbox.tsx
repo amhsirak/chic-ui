@@ -1,7 +1,7 @@
 import Field from '../field';
 import { StyledCheckbox, StyledLabelCheckbox } from '../styled';
 
-type CheckboxProps = {
+export interface CheckboxProps {
   label: string;
   value: string | number;
   name: string;
