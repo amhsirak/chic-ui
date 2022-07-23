@@ -19,7 +19,7 @@
     "sourceMap": true,
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
-    "noEmit": true
+    "noEmit": false
   },
   "include": ["src"],
   "exclude": [
