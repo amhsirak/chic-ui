@@ -1,6 +1,7 @@
 import Link from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Link Component', () => {
   it('Renders Correctly', () => {
     const LinkGroup = render(

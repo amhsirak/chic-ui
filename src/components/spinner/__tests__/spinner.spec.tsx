@@ -1,6 +1,7 @@
 import Spinner from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Spinner Component', () => {
   it('Renders Correctly', () => {
     const SpinnerGroup = render(

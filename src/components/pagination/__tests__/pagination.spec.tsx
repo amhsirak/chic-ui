@@ -1,6 +1,7 @@
 import Pagination from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Pagination Component', () => {
   it('Renders Correctly', () => {
     const PaginationGroup = render(

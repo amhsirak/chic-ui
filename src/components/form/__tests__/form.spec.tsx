@@ -6,6 +6,7 @@ const onSubmit = (values: any) => {
   console.log('submit form: ', values);
 };
 
+/* eslint-disable */
 describe('Form Component', () => {
   it('Renders Correctly', () => {
     const FormGroup = render(

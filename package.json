@@ -37,7 +37,6 @@
     "styled-components": "^5.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "tsc --build \"./tsconfig.json\"",
     "build:storybook": "build-storybook -s public",
     "lint": "eslint --ignore-path .gitignore --ext .ts,.tsx .",
@@ -51,8 +50,7 @@
     "prebuild": "npm run compile-icons",
     "prepublish": "npm run build",
     "build-storybook": "build-storybook -s public",
-    "compile-icons": "npx @svgr/cli -d src/icons src/icons --typescript",
-    "prepublishOnly": "npm run build"
+    "compile-icons": "npx @svgr/cli -d src/icons src/icons --typescript"
   },
   "eslintConfig": {
     "extends": [

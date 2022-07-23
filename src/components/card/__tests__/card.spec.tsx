@@ -1,6 +1,7 @@
 import Card from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Card Component', () => {
   it('Renders Correctly', () => {
     const CardGroup = render(

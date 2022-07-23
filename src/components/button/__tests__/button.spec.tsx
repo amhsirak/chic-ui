@@ -2,6 +2,7 @@ import Button from '..';
 import { render } from '../../../test/utils';
 import SearchIcon from '../../../icons/Search';
 
+/* eslint-disable */
 describe('Button Component', () => {
   it('Renders Correctly', () => {
     const ButtonGroup = render(

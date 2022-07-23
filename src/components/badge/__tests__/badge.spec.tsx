@@ -2,6 +2,7 @@ import Badge from '..';
 import { Avatar } from '../../avatar';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Badge Component', () => {
   it('Renders Correctly', () => {
     const BadgeGroup = render(

@@ -2,6 +2,7 @@ import CardGroup from '..';
 import { Card } from '../../card';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Card Group Component', () => {
   it('Renders Correctly', () => {
     const CardGroups = render(
