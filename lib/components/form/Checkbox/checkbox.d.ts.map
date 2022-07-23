@@ -1,0 +1,1 @@
+{"version":3,"file":"checkbox.d.ts","sourceRoot":"","sources":["../../../../src/components/form/Checkbox/checkbox.tsx"],"names":[],"mappings":";AAGA,MAAM,WAAW,aAAa;IAC5B,KAAK,EAAE,MAAM,CAAC;IACd,KAAK,EAAE,MAAM,GAAG,MAAM,CAAC;IACvB,IAAI,EAAE,MAAM,CAAC;IACb,EAAE,EAAE,MAAM,CAAC;CACZ;AAED,QAAA,MAAM,QAAQ,gCAAiC,aAAa,gBAa3D,CAAC;AAEF,eAAe,QAAQ,CAAC"}

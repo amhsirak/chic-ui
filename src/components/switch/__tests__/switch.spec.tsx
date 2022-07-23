@@ -1,6 +1,7 @@
 import Switch from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Switch Component', () => {
   it('Renders Correctly', () => {
     const SwitchGroup = render(

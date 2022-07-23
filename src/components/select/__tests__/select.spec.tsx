@@ -1,6 +1,7 @@
 import Select from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Select Component', () => {
   it('Renders Correctly', () => {
     const SelectGroup = render(

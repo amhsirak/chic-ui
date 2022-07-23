@@ -1,6 +1,7 @@
 import Avatar from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Avatar Component', () => {
   it('Renders Correctly', () => {
     const AvatarGroup = render(

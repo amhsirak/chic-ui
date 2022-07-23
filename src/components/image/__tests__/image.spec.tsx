@@ -1,6 +1,7 @@
 import Image from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Image Component', () => {
   it('Renders Correctly', () => {
     const ImageGroup = render(

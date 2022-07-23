@@ -1,6 +1,7 @@
 import TextInput from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('TextInput Component', () => {
   it('Renders Correctly', () => {
     const TextInputGroup = render(

@@ -1,6 +1,7 @@
 import Divider from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Divider Component', () => {
   it('Renders Correctly', () => {
     const DividerGroup = render(

@@ -1,6 +1,7 @@
 import Breadcrumb from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Breadcrumb Component', () => {
   it('Renders Correctly', () => {
     const BreadcrumbGroup = render(

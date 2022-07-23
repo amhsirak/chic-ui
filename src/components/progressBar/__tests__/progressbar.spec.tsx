@@ -1,6 +1,7 @@
 import ProgressBar from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('ProgressBar Component', () => {
   it('Renders Correctly', () => {
     const ProgressBarGroup = render(

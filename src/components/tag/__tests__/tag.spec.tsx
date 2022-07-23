@@ -1,6 +1,7 @@
 import Tag from '..';
 import { render } from '../../../test/utils';
 
+/* eslint-disable */
 describe('Tag Component', () => {
   it('Renders Correctly', () => {
     const TagGroup = render(

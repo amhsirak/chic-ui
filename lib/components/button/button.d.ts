@@ -10,7 +10,7 @@ interface BaseButtonProps {
     disabled?: boolean;
     loading?: boolean;
     search?: boolean;
-    typeBtn?: "button" | "submit" | "reset";
+    typeBtn?: 'button' | 'submit' | 'reset';
 }
 declare type HTMLButtonProps = {
     onClick?: MouseEventHandler<HTMLButtonElement>;

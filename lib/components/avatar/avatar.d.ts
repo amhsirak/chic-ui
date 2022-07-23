@@ -4,6 +4,8 @@ export interface AvatarProps {
     className?: string;
     name?: string;
     isActive?: boolean;
+    width?: number;
+    height?: number;
 }
 export declare const Avatar: React.ForwardRefRenderFunction<HTMLSpanElement, AvatarProps>;
 declare const _default: React.ForwardRefExoticComponent<AvatarProps & React.RefAttributes<HTMLSpanElement>>;
