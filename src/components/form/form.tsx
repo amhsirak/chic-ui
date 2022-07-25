@@ -13,7 +13,7 @@ interface FormProps<FormValues = unknown> {
   onSubmit: Config<FormValues, Partial<FormValues>>['onSubmit'];
 };
 
-function Form(props: FormProps): JSX.Element {
+const Form = (props: FormProps): JSX.Element => {
   const { onSubmit, children, ...restProps } = props;
 
   return (
