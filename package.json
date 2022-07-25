@@ -34,9 +34,9 @@
   ],
   "author": "Karishma Shukla(https://github.com/karishmashuklaa)",
   "dependencies": {
+    "final-form": "^4.20.7",
+    "react-final-form": "^6.5.9",
     "styled-components": "^5.3.1",
-    "final-form": "^4.20.6",
-    "react-final-form": "^6.5.7",
     "validator": "^13.7.0"
   },
   "scripts": {
