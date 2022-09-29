@@ -15,13 +15,13 @@ export const StyledAvatar = styled.span<StyledAvatarProps>`
   position: relative;
   width: ${(pr) => pr.width}px;
   height: ${(pr) => pr.height}px;
-  padding: 5px;
+  padding: 1px;
   border-radius: 50%;
+  color: #000000;
   ${(pr) => pr.isActive && isActiveProp};
 `;
 
 const isActiveProp = css`
-  background: #262526;
   &::before {
     content: '';
     display: block;
