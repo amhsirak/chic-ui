@@ -17,6 +17,7 @@ export const StyledAvatar = styled.span<StyledAvatarProps>`
   height: ${(pr) => pr.height}px;
   padding: 1px;
   border-radius: 50%;
+  color: #000000;
   ${(pr) => pr.isActive && isActiveProp};
 `;
 
