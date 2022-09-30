@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { BadgeProps } from './badge';
-import { theme as typeColors } from '../../config/themes';
+import { theme as typeColors } from '../../tokens/themes';
 
 export const Wrapper = styled.div`
   position: relative;

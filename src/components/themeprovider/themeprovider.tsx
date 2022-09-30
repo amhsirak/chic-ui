@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../../config/global.styles';
-import { theme } from '../../config/themes';
+import { GlobalStyles } from '../../tokens/global.styles';
+import { theme } from '../../tokens/themes';
 
 const ThemeProvider: React.FC = ({ children }) => {
   return (

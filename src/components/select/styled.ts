@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ComponentSize, heights } from '../../config/sizes';
+import { ComponentSize, heights } from '../../tokens/sizes';
 import SvgArrowDown from '../../icons/ArrowDown';
 import Cross from '../../icons/Cross';
 

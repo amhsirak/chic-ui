@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
-import { theme } from '../../config/themes';
+import { theme } from '../../tokens/themes';
 import Pagination, { PaginationProps } from './pagination';
 export default {
   title: 'Components/Pagination',

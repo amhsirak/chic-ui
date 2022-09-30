@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react';
 import styled from 'styled-components';
-import { theme } from '../../config/themes';
+import { theme } from '../../tokens/themes';
 
 import Badge, { BadgeProps } from '.';
 

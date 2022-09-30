@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { PaginationProps } from './pagination';
-import { theme as typeColors } from '../../config/themes';
+import { theme as typeColors } from '../../tokens/themes';
 
 export const Container = styled.div``;
 

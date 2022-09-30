@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { StyledCardProps } from '.';
-import { theme as typeColors } from '../../config/themes';
+import { theme as typeColors } from '../../tokens/themes';
 
 export const StyledCard = styled.div`
   display: flex;
