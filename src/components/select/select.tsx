@@ -104,10 +104,9 @@ const Select: React.ForwardRefRenderFunction<
             <MultiSelectOptionWrapper>
               {dataKey && dataName ? option[dataName] : option}
               <StyledCross
-                onClick={(e) => {
-                  e.stopPropagation;
-                  setMultiSelectOption(option);
-                }}
+                onClick={(e) => (
+                  e.stopPropagation, setMultiSelectOption(option)
+                )}
               />
             </MultiSelectOptionWrapper>
           ))) ||
@@ -144,10 +143,10 @@ const Select: React.ForwardRefRenderFunction<
                     : selectedOption.includes(option))
                 }
                 key={`${option}_${index}`}
-                onClick={(e) => {
-                  e.stopPropagation;
-                  onOptionSelect(dataKey ? option[dataKey] : option);
-                }}
+                onClick={(e) => (
+                  e.stopPropagation,
+                  onOptionSelect(dataKey ? option[dataKey] : option)
+                )}
               >
                 {dataKey && dataName ? option[dataName] : option}
               </SelectOption>
