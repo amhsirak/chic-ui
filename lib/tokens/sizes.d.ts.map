@@ -1,0 +1,1 @@
+{"version":3,"file":"sizes.d.ts","sourceRoot":"","sources":["../../src/tokens/sizes.ts"],"names":[],"mappings":"AAAA,oBAAY,aAAa,GAAG,SAAS,GAAG,OAAO,GAAG,OAAO,CAAC;AAE1D,eAAO,MAAM,YAAY,EAAE;KACxB,GAAG,IAAI,aAAa,GAAG,MAAM;CAK/B,CAAC;AAEF,eAAO,MAAM,OAAO,EAAE;KACnB,GAAG,IAAI,aAAa,GAAG,MAAM;CAK/B,CAAC;AAEF,eAAO,MAAM,oBAAoB,EAAE;KAChC,GAAG,IAAI,aAAa,GAAG,MAAM;CAK/B,CAAC"}
