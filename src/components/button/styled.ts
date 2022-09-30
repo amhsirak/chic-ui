@@ -33,13 +33,9 @@ export const StyledButton = styled.button<StyledButtonProps>`
     box-shadow: 0 0 0 1px #fff,
       0 0 0 2px ${(pr) => typeColors[pr.innerType].bgColor};
   }
-
-  // Add margin for icon and loading
   & > *:nth-child(1) {
     margin-left: ${(pr) => (pr.withText ? 7 : 5)}px;
   }
-
-  // Disabled button logic
   ${(pr) =>
     pr.disabled
       ? `
