@@ -30,8 +30,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
     background-color: ${(pr) => typeColors[pr.innerType].hover};
   }
   &:focus {
-    box-shadow: 0 0 0 1px #fff,
-      0 0 0 2px ${(pr) => typeColors[pr.innerType].bgColor};
+   outline: none;
   }
   & > *:nth-child(1) {
     margin-left: ${(pr) => (pr.withText ? 7 : 5)}px;
