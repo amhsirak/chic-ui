@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { theme as typeColors } from '../../tokens/themes';
 
 interface StyledAvatarProps {
   src?: string;
@@ -15,13 +16,13 @@ export const StyledAvatar = styled.span<StyledAvatarProps>`
   position: relative;
   width: ${(pr) => pr.width}px;
   height: ${(pr) => pr.height}px;
-  padding: 5px;
+  padding: 1px;
   border-radius: 50%;
+  color: ${typeColors.light.color};
   ${(pr) => pr.isActive && isActiveProp};
 `;
 
 const isActiveProp = css`
-  background: #262526;
   &::before {
     content: '';
     display: block;
@@ -47,7 +48,7 @@ const commonStyles = css`
   height: 100%;
   border-radius: 50%;
   background: #eee;
-  color: #00000;
+  color: ${typeColors.light.color};
 `;
 
 export const StyledImage = styled.img`
@@ -61,6 +62,6 @@ export const StyledSpan = styled.span`
   justify-content: center;
   font-size: 24px;
   font-weight: 700;
-  color: #00000;
+  color: ${typeColors.light.color};
   ${commonStyles};
 `;

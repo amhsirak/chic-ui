@@ -1,5 +1,5 @@
 import React, { ChangeEventHandler, HTMLAttributes } from 'react';
-import { ComponentSize } from '../../config/sizes';
+import { ComponentSize } from '../../tokens/sizes';
 import {
   StyledWrapper,
   StyledTextInput,

@@ -21,18 +21,18 @@ export const AllAvatars = () => {
   return (
     <>
       <AvatarRow>
-        <Avatar src="chic_copy.png" />
-        <Avatar src="chic_copy.png" isActive />
+        <Avatar src="https://tinyurl.com/mpr6k7yd" />
+        <Avatar src="https://tinyurl.com/mpr6k7yd" isActive />
       </AvatarRow>
       <AvatarRow>
         <Avatar name="KS" />
         <Avatar name="KS" isActive />
       </AvatarRow>
       <Badge type="danger" offset={[-13, 11]} count={3} showCount>
-        <Avatar src="chic_copy.png" />
+        <Avatar src="https://tinyurl.com/mpr6k7yd" />
       </Badge>
       <Badge type="success" offset={[-13, 11]} count={0} showZero>
-        <Avatar src="chic_copy.png" />
+        <Avatar src="https://tinyurl.com/mpr6k7yd" />
       </Badge>
     </>
   );

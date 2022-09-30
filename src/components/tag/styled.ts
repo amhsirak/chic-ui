@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { themeType, theme as typeColors } from '../../config/themes';
+import { themeType, theme as typeColors } from '../../tokens/themes';
 
 interface StyledTagProps {
   innerType: themeType;

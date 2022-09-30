@@ -3,8 +3,8 @@ import {
   ComponentSize,
   heights,
   switchPaddingNumbers
-} from '../../config/sizes';
-import { themeType, theme as typeColors } from '../../config/themes';
+} from '../../tokens/sizes';
+import { themeType, theme as typeColors } from '../../tokens/themes';
 
 interface SwitchWrapperProps {
   type: themeType;

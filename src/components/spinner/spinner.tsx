@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledSpinner } from './styled';
-import { themeType } from '../../config/themes';
+import { themeType } from '../../tokens/themes';
 
 export interface SpinnerProps {
   type?: themeType;

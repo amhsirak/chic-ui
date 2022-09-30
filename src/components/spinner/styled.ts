@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { spinnerWidth } from './sizes';
-import { themeType, theme as typeColors } from '../../config/themes';
+import { themeType, theme as typeColors } from '../../tokens/themes';
 
 interface StyledSpinnerProps {
   innerType: themeType;

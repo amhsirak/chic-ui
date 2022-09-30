@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme as typeColors } from '../../config/themes';
+import { theme as typeColors } from '../../tokens/themes';
 import { DividerProps } from './divider';
 
 export const StyledDivider = styled.hr<DividerProps>`

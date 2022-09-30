@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { ComponentSize, heights, sidePaddings } from '../../config/sizes';
-import { themeType, theme as typeColors } from '../../config/themes';
+import { ComponentSize, heights, sidePaddings } from '../../tokens/sizes';
+import { themeType, theme as typeColors } from '../../tokens/themes';
 
 interface StyledButtonProps {
   innerType: themeType;
@@ -30,16 +30,11 @@ export const StyledButton = styled.button<StyledButtonProps>`
     background-color: ${(pr) => typeColors[pr.innerType].hover};
   }
   &:focus {
-    box-shadow: 0 0 0 1px #fff,
-      0 0 0 2px ${(pr) => typeColors[pr.innerType].bgColor};
+   outline: none;
   }
-
-  // Add margin for icon and loading
   & > *:nth-child(1) {
     margin-left: ${(pr) => (pr.withText ? 7 : 5)}px;
   }
-
-  // Disabled button logic
   ${(pr) =>
     pr.disabled
       ? `

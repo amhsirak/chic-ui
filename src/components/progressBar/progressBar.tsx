@@ -1,5 +1,5 @@
 import React from 'react';
-import { themeType } from '../../config/themes';
+import { themeType } from '../../tokens/themes';
 import {
   StyledProgressBar,
   StyledLoadingText,

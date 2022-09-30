@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import { theme } from '../../config/themes';
+import { theme } from '../../tokens/themes';
 
 import ProgressBar, { ProgressBarProps } from '.';
 import progressBar from './progressBar';

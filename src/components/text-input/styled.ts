@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ComponentSize, heights, sidePaddings } from '../../config/sizes';
+import { ComponentSize, heights, sidePaddings } from '../../tokens/sizes';
 import CrossIcon from '../../icons/Cross';
 
 interface StyledWrapperProps {

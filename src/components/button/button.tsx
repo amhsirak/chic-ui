@@ -1,7 +1,7 @@
 import React, { ElementType, MouseEventHandler, ReactNode } from 'react';
 import { StyledButton, StyledIcon } from './styled';
-import { ComponentSize } from '../../config/sizes';
-import { themeType } from '../../config/themes';
+import { ComponentSize } from '../../tokens/sizes';
+import { themeType } from '../../tokens/themes';
 import Spinner from '../spinner';
 
 interface BaseButtonProps {

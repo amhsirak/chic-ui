@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { themeType, theme as typeColors } from '../../config/themes';
+import { themeType, theme as typeColors } from '../../tokens/themes';
 
 interface StyledProgressBarProps {
   type?: themeType;
@@ -23,7 +23,7 @@ export const StyledProgressBar = styled.div<StyledProgressBarProps>`
 export const StyledProgressWrapper = styled.div`
   position: relative;
   height: 25px;
-  background-color: #e2e2e2;
+  background-color: ${typeColors.light.hover};
   width: 100%;
   border-radius: 8px;
 `;

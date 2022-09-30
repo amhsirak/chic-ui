@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme as typeColors } from '../../tokens/themes';
 
 export const StyledBreadcrumb = styled.ol`
   list-style: none;
@@ -10,7 +11,7 @@ export const StyledBreadcrumb = styled.ol`
   .breadcrumb-separator {
     display: flex;
     align-items: center;
-    color: #b8b8b8;
+    color: ${typeColors.light.color};
     margin: auto 6px;
     user-select: none;
   }

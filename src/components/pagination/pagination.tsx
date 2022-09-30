@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { themeType, ThemeValues } from '../../config/themes';
+import { themeType, ThemeValues } from '../../tokens/themes';
 import { Container, NextButton, PageButton, PreviousButton } from './styled';
 
 export interface PaginationProps {

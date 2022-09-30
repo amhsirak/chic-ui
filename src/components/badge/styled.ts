@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { BadgeProps } from './badge';
-import { theme as typeColors } from '../../config/themes';
+import { theme as typeColors } from '../../tokens/themes';
 
 export const Wrapper = styled.div`
   position: relative;
@@ -24,7 +24,7 @@ export const StyledBadge = styled.div<StyledBadgeProps>`
   align-items: center;
   justify-content: center;
   transform: translate(40%, -40%);
-  box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 1px ${typeColors.light.bgColor};
 
   ${(pr) =>
     pr.offset &&
