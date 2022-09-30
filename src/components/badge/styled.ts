@@ -24,7 +24,7 @@ export const StyledBadge = styled.div<StyledBadgeProps>`
   align-items: center;
   justify-content: center;
   transform: translate(40%, -40%);
-  box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 1px ${typeColors.light.bgColor};
 
   ${(pr) =>
     pr.offset &&
