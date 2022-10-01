@@ -2,7 +2,7 @@
 
 exports[`Breadcrumb Component Renders Correctly 1`] = `
 <ol
-  className="sc-bdfBQB RJtEk"
+  className="sc-bdfBQB cnZHxH"
 >
   <li
     className="breadcrumb-item"
