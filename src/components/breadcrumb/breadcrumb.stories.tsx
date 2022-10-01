@@ -1,9 +1,17 @@
+import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import Breadcrumb, { BreadcrumbProps } from '.';
+import { theme } from '../../tokens/themes';
 
 export default {
   title: 'Components/Breadcrumb',
-  component: Breadcrumb
+  component: Breadcrumb,
+  argTypes: {
+    type: {
+      options: Object.keys(theme),
+      control: { type: 'radio' }
+    },
+  }
 } as Meta;
 
 const options = {
