@@ -5,6 +5,7 @@ interface StyledProgressBarProps {
   type?: themeType;
   animated?: boolean;
   width?: number;
+  striped?: boolean;
 }
 
 interface StyledLoadingTextProps {
@@ -14,10 +15,25 @@ interface StyledLoadingTextProps {
 export const StyledProgressBar = styled.div<StyledProgressBarProps>`
   display: inline-block;
   height: 25px;
+  border-radius: 8px;
   background-color: ${(pr) => typeColors[pr.type!].bgColor};
   width: ${(pr) => pr.width}%;
   ${(pr) => pr.animated && `transition: width 1s ease-in-out`};
-  border-radius: 8px;
+  ${(pr) =>
+    pr.striped &&
+    `background-image: linear-gradient(
+        135deg, 
+        hsla(0, 0%, 100%, .25) 25%,
+        transparent 0,
+        transparent 50%,
+        hsla(0, 0%, 100%, .25) 0,
+        hsla(0, 0%, 100%, .25) 75%,
+        transparent 0,
+        transparent
+      );
+      background-size: 40px 40px;
+      background-repeat: repeat;
+    `};
 `;
 
 export const StyledProgressWrapper = styled.div`
