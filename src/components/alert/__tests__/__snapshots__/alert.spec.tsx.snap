@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert Component Renders Correctly 1`] = `
+Array [
+  <div
+    className="sc-bdfBQB lgkczG"
+  >
+    <div
+      className="sc-dlfnuX bZAMYF"
+    >
+      Title
+    </div>
+    <div
+      className="sc-hKgJUU lcNSlk"
+    >
+      message
+    </div>
+  </div>,
+  <div
+    className="sc-bdfBQB hEVYZg"
+  >
+    <div
+      className="sc-dlfnuX bZAMYF"
+    >
+      Title
+    </div>
+    <div
+      className="sc-hKgJUU lcNSlk"
+    >
+      message
+    </div>
+  </div>,
+  <div
+    className="sc-bdfBQB lkZOda"
+  >
+    <div
+      className="sc-dlfnuX bZAMYF"
+    >
+      Title
+    </div>
+    <div
+      className="sc-hKgJUU lcNSlk"
+    >
+      message
+    </div>
+  </div>,
+  <div
+    className="sc-bdfBQB kjEABS"
+  >
+    <div
+      className="sc-dlfnuX bZAMYF"
+    >
+      Title
+    </div>
+    <div
+      className="sc-hKgJUU lcNSlk"
+    >
+      message
+    </div>
+  </div>,
+  <div
+    className="sc-bdfBQB ga-DLbq"
+  >
+    <div
+      className="sc-dlfnuX bZAMYF"
+    >
+      Title
+    </div>
+    <div
+      className="sc-hKgJUU lcNSlk"
+    >
+      message
+    </div>
+  </div>,
+  <div
+    className="sc-bdfBQB cpednK"
+  >
+    <div
+      className="sc-dlfnuX bZAMYF"
+    >
+      Title
+    </div>
+    <div
+      className="sc-hKgJUU lcNSlk"
+    >
+      message
+    </div>
+  </div>,
+  <div
+    className="sc-bdfBQB jaKRqu"
+  >
+    <div
+      className="sc-dlfnuX bZAMYF"
+    >
+      Title
+    </div>
+    <div
+      className="sc-hKgJUU lcNSlk"
+    >
+      message
+    </div>
+  </div>,
+]
+`;
