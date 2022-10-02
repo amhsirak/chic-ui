@@ -1,10 +1,13 @@
 import React, { ReactNode } from 'react';
 import { StyledBreadcrumb } from './styled';
 
+import type { themeType } from 'src/tokens/themes';
+
 interface BaseBreadcrumbProps {
   className?: string;
   separator?: ReactNode | string;
   style?: any;
+  type?: themeType;
 }
 
 interface BreadcrumbItemProps {
@@ -15,7 +18,7 @@ interface BreadcrumbSeparatorProps {
   children?: ReactNode;
 }
 
-const Breadcrumb: React.FC<BreadcrumbProps> = ({ separator, ...props }) => {
+const Breadcrumb: React.FC<BreadcrumbProps> = ({ separator, type = 'primary', ...props }) => {
   let children = React.Children.toArray(props.children);
 
   const totalItems = children.length;
@@ -26,7 +29,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ separator, ...props }) => {
     .map(toBreadcrumbItem)
     .reduce(withSeparator(lastIndex, separator), []);
 
-  return <StyledBreadcrumb {...props}>{children}</StyledBreadcrumb>;
+  return <StyledBreadcrumb themeColor={type} {...props}>{children}</StyledBreadcrumb>;
 };
 
 const toBreadcrumbItem = (child: ReactNode, index: number) => (
