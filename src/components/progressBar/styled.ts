@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import { themeType, theme as typeColors } from '../../tokens/themes';
 
 interface StyledProgressBarProps {
@@ -12,6 +12,17 @@ interface StyledLoadingTextProps {
   type?: themeType;
 }
 
+// Animation
+const animationAttributes = () =>
+  css`
+    ${key} 5s linear infinite
+  `;
+
+const key = keyframes`
+    0% { background-position-x: 0.1px }
+    100% { background-position-x: 25% }
+`;
+
 export const StyledProgressBar = styled.div<StyledProgressBarProps>`
   display: inline-block;
   height: 25px;
@@ -21,18 +32,20 @@ export const StyledProgressBar = styled.div<StyledProgressBarProps>`
   ${(pr) => pr.animated && `transition: width 1s ease-in-out`};
   ${(pr) =>
     pr.striped &&
-    `background-image: linear-gradient(
-        135deg, 
-        hsla(0, 0%, 100%, .25) 25%,
+    css`
+      background-image: linear-gradient(
+        135deg,
+        hsla(0, 0%, 100%, 0.25) 25%,
         transparent 0,
         transparent 50%,
-        hsla(0, 0%, 100%, .25) 0,
-        hsla(0, 0%, 100%, .25) 75%,
+        hsla(0, 0%, 100%, 0.25) 0,
+        hsla(0, 0%, 100%, 0.25) 75%,
         transparent 0,
         transparent
       );
       background-size: 40px 40px;
       background-repeat: repeat;
+      animation: ${animationAttributes};
     `};
 `;
 

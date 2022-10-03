@@ -18,12 +18,7 @@ const ProgressBar: React.ForwardRefRenderFunction<
   HTMLAnchorElement,
   ProgressBarProps
 > = (props, ref) => {
-  const {
-    progress = 70,
-    type = 'primary',
-    showProgress = true,
-    animated = false
-  } = props;
+  const { progress = 70, type = 'primary', showProgress = true } = props;
 
   return (
     <StyledProgressWrapper>
