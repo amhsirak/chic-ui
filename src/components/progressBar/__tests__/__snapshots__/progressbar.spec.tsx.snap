@@ -3,10 +3,10 @@
 exports[`ProgressBar Component Renders Correctly 1`] = `
 Array [
   <div
-    className="sc-gsTEea kDUPfF"
+    className="sc-gsTEea dYAXdu"
   >
     <div
-      className="sc-bdfBQB ePBJvV"
+      className="sc-bdfBQB gxZpio"
       type="danger"
       width={80}
     >
@@ -31,19 +31,19 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-gsTEea kDUPfF"
+    className="sc-gsTEea dYAXdu"
   >
     <div
-      className="sc-bdfBQB gqPdhi"
+      className="sc-bdfBQB ibDUNn"
       type="success"
       width={60}
     />
   </div>,
   <div
-    className="sc-gsTEea kDUPfF"
+    className="sc-gsTEea dYAXdu"
   >
     <div
-      className="sc-bdfBQB VfOvq"
+      className="sc-bdfBQB ezkAWj"
       type="primary"
       width={40}
     >
@@ -62,6 +62,62 @@ Array [
           type="primary"
         >
           40
+          % 
+        </span>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="sc-gsTEea dYAXdu"
+  >
+    <div
+      className="sc-bdfBQB cVFWwR"
+      type="primary"
+      width={20}
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <span
+          className="sc-dlfnuX eNxsCi"
+          type="primary"
+        >
+          20
+          % 
+        </span>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="sc-gsTEea dYAXdu"
+  >
+    <div
+      className="sc-bdfBQB hzzFmi"
+      type="primary"
+      width={30}
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <span
+          className="sc-dlfnuX eNxsCi"
+          type="primary"
+        >
+          30
           % 
         </span>
       </div>
