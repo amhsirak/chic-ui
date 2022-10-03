@@ -15,12 +15,12 @@ interface StyledLoadingTextProps {
 // Animation
 const animationAttributes = () =>
   css`
-    ${key} 5s linear infinite
+    ${keys} 30s linear infinite
   `;
 
-const key = keyframes`
-    0% { background-position-x: 0.1px }
-    100% { background-position-x: 25% }
+const keys = keyframes`
+    0% { background-position-x: 0vw }
+    100% { background-position-x: 100vw }
 `;
 
 export const StyledProgressBar = styled.div<StyledProgressBarProps>`
@@ -45,6 +45,12 @@ export const StyledProgressBar = styled.div<StyledProgressBarProps>`
       );
       background-size: 40px 40px;
       background-repeat: repeat;
+    `};
+
+  ${(pr) =>
+    pr.animated &&
+    pr.striped &&
+    css`
       animation: ${animationAttributes};
     `};
 `;
