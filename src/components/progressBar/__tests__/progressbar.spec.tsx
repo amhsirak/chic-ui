@@ -11,6 +11,8 @@ describe('ProgressBar Component', () => {
         <ProgressBar progress={40} animated />
         <ProgressBar progress={20} striped />
         <ProgressBar progress={30} striped animated />
+        <ProgressBar progress={40} striped stripedAnimated />
+        <ProgressBar progress={50} striped stripedAnimated animated />
       </>
     );
     expect(ProgressBarGroup).toMatchSnapshot();

@@ -123,5 +123,61 @@ Array [
       </div>
     </div>
   </div>,
+  <div
+    className="sc-gsTEea dYAXdu"
+  >
+    <div
+      className="sc-bdfBQB kSFVlq"
+      type="primary"
+      width={40}
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <span
+          className="sc-dlfnuX eNxsCi"
+          type="primary"
+        >
+          40
+          % 
+        </span>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="sc-gsTEea dYAXdu"
+  >
+    <div
+      className="sc-bdfBQB jYaUQp"
+      type="primary"
+      width={50}
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <span
+          className="sc-dlfnuX eNxsCi"
+          type="primary"
+        >
+          50
+          % 
+        </span>
+      </div>
+    </div>
+  </div>,
 ]
 `;
