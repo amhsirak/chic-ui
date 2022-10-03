@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { themeType, theme as typeColors } from '../../tokens/themes';
+import Cross from '../../icons/Cross';
 
 interface StyledAlertProps {
   innerType: themeType;
@@ -34,8 +35,21 @@ export const StyledIcon = styled.div`
 export const StyledTitle = styled.div`
   font-size: 15px;
   font-weight: 600;
+  width: 100%;
 `;
 export const StyledMessage = styled.div`
   padding-top: 3px;
   font-size: 13px;
+`;
+export const StyledRow = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export const StyledDismissible = styled(Cross)`
+  float: right;
+  width: 10px;
+  cursor: pointer;
+  fill: #c9c9c9;
+  stroke: #c9c9c9;
+  stroke-width: 53px;
 `;

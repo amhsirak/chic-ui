@@ -1,5 +1,12 @@
-import React, { ElementType } from 'react';
-import { StyledAlert, StyledTitle, StyledMessage } from './styled';
+import React, { useCallback } from 'react';
+import {
+  StyledAlert,
+  StyledTitle,
+  StyledMessage,
+  StyledDismissible,
+  StyledRow
+} from './styled';
+
 import { themeType } from '../../tokens/themes';
 
 interface BaseAlertProps {
@@ -7,6 +14,9 @@ interface BaseAlertProps {
   className?: string;
   title: string;
   message: string;
+  dismissible?: boolean;
+  onClose?: () => void;
+  show?: boolean;
 }
 
 export type AlertProps = BaseAlertProps;
@@ -15,18 +25,40 @@ const Alert: React.ForwardRefRenderFunction<unknown, AlertProps> = (
   props,
   ref
 ) => {
-  const { type = 'primary', className, children, title, message } = props;
+  const {
+    type = 'primary',
+    className,
+    children,
+    title,
+    message,
+    dismissible,
+    show = true,
+    onClose
+  } = props;
 
   const styles = {
     innerType: type,
     withText: children != null
   };
 
+  const handleOnClose = useCallback(() => {
+    if (show && onClose) {
+      onClose();
+    }
+  }, [onClose, show]);
+
   return (
-    <StyledAlert className={className} {...styles}>
-      <StyledTitle>{title && title}</StyledTitle>
-      <StyledMessage>{message && message}</StyledMessage>
-    </StyledAlert>
+    <>
+      {show && (
+        <StyledAlert className={className} {...styles}>
+          <StyledRow>
+            <StyledTitle>{title && title}</StyledTitle>
+            {dismissible && <StyledDismissible onClick={handleOnClose} />}
+          </StyledRow>
+          <StyledMessage>{message && message}</StyledMessage>
+        </StyledAlert>
+      )}
+    </>
   );
 };
 
