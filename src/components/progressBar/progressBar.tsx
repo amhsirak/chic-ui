@@ -19,10 +19,14 @@ const ProgressBar: React.ForwardRefRenderFunction<
   ProgressBarProps
 > = (props, ref) => {
   const { progress = 70, type = 'primary', showProgress = true } = props;
-
   return (
     <StyledProgressWrapper>
-      <StyledProgressBar width={progress} {...props}>
+      <StyledProgressBar
+        type={type}
+        width={progress}
+        showProgress={showProgress}
+        {...props}
+      >
         {showProgress && (
           <div
             style={{
