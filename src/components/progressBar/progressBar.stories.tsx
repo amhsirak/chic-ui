@@ -24,5 +24,6 @@ Default.args = {
   type: 'primary',
   showProgress: true,
   animated: false,
-  striped: false
+  striped: false,
+  stripedAnimated: false
 };

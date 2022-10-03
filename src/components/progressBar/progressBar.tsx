@@ -12,6 +12,7 @@ export interface ProgressBarProps {
   showProgress?: boolean;
   animated?: boolean;
   striped?: boolean;
+  stripedAnimated?: boolean;
 }
 
 const ProgressBar: React.ForwardRefRenderFunction<
@@ -19,6 +20,7 @@ const ProgressBar: React.ForwardRefRenderFunction<
   ProgressBarProps
 > = (props, ref) => {
   const { progress = 70, type = 'primary', showProgress = true } = props;
+
   return (
     <StyledProgressWrapper>
       <StyledProgressBar

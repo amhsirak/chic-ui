@@ -6,6 +6,7 @@ interface StyledProgressBarProps {
   animated?: boolean;
   width?: number;
   striped?: boolean;
+  stripedAnimated?: boolean;
 }
 
 interface StyledLoadingTextProps {
@@ -48,8 +49,7 @@ export const StyledProgressBar = styled.div<StyledProgressBarProps>`
     `};
 
   ${(pr) =>
-    pr.animated &&
-    pr.striped &&
+    pr.stripedAnimated &&
     css`
       animation: ${animationAttributes};
     `};
