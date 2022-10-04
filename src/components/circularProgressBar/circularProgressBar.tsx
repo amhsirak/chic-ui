@@ -17,7 +17,6 @@ const CircularProgressBar: React.ForwardRefRenderFunction<
   CircularProgressBarProps
 > = (props, ref) => {
   let { progress = 70, type = 'primary', showProgress = true } = props;
-
   const degree = 3.6 * progress;
 
   const getProgressAndDegree = (value: number, maxValue: number) => {
