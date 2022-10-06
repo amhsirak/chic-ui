@@ -23,5 +23,7 @@ Default.args = {
   progress: 80,
   type: 'primary',
   showProgress: true,
-  animated: false
+  animated: false,
+  striped: false,
+  stripedAnimated: false
 };
