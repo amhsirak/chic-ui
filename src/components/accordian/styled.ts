@@ -45,7 +45,9 @@ export const StyledDescriptionWrapper = styled.div`
 `;
 
 export const StyledDescription = styled.div`
-  transition: transform 200ms ease;
+  transition: transform 300ms ease;
+  font-weight: normal;
+  color: rgb(73, 80, 87);
   &.open,
   &.close {
     padding: 12px;

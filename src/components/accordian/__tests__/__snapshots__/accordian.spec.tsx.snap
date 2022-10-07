@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordian Component Renders Correctly 1`] = `
+<div
+  className="sc-bdfBQB"
+>
+  <h4
+    className="sc-gsTEea fnlNQt accordian-header"
+    onClick={[Function]}
+  >
+    <div
+      className="accordian-toggle-button"
+    >
+      <span />
+    </div>
+    Hello World
+  </h4>
+  <div
+    className="sc-dlfnuX dEShIn desc-wrapper"
+  >
+    <div
+      className="sc-hKgJUU juZUcl accordian-description close"
+    >
+      Short Description
+    </div>
+  </div>
+</div>
+`;
