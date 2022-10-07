@@ -1,13 +1,13 @@
 import { ComponentStory, Story } from '@storybook/react';
 import React from 'react'
-import Accordian, { AccoridanProps } from "./accoridan";
+import Accordian, { AccordianProps } from "./accordian";
 
 export default {
     title: "Components/Accordian",
     component: Accordian
 }
 
-const Template: Story<AccoridanProps> = (args) => <Accordian {...args} />;
+const Template: Story<AccordianProps> = (args) => <Accordian {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

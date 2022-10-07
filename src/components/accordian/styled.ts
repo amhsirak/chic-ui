@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { AccordianProps } from '.';
 
 export const StyledAccordian = styled.div``;
 
@@ -39,13 +40,21 @@ export const StyledHeader = styled.h4`
   }
 `;
 
+export const StyledDescriptionWrapper = styled.div`
+  overflow: hidden;
+`;
+
 export const StyledDescription = styled.div`
-  display: none;
-  &.open {
+  transition: transform 200ms ease;
+  &.open,
+  &.close {
     padding: 12px;
     border: 1px solid rgb(222, 226, 230);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    display: block;
+  }
+
+  &.close {
+    transform: translateY(-100%);
   }
 `;
