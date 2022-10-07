@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip Component Renders Correctly 1`] = `
+Array [
+  <button
+    aria-label="Tooltip Top"
+    className="sc-bdfBQB euoskl tooltip top"
+    type="button"
+  >
+    Tooltip on 
+    top
+  </button>,
+  <button
+    aria-label="Tooltip Left"
+    className="sc-bdfBQB bMeiSC tooltip left"
+    type="button"
+  >
+    Tooltip on 
+    left
+  </button>,
+  <button
+    aria-label="Tooltip Bottom"
+    className="sc-bdfBQB rtynV tooltip bottom"
+    type="button"
+  >
+    Tooltip on 
+    bottom
+  </button>,
+  <button
+    aria-label="Tooltip Right"
+    className="sc-bdfBQB kYJiyS tooltip right"
+    type="button"
+  >
+    Tooltip on 
+    right
+  </button>,
+]
+`;
