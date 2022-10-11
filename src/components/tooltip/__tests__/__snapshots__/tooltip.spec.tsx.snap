@@ -2,37 +2,243 @@
 
 exports[`Tooltip Component Renders Correctly 1`] = `
 Array [
-  <button
-    aria-label="Tooltip Top"
-    className="sc-bdfBQB euoskl tooltip top"
-    type="button"
-  >
-    Tooltip on 
-    top
-  </button>,
-  <button
-    aria-label="Tooltip Left"
-    className="sc-bdfBQB bMeiSC tooltip left"
-    type="button"
-  >
-    Tooltip on 
-    left
-  </button>,
-  <button
-    aria-label="Tooltip Bottom"
-    className="sc-bdfBQB rtynV tooltip bottom"
-    type="button"
-  >
-    Tooltip on 
-    bottom
-  </button>,
-  <button
-    aria-label="Tooltip Right"
-    className="sc-bdfBQB kYJiyS tooltip right"
-    type="button"
-  >
-    Tooltip on 
-    right
-  </button>,
+  <div>
+    <button
+      aria-label="Tooltip top"
+      className="sc-bdfBQB hNeiyv"
+      type="button"
+    >
+      Tooltip on 
+      top
+    </button>
+    <button
+      aria-label="Tooltip left"
+      className="sc-bdfBQB grFfFq"
+      type="button"
+    >
+      Tooltip on 
+      left
+    </button>
+    <button
+      aria-label="Tooltip bottom"
+      className="sc-bdfBQB hfPPGd"
+      type="button"
+    >
+      Tooltip on 
+      bottom
+    </button>
+    <button
+      aria-label="Tooltip right"
+      className="sc-bdfBQB fHdHJG"
+      type="button"
+    >
+      Tooltip on 
+      right
+    </button>
+  </div>,
+  <div>
+    <button
+      aria-label="Tooltip top"
+      className="sc-bdfBQB gXvEnX"
+      type="button"
+    >
+      Tooltip on 
+      top
+    </button>
+    <button
+      aria-label="Tooltip left"
+      className="sc-bdfBQB hkzkFa"
+      type="button"
+    >
+      Tooltip on 
+      left
+    </button>
+    <button
+      aria-label="Tooltip bottom"
+      className="sc-bdfBQB ddzDet"
+      type="button"
+    >
+      Tooltip on 
+      bottom
+    </button>
+    <button
+      aria-label="Tooltip right"
+      className="sc-bdfBQB jPZKAK"
+      type="button"
+    >
+      Tooltip on 
+      right
+    </button>
+  </div>,
+  <div>
+    <button
+      aria-label="Tooltip top"
+      className="sc-bdfBQB fCTtLb"
+      type="button"
+    >
+      Tooltip on 
+      top
+    </button>
+    <button
+      aria-label="Tooltip left"
+      className="sc-bdfBQB hswHem"
+      type="button"
+    >
+      Tooltip on 
+      left
+    </button>
+    <button
+      aria-label="Tooltip bottom"
+      className="sc-bdfBQB fVcSQR"
+      type="button"
+    >
+      Tooltip on 
+      bottom
+    </button>
+    <button
+      aria-label="Tooltip right"
+      className="sc-bdfBQB jCIFjO"
+      type="button"
+    >
+      Tooltip on 
+      right
+    </button>
+  </div>,
+  <div>
+    <button
+      aria-label="Tooltip top"
+      className="sc-bdfBQB cntBGf"
+      type="button"
+    >
+      Tooltip on 
+      top
+    </button>
+    <button
+      aria-label="Tooltip left"
+      className="sc-bdfBQB ckYfXO"
+      type="button"
+    >
+      Tooltip on 
+      left
+    </button>
+    <button
+      aria-label="Tooltip bottom"
+      className="sc-bdfBQB cIVxGd"
+      type="button"
+    >
+      Tooltip on 
+      bottom
+    </button>
+    <button
+      aria-label="Tooltip right"
+      className="sc-bdfBQB iqdBzO"
+      type="button"
+    >
+      Tooltip on 
+      right
+    </button>
+  </div>,
+  <div>
+    <button
+      aria-label="Tooltip top"
+      className="sc-bdfBQB jjijZj"
+      type="button"
+    >
+      Tooltip on 
+      top
+    </button>
+    <button
+      aria-label="Tooltip left"
+      className="sc-bdfBQB ebqjku"
+      type="button"
+    >
+      Tooltip on 
+      left
+    </button>
+    <button
+      aria-label="Tooltip bottom"
+      className="sc-bdfBQB cBPaYR"
+      type="button"
+    >
+      Tooltip on 
+      bottom
+    </button>
+    <button
+      aria-label="Tooltip right"
+      className="sc-bdfBQB nyEUu"
+      type="button"
+    >
+      Tooltip on 
+      right
+    </button>
+  </div>,
+  <div>
+    <button
+      aria-label="Tooltip top"
+      className="sc-bdfBQB cJPQpj"
+      type="button"
+    >
+      Tooltip on 
+      top
+    </button>
+    <button
+      aria-label="Tooltip left"
+      className="sc-bdfBQB cgkPgK"
+      type="button"
+    >
+      Tooltip on 
+      left
+    </button>
+    <button
+      aria-label="Tooltip bottom"
+      className="sc-bdfBQB bxZlDF"
+      type="button"
+    >
+      Tooltip on 
+      bottom
+    </button>
+    <button
+      aria-label="Tooltip right"
+      className="sc-bdfBQB hKIsAe"
+      type="button"
+    >
+      Tooltip on 
+      right
+    </button>
+  </div>,
+  <div>
+    <button
+      aria-label="Tooltip top"
+      className="sc-bdfBQB hqfHtj"
+      type="button"
+    >
+      Tooltip on 
+      top
+    </button>
+    <button
+      aria-label="Tooltip left"
+      className="sc-bdfBQB jFfiIe"
+      type="button"
+    >
+      Tooltip on 
+      left
+    </button>
+    <button
+      aria-label="Tooltip bottom"
+      className="sc-bdfBQB eROZIB"
+      type="button"
+    >
+      Tooltip on 
+      bottom
+    </button>
+    <button
+      aria-label="Tooltip right"
+      className="sc-bdfBQB cUJtbi"
+      type="button"
+    >
+      Tooltip on 
+      right
+    </button>
+  </div>,
 ]
 `;

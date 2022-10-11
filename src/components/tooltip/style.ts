@@ -1,8 +1,10 @@
+import { theme as typeColors, themeType } from "src/tokens/themes";
 import styled from "styled-components";
 import { placementType } from "./tooltip";
 
 interface StyledTooltipTextProps {
-    placement?: placementType
+    placement?: placementType,
+    colorType: themeType
 }
 
 export const StyledTooltip = styled.button<StyledTooltipTextProps>`
@@ -34,8 +36,8 @@ export const StyledTooltip = styled.button<StyledTooltipTextProps>`
         font-size: 12px;
         line-height: 1.4;
         border-radius: 5px;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
+        background-color: ${(pre) => typeColors[pre.colorType].bgColor};
+        color: ${(pre) => typeColors[pre.colorType].color};
         display: none;
     }
 
@@ -57,10 +59,10 @@ export const StyledTooltip = styled.button<StyledTooltipTextProps>`
         display: inline-block;
     }
 
-    ${(pre) => pre.placement === 'top' ? " &::before { bottom: calc(100% + 5px); left: 50%; transform: translateX(-50%); } &::after { bottom: 100%; left: 50%; transform: translateX(-50%); border-bottom-width: 0; border-top-color: rgba(0, 0, 0, 0.8); }" : 
-    pre.placement === 'left' ? "&::before { top: 50%; right: calc(100% + 5px); transform: translateY(-50%); } &::after { top: 50%; right: 100%; transform: translateY(-50%); border-right-width: 0; border-left-color: rgba(0, 0, 0, 0.8);}" : 
-    pre.placement === 'bottom' ? "&::before { top: calc(100% + 5px); left: 50%; transform: translateX(-50%); } &::after { top: 100%; left: 50%; transform: translateX(-50%); border-top-width: 0; border-bottom-color: rgba(0, 0, 0, 0.8); }" : 
-    "&::before { top: 50%; left: calc(100% + 5px);transform: translateY(-50%); } &::after { top: 50%; left: 100%; transform: translateY(-50%); border-left-width: 0; border-right-color: rgba(0, 0, 0, 0.8); }" }
+    ${(pre) => pre.placement === 'top' ? ` &::before { bottom: calc(100% + 5px); left: 50%; transform: translateX(-50%); } &::after { bottom: 100%; left: 50%; transform: translateX(-50%); border-bottom-width: 0; border-top-color: ${typeColors[pre.colorType].bgColor}` :
+        pre.placement === 'left' ? `&::before { top: 50%; right: calc(100% + 5px); transform: translateY(-50%); } &::after { top: 50%; right: 100%; transform: translateY(-50%); border-right-width: 0; border-left-color: ${typeColors[pre.colorType].bgColor};}` :
+            pre.placement === 'bottom' ? `&::before { top: calc(100% + 5px); left: 50%; transform: translateX(-50%); } &::after { top: 100%; left: 50%; transform: translateX(-50%); border-top-width: 0; border-bottom-color: ${typeColors[pre.colorType].bgColor}; }` :
+                `&::before { top: 50%; left: calc(100% + 5px);transform: translateY(-50%); } &::after { top: 50%; left: 100%; transform: translateY(-50%); border-left-width: 0; border-right-color: ${typeColors[pre.colorType].bgColor}; }`}
 
     
 `
