@@ -5,8 +5,8 @@ export interface BackdropProps {
   visible?: boolean;
   color?: string;
   relative?: boolean;
-  zIndex?: number;
   onClick?: MouseEventHandler<HTMLDivElement>;
+  zIndex?: number;
 }
 
 export const Backdrop: React.ForwardRefRenderFunction<
