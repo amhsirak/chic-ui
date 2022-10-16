@@ -14,6 +14,8 @@ export { default as CardGroup } from './cardgroup';
 
 export { default as Divider } from './divider';
 
+export { default as Drawer } from './drawer';
+
 export { default as Image } from './image';
 
 export { default as Link } from './link';
