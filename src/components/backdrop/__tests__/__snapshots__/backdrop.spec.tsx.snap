@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Backdrop Component Renders Correctly 1`] = `
+Array [
+  <div
+    className="sc-bdfBQB fiZSsf"
+  />,
+  <div
+    className="sc-bdfBQB gqAeyi"
+    color="#e4f0f4"
+  />,
+  <div
+    className="sc-bdfBQB gzdGhb"
+  />,
+]
+`;
