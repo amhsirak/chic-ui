@@ -1,0 +1,519 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Steps Component Renders Correctly 1`] = `
+Array [
+  <div>
+    <ul
+      className="sc-bdfBQB fmYaOW"
+      dir="horizontal"
+    >
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX imxLtz"
+          dir="horizontal"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq dUIiQM"
+              type="primary"
+            >
+              1
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU ljUiXp"
+            dir="horizontal"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step One
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step one details
+            </p>
+          </div>
+        </div>
+      </li>
+      <div
+        className="sc-fubCzh jgLlWI"
+        dir="horizontal"
+      >
+        <div
+          className="sc-pGacB bSXhZE"
+          dir="horizontal"
+        />
+      </div>
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX imxLtz"
+          dir="horizontal"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq fkPVXw"
+              type="primary"
+            >
+              2
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU ljUiXp"
+            dir="horizontal"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step Two
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step two details
+            </p>
+          </div>
+        </div>
+      </li>
+      <div
+        className="sc-fubCzh jgLlWI"
+        dir="horizontal"
+      >
+        <div
+          className="sc-pGacB bSXhZE"
+          dir="horizontal"
+        />
+      </div>
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX imxLtz"
+          dir="horizontal"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq fkPVXw"
+              type="primary"
+            >
+              3
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU ljUiXp"
+            dir="horizontal"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step Three
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step three details
+            </p>
+          </div>
+        </div>
+      </li>
+      <div
+        className="sc-fubCzh jgLlWI"
+        dir="horizontal"
+      >
+        <div
+          className="sc-pGacB bSXhZE"
+          dir="horizontal"
+        />
+      </div>
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX imxLtz"
+          dir="horizontal"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq fkPVXw"
+              type="primary"
+            >
+              4
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU ljUiXp"
+            dir="horizontal"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step Four
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step four details
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>,
+  <div>
+    <ul
+      className="sc-bdfBQB jnHHgE"
+      dir="vertical"
+    >
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX iSJfGb"
+          dir="vertical"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq dUIiQM"
+              type="primary"
+            >
+              1
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU bfwOPF"
+            dir="vertical"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step One
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step one details
+            </p>
+          </div>
+        </div>
+      </li>
+      <div
+        className="sc-fubCzh bKHBRa"
+        dir="vertical"
+      >
+        <div
+          className="sc-pGacB fYHpSJ"
+          dir="vertical"
+        />
+      </div>
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX iSJfGb"
+          dir="vertical"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq fkPVXw"
+              type="primary"
+            >
+              2
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU bfwOPF"
+            dir="vertical"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step Two
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step two details
+            </p>
+          </div>
+        </div>
+      </li>
+      <div
+        className="sc-fubCzh bKHBRa"
+        dir="vertical"
+      >
+        <div
+          className="sc-pGacB fYHpSJ"
+          dir="vertical"
+        />
+      </div>
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX iSJfGb"
+          dir="vertical"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq fkPVXw"
+              type="primary"
+            >
+              3
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU bfwOPF"
+            dir="vertical"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step Three
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step three details
+            </p>
+          </div>
+        </div>
+      </li>
+      <div
+        className="sc-fubCzh bKHBRa"
+        dir="vertical"
+      >
+        <div
+          className="sc-pGacB fYHpSJ"
+          dir="vertical"
+        />
+      </div>
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX iSJfGb"
+          dir="vertical"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq fkPVXw"
+              type="primary"
+            >
+              4
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU bfwOPF"
+            dir="vertical"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step Four
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step four details
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>,
+  <div>
+    <ul
+      className="sc-bdfBQB fmYaOW"
+      dir="horizontal"
+    >
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX imxLtz"
+          dir="horizontal"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq dUIiQM"
+              type="primary"
+            >
+              1
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU ljUiXp"
+            dir="horizontal"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step One
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step one details
+            </p>
+          </div>
+        </div>
+      </li>
+      <div
+        className="sc-fubCzh jgLlWI"
+        dir="horizontal"
+      >
+        ------
+      </div>
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX imxLtz"
+          dir="horizontal"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq fkPVXw"
+              type="primary"
+            >
+              2
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU ljUiXp"
+            dir="horizontal"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step Two
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step two details
+            </p>
+          </div>
+        </div>
+      </li>
+      <div
+        className="sc-fubCzh jgLlWI"
+        dir="horizontal"
+      >
+        ------
+      </div>
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX imxLtz"
+          dir="horizontal"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq fkPVXw"
+              type="primary"
+            >
+              3
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU ljUiXp"
+            dir="horizontal"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step Three
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step three details
+            </p>
+          </div>
+        </div>
+      </li>
+      <div
+        className="sc-fubCzh jgLlWI"
+        dir="horizontal"
+      >
+        ------
+      </div>
+      <li
+        className="sc-gsTEea eonJnz"
+      >
+        <div
+          className="sc-dlfnuX imxLtz"
+          dir="horizontal"
+        >
+          <div
+            className="sc-eCstlR jXyqPy"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-jSgvzq fkPVXw"
+              type="primary"
+            >
+              4
+            </div>
+          </div>
+          <div
+            className="sc-hKgJUU ljUiXp"
+            dir="horizontal"
+          >
+            <p
+              className="sc-gKseQn cYfBdh"
+            >
+              Step Four
+            </p>
+            <p
+              className="sc-iBPTik jHlHiU"
+            >
+              Step four details
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>,
+]
+`;
