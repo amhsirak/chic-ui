@@ -4,49 +4,49 @@ exports[`Avatar Component Renders Correctly 1`] = `
 Array [
   <div>
     <span
-      className="sc-bdfBQB iKJlZW"
+      className="sc-bdfBQB gvmZcQ"
       height={120}
       src="chic_copy.png"
       width={100}
     >
       <img
-        className="sc-gsTEea hNsTPX"
+        className="sc-gsTEea bnGJKc"
         src="chic_copy.png"
       />
     </span>
     <span
-      className="sc-bdfBQB gEKoPp"
+      className="sc-bdfBQB fWIYqC"
       height={80}
       src="chic_copy.png"
       width={80}
     >
       <img
-        className="sc-gsTEea hNsTPX"
+        className="sc-gsTEea bnGJKc"
         src="chic_copy.png"
       />
     </span>
   </div>,
   <div>
     <span
-      className="sc-bdfBQB cyfyoM"
+      className="sc-bdfBQB cKpsBK"
       height={80}
       name="KS"
       width={80}
     >
       <span
-        className="sc-dlfnuX eviKBa"
+        className="sc-dlfnuX ibWqje"
       >
         KS
       </span>
     </span>
     <span
-      className="sc-bdfBQB gEKoPp"
+      className="sc-bdfBQB fWIYqC"
       height={80}
       name="KS"
       width={80}
     >
       <span
-        className="sc-dlfnuX eviKBa"
+        className="sc-dlfnuX ibWqje"
       >
         KS
       </span>

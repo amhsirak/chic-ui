@@ -4,11 +4,11 @@ exports[`Select Component Renders Correctly 1`] = `
 Array [
   <div>
     <div
-      className="sc-bdfBQB iUommc"
+      className="sc-bdfBQB XKRgm"
       width="200px"
     >
       <div
-        className="sc-dlfnuX hdSKUI"
+        className="sc-dlfnuX lfpMoL"
         disabled={false}
         onClick={[Function]}
         tabIndex={0}
@@ -30,11 +30,11 @@ Array [
   </div>,
   <div>
     <div
-      className="sc-bdfBQB dXXAAm"
+      className="sc-bdfBQB hgxLus"
       width="400px"
     >
       <div
-        className="sc-dlfnuX hdSKUI"
+        className="sc-dlfnuX lfpMoL"
         disabled={false}
         onClick={[Function]}
         tabIndex={0}

@@ -3,31 +3,31 @@
 exports[`Image Component Renders Correctly 1`] = `
 Array [
   <img
-    className="sc-bdfBQB jhBvVE"
+    className="sc-bdfBQB kREmQd"
     height="130px"
     src="cat1.png"
     width="160px"
   />,
   <img
-    className="sc-bdfBQB gKvcuj"
+    className="sc-bdfBQB jbhbsW"
     height="130px"
     src="cat2.png"
     width="160px"
   />,
   <img
-    className="sc-bdfBQB clOIbE"
+    className="sc-bdfBQB hgqmGJ"
     height="130px"
     src="cat1.png"
     width="160px"
   />,
   <img
-    className="sc-bdfBQB gwswZL"
+    className="sc-bdfBQB beIrHm"
     height="130px"
     src="cat2.png"
     width="160px"
   />,
   <img
-    className="sc-bdfBQB hzurrL"
+    className="sc-bdfBQB fBXjEW"
     height="130px"
     src="cat3.png"
     width="160px"

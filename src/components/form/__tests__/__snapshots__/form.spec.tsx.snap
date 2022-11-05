@@ -15,7 +15,7 @@ exports[`Form Component Renders Correctly 1`] = `
       Full name
     </label>
     <input
-      className="sc-hKgJUU iEHFOD"
+      className="sc-hKgJUU gJnbEf"
       id="fullname"
       name="fullname"
       onBlur={[Function]}
@@ -36,7 +36,7 @@ exports[`Form Component Renders Correctly 1`] = `
       Email
     </label>
     <input
-      className="sc-hKgJUU iEHFOD"
+      className="sc-hKgJUU gJnbEf"
       id="email"
       name="email"
       onBlur={[Function]}
@@ -57,7 +57,7 @@ exports[`Form Component Renders Correctly 1`] = `
       Password
     </label>
     <input
-      className="sc-hKgJUU iEHFOD"
+      className="sc-hKgJUU gJnbEf"
       id="password"
       name="password"
       onBlur={[Function]}
@@ -138,7 +138,7 @@ exports[`Form Component Renders Correctly 1`] = `
        (Optional)
     </label>
     <textarea
-      className="sc-hKgJUU bdvLsy"
+      className="sc-hKgJUU fEXmGq"
       id="bio"
       name="bio"
       onBlur={[Function]}
@@ -227,7 +227,7 @@ exports[`Form Component Renders Correctly 1`] = `
     </div>
   </div>
   <button
-    className="sc-fubCzh jekVwW"
+    className="sc-fubCzh kBybUr"
     disabled={false}
     size="default"
     type="submit"
