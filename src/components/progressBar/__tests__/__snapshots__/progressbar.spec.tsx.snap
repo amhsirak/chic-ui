@@ -3,7 +3,7 @@
 exports[`ProgressBar Component Renders Correctly 1`] = `
 Array [
   <div
-    className="sc-gsTEea kDUPfF"
+    className="sc-gsTEea dYAXdu"
   >
     <div
       className="sc-bdfBQB ePBJvV"
@@ -31,7 +31,7 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-gsTEea kDUPfF"
+    className="sc-gsTEea dYAXdu"
   >
     <div
       className="sc-bdfBQB gqPdhi"
@@ -40,7 +40,7 @@ Array [
     />
   </div>,
   <div
-    className="sc-gsTEea kDUPfF"
+    className="sc-gsTEea dYAXdu"
   >
     <div
       className="sc-bdfBQB VfOvq"

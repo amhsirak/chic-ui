@@ -3,16 +3,18 @@
 exports[`Link Component Renders Correctly 1`] = `
 Array [
   <a
-    className="sc-bdfBQB hfJzcz"
+    className="sc-bdfBQB fmeqlR"
     disabled={false}
     href="https://github.com/karishmashuklaa/chic-ui"
+    type="primary"
   >
     Link to Chic-UI Repository
   </a>,
   <p
-    className="sc-bdfBQB kihIlz"
+    className="sc-bdfBQB flimt"
     disabled={true}
     href="https://github.com/karishmashuklaa/chic-ui"
+    type="primary"
   >
     Disabled Link to Chic-UI Repository
   </p>,

@@ -4,7 +4,7 @@ exports[`Button Component Renders Correctly 1`] = `
 Array [
   <div>
     <button
-      className="sc-bdfBQB UuVpS"
+      className="sc-bdfBQB iuzAqj"
       disabled={false}
       size="large"
       type="button"
@@ -12,7 +12,7 @@ Array [
       Large
     </button>
     <button
-      className="sc-bdfBQB hLwtay"
+      className="sc-bdfBQB jOgVcX"
       disabled={false}
       size="default"
       type="button"
@@ -20,7 +20,7 @@ Array [
       Default
     </button>
     <button
-      className="sc-bdfBQB gSgfFO"
+      className="sc-bdfBQB spVYT"
       disabled={false}
       size="small"
       type="button"
@@ -30,7 +30,7 @@ Array [
   </div>,
   <div>
     <button
-      className="sc-bdfBQB hLwtay"
+      className="sc-bdfBQB jOgVcX"
       disabled={false}
       size="default"
       type="button"
@@ -38,7 +38,7 @@ Array [
       Primary
     </button>
     <button
-      className="sc-bdfBQB bpswqB"
+      className="sc-bdfBQB ifOkXl"
       disabled={false}
       size="default"
       type="button"
@@ -46,7 +46,7 @@ Array [
       Secondary
     </button>
     <button
-      className="sc-bdfBQB dxPRbf"
+      className="sc-bdfBQB dGipFf"
       disabled={false}
       size="default"
       type="button"
@@ -54,7 +54,7 @@ Array [
       Warning
     </button>
     <button
-      className="sc-bdfBQB fdemuC"
+      className="sc-bdfBQB gppRuv"
       disabled={false}
       size="default"
       type="button"
@@ -62,7 +62,7 @@ Array [
       Success
     </button>
     <button
-      className="sc-bdfBQB dzQfbv"
+      className="sc-bdfBQB hKkpIX"
       disabled={false}
       size="default"
       type="button"
@@ -70,7 +70,7 @@ Array [
       Danger
     </button>
     <button
-      className="sc-bdfBQB iOlQzF"
+      className="sc-bdfBQB hZGcwn"
       disabled={false}
       size="default"
       type="button"
@@ -78,7 +78,7 @@ Array [
       Info
     </button>
     <button
-      className="sc-bdfBQB fTjXBZ"
+      className="sc-bdfBQB bCHUX"
       disabled={false}
       size="default"
       type="button"
@@ -88,7 +88,7 @@ Array [
   </div>,
   <div>
     <button
-      className="sc-bdfBQB ekJOnv"
+      className="sc-bdfBQB lcrjrz"
       disabled={false}
       size="default"
       type="button"
@@ -100,7 +100,7 @@ Array [
       />
     </button>
     <button
-      className="sc-bdfBQB bzuYJb"
+      className="sc-bdfBQB iHGYdF"
       disabled={false}
       size="default"
       type="button"
@@ -112,7 +112,7 @@ Array [
       />
     </button>
     <button
-      className="sc-bdfBQB bGJqgb"
+      className="sc-bdfBQB FnpUW"
       disabled={true}
       size="default"
       type="button"
@@ -120,7 +120,7 @@ Array [
       Disabled
     </button>
     <button
-      className="sc-bdfBQB fTjXBZ"
+      className="sc-bdfBQB bCHUX"
       disabled={false}
       size="default"
       type="button"
