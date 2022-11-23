@@ -1,4 +1,5 @@
 import { Meta } from '@storybook/react/types-6-0';
+import React from 'react';
 import styled from 'styled-components';
 import Button from '.';
 import SearchIcon from '../../icons/Search';
@@ -19,7 +20,7 @@ const ButtonRow = styled.div`
 
 export const Sizes = () => {
   return (
-    <>
+    <React.Fragment>
       <ButtonRow>
         <Button size="large">Large</Button>
         <Button size="default">Default</Button>
@@ -43,6 +44,34 @@ export const Sizes = () => {
           Search
         </Button>
       </ButtonRow>
-    </>
+    </React.Fragment>
+  );
+};
+
+export const Outline = () => {
+  return (
+    <React.Fragment>
+      <ButtonRow>
+        <Button outline>Primary</Button>
+        <Button outline type="secondary">
+          Secondary
+        </Button>
+        <Button outline type="warning">
+          Warning
+        </Button>
+        <Button outline type="success">
+          Success
+        </Button>
+        <Button outline type="danger">
+          Danger
+        </Button>
+        <Button outline type="info">
+          Info
+        </Button>
+        <Button outline type="light">
+          Light
+        </Button>
+      </ButtonRow>
+    </React.Fragment>
   );
 };

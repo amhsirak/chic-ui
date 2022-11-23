@@ -14,6 +14,7 @@ interface BaseButtonProps {
   loading?: boolean;
   search?: boolean;
   typeBtn?: 'button' | 'submit' | 'reset';
+  outline?: boolean;
 }
 
 type HTMLButtonProps = {
@@ -50,7 +51,8 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     as,
     to,
     search = false,
-    typeBtn = 'button'
+    typeBtn = 'button',
+    outline = false
   } = props;
 
   const styles = {
@@ -58,7 +60,8 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     size,
     disabled,
     withText: children != null,
-    isSearch: search
+    isSearch: search,
+    outline
   };
 
   const spinnerStyles = {
