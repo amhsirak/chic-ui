@@ -6,7 +6,7 @@
 <img alt="GitHub Workflow Status (branch)" src="https://img.shields.io/github/workflow/status/karishmashuklaa/chic-ui/%F0%9F%9A%80%20npm%20publish/master?style=for-the-badge">
 <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/chic-ui?color=black&style=for-the-badge">
 
-**Simple Set of Reusable Components for React**
+**A set of lightweight reusable React components**
 
 </div>
 
@@ -35,6 +35,10 @@ const App = () => (
 
 https://chic-ui.vercel.app/
 
+## ⚠ Quick Disclaimer
+
+*This project is **very much** under development. The API is subject to change frequently without notice.*
+
 ## Contributions
 
 **Read contribution guidelines in [CONTRIBUTING.md](CONTRIBUTING.md)**
@@ -42,4 +46,3 @@ https://chic-ui.vercel.app/
 <a href="https://github.com/karishmashuklaa/chic-ui/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=karishmashuklaa/chic-ui" />
 </a>
-
