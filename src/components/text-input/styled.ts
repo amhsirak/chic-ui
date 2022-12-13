@@ -21,41 +21,47 @@ interface StyledTextInputProps {
   withIcon: boolean;
   withCross: boolean;
   isSearch: boolean;
+  bordered: boolean;
 }
 
 export const StyledTextInput = styled.input<StyledTextInputProps>`
   box-sizing: border-box;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.4;
   position: relative;
   color: #000;
-  border: none;
-  border-radius: ${(pr) => (pr.isSearch ? '8px 0px 0px 8px' : '8px')};
+  border: 1px solid ${(pr) => (pr.error ? '#ff4d4f' : '#d9d9d9')};
+  border-radius: ${(pr) => (pr.bordered ? '6px' : '0px')};
   outline: none;
-  transition: 0.1s ease-out;
-  padding: 0;
-  padding-left: ${(pr) =>
-    sidePaddings[pr.innerSize] +
-    (pr.withIcon ? sidePaddings[pr.innerSize] + 10 /* icon */ : 0)}px;
-  padding-right: ${(pr) =>
-    sidePaddings[pr.innerSize] +
-    (pr.withIcon ? sidePaddings[pr.innerSize] : 0)}px;
+  transition: all 0.2s;
+  padding: 0px 11px;
+  margin: 0;
+  display: inline-block;
   height: ${(pr) => heights[pr.innerSize]}px;
   width: 100%;
-  box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : 'transparent')};
-  background-color: ${(pr) => (pr.error ? 'ffe3e6' : '#EEEEEE')};
+  min-width: 0;
+  background-color: #fff;
+  background-image: none;
+
   &:focus {
-    box-shadow: inset 0 0 0 2px ${(pr) => (pr.error ? '#d93848' : '#000')};
+    outline: 0;
+    border-color: ${(pr) => (pr.error ? '#ff4d4f' : '#4096ff')};
+    border-inline-end-width: 1px;
+    box-shadow: 0 0 0 2px
+      ${(pr) => (pr.error ? 'rgb(255,38,5,0.06)' : 'rgb(55,68,78,0.1)')};
   }
 
   // Disabled
   ${(pr) =>
     pr.disabled &&
     `
-        background-color: #a6a6a6;
+        background-color: #e1e1e1;
         color: #5e5e5e;
         cursor: not-allowed;
-        
+
         &:hover {
-            background-color: #a6a6a6 !important;
+            background-color: #e1e1e1 !important;
             color: #5e5e5e !important;
         }
     `}
@@ -89,5 +95,5 @@ export const StyledCross = styled(CrossIcon)<StyledCrossProps>`
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  height: 15px;
+  height: 10px;
 `;
