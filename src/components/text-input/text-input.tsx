@@ -20,7 +20,6 @@ export interface TextInputProps
   value?: string;
   bordered: boolean;
   maxLength?: number;
-  showCount?: boolean;
   onChange?: ChangeEventHandler<HTMLInputElement>;
   // if input is controlled by another element
   readonly?: boolean;
