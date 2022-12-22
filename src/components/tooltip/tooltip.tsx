@@ -1,6 +1,6 @@
 import React from "react";
 import { themeType } from 'src/tokens/themes';
-import { StyledTooltip } from "./style";
+import { StyledTooltip } from "./styled";
 
 export type placementType = 'top' | 'right' | 'bottom' | 'left'
 

@@ -1,4 +1,4 @@
-import { theme as typeColors, themeType } from "src/tokens/themes";
+import { theme as typeColors, themeType } from "../../tokens/themes";
 import styled from "styled-components";
 import { placementType } from "./tooltip";
 
