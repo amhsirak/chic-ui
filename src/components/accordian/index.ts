@@ -1,5 +1,5 @@
-import Accordion from './accordian';
+import Accordion from './accordion';
 
-export * from './accordian';
+export * from './accordion';
 
 export default Accordion;
