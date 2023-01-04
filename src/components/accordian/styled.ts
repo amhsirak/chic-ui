@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { AccordianProps } from '.';
+import { AccordionProps } from '.';
 
-export const StyledAccordian = styled.div``;
+export const StyledAccordion = styled.div``;
 
 export const StyledHeader = styled.h4`
   border: 1px solid rgb(222, 226, 230);
@@ -15,7 +15,7 @@ export const StyledHeader = styled.h4`
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .accordian-toggle-button {
+  .accordion-toggle-button {
     display: flex;
     align-items: center;
     padding: 18px 20px;
