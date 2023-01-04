@@ -1,14 +1,14 @@
-import Accordian from '..';
+import Accordion from '..';
 import { render } from '../../../test/utils';
 
 /* eslint-disable */
 describe('Accordian Component', () => {
     it('Renders Correctly', () => {
-        const AccordianGroup = render(
+        const AccordionGroup = render(
             <>
-                <Accordian header='Hello World' description='Short Description' />
+                <Accordion header='Hello World' description='Short Description' />
             </>
         );
-        expect(AccordianGroup).toMatchSnapshot();
+        expect(AccordionGroup).toMatchSnapshot();
     });
 });
