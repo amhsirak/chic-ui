@@ -47,3 +47,5 @@ export { default as Tag } from './tag';
 export { default as TextInput } from './text-input';
 
 export { default as ThemeProvider } from './themeprovider';
+
+export { default as Tooltip } from './tooltip';
