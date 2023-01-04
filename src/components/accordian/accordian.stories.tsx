@@ -1,6 +1,6 @@
 import { ComponentStory, Story } from '@storybook/react';
 import React from 'react'
-import Accordion, { AccordionProps } from "./accordian";
+import Accordion, { AccordionProps } from "./accordion";
 
 export default {
     title: "Components/Accordion",
