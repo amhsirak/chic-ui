@@ -43,7 +43,7 @@ export const PageButton = styled.button<PageButtonProps>`
         ? activeBg
         : customBg
         ? customBg.hover
-        : typeColors[customBg ?? bgType!].hover};
+        : typeColors[bgType!].hover};
 
     color: ${({ activeHoverColor, activePage, buttonPage, customBg, bgType }) =>
       activeHoverColor && !isNaN(activePage!) && activePage === buttonPage
