@@ -20,6 +20,8 @@ export { default as Divider } from './divider';
 
 export { default as Drawer } from './drawer';
 
+export { default as Form } from './form';
+
 export { default as Image } from './image';
 
 export { default as Link } from './link';
@@ -43,7 +45,5 @@ export { default as Switch } from './switch';
 export { default as Tag } from './tag';
 
 export { default as TextInput } from './text-input';
-
-export { default as Form } from './form';
 
 export { default as ThemeProvider } from './themeprovider';
