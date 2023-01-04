@@ -1,4 +1,4 @@
-import { ComponentStory, Story } from '@storybook/react';
+import { Story } from '@storybook/react';
 import React from 'react'
 import Accordion, { AccordionProps } from "./accordion";
 
