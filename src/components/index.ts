@@ -14,6 +14,8 @@ export { default as Card } from './card';
 
 export { default as CardGroup } from './cardgroup';
 
+export { default as CircularProgressBar } from './circularProgressBar';
+
 export { default as Divider } from './divider';
 
 export { default as Drawer } from './drawer';
