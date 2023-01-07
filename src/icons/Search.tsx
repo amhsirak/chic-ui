@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 function SvgSearch(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -11,5 +10,4 @@ function SvgSearch(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-
 export default SvgSearch;

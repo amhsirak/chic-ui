@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 function SvgArrowDown(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 330" {...props}>
@@ -7,5 +6,4 @@ function SvgArrowDown(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-
 export default SvgArrowDown;
