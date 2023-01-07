@@ -39,11 +39,11 @@ export const StyledHeader = styled.h4`
   }
 `;
 
-export const StyledDescriptionWrapper = styled.div`
+export const StyledContentWrapper = styled.div`
   overflow: hidden;
 `;
 
-export const StyledDescription = styled.div`
+export const StyledContent = styled.div`
   transition: transform 300ms ease;
   font-weight: normal;
   color: rgb(73, 80, 87);
