@@ -28,17 +28,12 @@ const isActiveProp = css`
     display: block;
     position: absolute;
     z-index: -1;
-    top: -4px;
-    left: -4px;
+    top: -7px;
+    left: -7px;
     width: calc(100% + 8px);
     height: calc(100% + 8px);
     border-radius: 50%;
-    background: linear-gradient(
-      90deg,
-      rgba(3, 70, 75, 1) 0%,
-      rgba(69, 181, 46, 1) 35%,
-      rgba(21, 227, 145, 1) 100%
-    );
+    border: 3px solid ${typeColors.success.bgColor};
   }
 `;
 
