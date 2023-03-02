@@ -3,16 +3,17 @@ import { StyledCards } from './styled';
 
 export interface StyledCardGroupProps {
   children?: ReactNode;
+  style?: React.CSSProperties;
 }
 
 export const CardGroup: React.ForwardRefRenderFunction<
   HTMLDivElement,
   StyledCardGroupProps
 > = (props, ref) => {
-  const { children } = props;
+  const { children, style } = props;
 
   return (
-    <StyledCards ref={ref as React.MutableRefObject<HTMLDivElement>}>
+    <StyledCards style={style} ref={ref as React.MutableRefObject<HTMLDivElement>}>
       {children}
     </StyledCards>
   );
