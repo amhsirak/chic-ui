@@ -9,6 +9,7 @@ export interface ImageProps {
   circle?: boolean;
   outline?: boolean;
   src: string;
+  style?: React.CSSProperties;
 }
 
 export const Image: React.ForwardRefRenderFunction<
@@ -22,7 +23,8 @@ export const Image: React.ForwardRefRenderFunction<
     src,
     rounded = false,
     circle = false,
-    outline = false
+    outline = false,
+    style,
   } = props;
 
   return (
@@ -35,6 +37,7 @@ export const Image: React.ForwardRefRenderFunction<
       rounded={rounded}
       circle={circle}
       outline={outline}
+      style={style}
     />
   );
 };
