@@ -6,7 +6,7 @@ import type { themeType } from 'src/tokens/themes';
 interface BaseBreadcrumbProps {
   className?: string;
   separator?: ReactNode | string;
-  style?: any;
+  style?: React.CSSProperties;
   type?: themeType;
 }
 
