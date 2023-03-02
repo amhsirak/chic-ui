@@ -6,13 +6,14 @@ export interface SkeletonProps {
   height?: number;
   borderRadius?: string;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export const Skeleton: React.ForwardRefRenderFunction<
   HTMLDivElement,
   SkeletonProps
 > = (props, ref) => {
-  const { width = 100, height = 100, borderRadius = 'none', className } = props;
+  const { width = 100, height = 100, borderRadius = 'none', className, style } = props;
 
   return (
     <StyledSkeleton
@@ -21,6 +22,7 @@ export const Skeleton: React.ForwardRefRenderFunction<
       width={width}
       borderRadius={borderRadius}
       className={className}
+      style={style}
     />
   );
 };
