@@ -9,6 +9,7 @@ export type BadgeProps = {
   showZero?: boolean;
   showCount?: boolean;
   offset?: [number, number];
+  style?: React.CSSProperties;
 };
 
 const Badge: React.ForwardRefRenderFunction<
@@ -22,7 +23,8 @@ const Badge: React.ForwardRefRenderFunction<
     showCount = false,
     showZero = false,
     offset = [0, 0],
-    children
+    children,
+    style,
   } = props;
 
   const isBadgeVisible = count !== 0 || showZero;
@@ -33,7 +35,7 @@ const Badge: React.ForwardRefRenderFunction<
       <>
         {children}
         {isBadgeVisible && (
-          <StyledBadge offset={offset} type={type} showCount={showCount}>
+          <StyledBadge offset={offset} type={type} showCount={showCount} style={style}>
             {showCount && displayCount}
           </StyledBadge>
         )}
