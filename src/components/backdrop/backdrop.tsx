@@ -7,15 +7,16 @@ export interface BackdropProps {
   relative?: boolean;
   onClick?: MouseEventHandler<HTMLDivElement>;
   zIndex?: number;
+  style?: React.CSSProperties;
 }
 
 export const Backdrop: React.ForwardRefRenderFunction<
   HTMLDivElement,
   BackdropProps
 > = (props, ref) => {
-  const { visible=true, color, zIndex, relative } = props;
+  const { visible=true, color, zIndex, relative, style } = props;
   console.log(props)
-  return <StyledBackdrop visible={visible} color={color} zIndex={zIndex} relative={relative}  />;
+  return <StyledBackdrop visible={visible} color={color} zIndex={zIndex} relative={relative} style={style}  />;
 };
 
 export default React.forwardRef<HTMLDivElement, BackdropProps>(Backdrop);
