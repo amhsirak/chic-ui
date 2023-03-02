@@ -10,13 +10,14 @@ export interface CircularProgressBarProps {
   progress?: number;
   type?: themeType;
   showProgress?: boolean;
+  style?: React.CSSProperties;
 }
 
 const CircularProgressBar: React.ForwardRefRenderFunction<
   HTMLAnchorElement,
   CircularProgressBarProps
 > = (props, ref) => {
-  let { progress = 70, type = 'primary', showProgress = true } = props;
+  let { progress = 70, type = 'primary', showProgress = true, style } = props;
   const degree = 3.6 * progress;
 
   const getProgressAndDegree = (value: number, maxValue: number) => {
@@ -27,7 +28,7 @@ const CircularProgressBar: React.ForwardRefRenderFunction<
   };
 
   return (
-    <StyledCircularProgressWrapper type={type} degree={getProgressAndDegree(degree, 360)}>
+    <StyledCircularProgressWrapper type={type} style={style} degree={getProgressAndDegree(degree, 360)}>
       <StyledCircularProgressInnerCircle>
         <StyledLoadingText>
           {showProgress ? getProgressAndDegree(progress, 100) + '%' : null}
