@@ -15,6 +15,7 @@ interface BaseButtonProps {
   search?: boolean;
   typeBtn?: 'button' | 'submit' | 'reset';
   outline?: boolean;
+  style?: React.CSSProperties;
 }
 
 type HTMLButtonProps = {
@@ -50,6 +51,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     href,
     as,
     to,
+    style,
     search = false,
     typeBtn = 'button',
     outline = false
@@ -80,7 +82,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
 
   if (as && !disabled) {
     return (
-      <StyledButton as={as} to={to} ref={ref} className={className} {...styles}>
+      <StyledButton as={as} to={to} ref={ref} className={className} style={style} {...styles}>
         {loading ? (
           <>
             Loading
@@ -100,6 +102,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
         href={href}
         ref={ref as React.MutableRefObject<HTMLAnchorElement>}
         className={className}
+        style={style}
         {...styles}
       >
         {loading ? (
@@ -121,6 +124,7 @@ const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
       onClick={onClick}
       ref={ref as React.MutableRefObject<HTMLButtonElement>}
       className={className}
+      style={style}
       {...styles}
     >
       {loading ? (
