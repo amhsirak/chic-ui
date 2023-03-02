@@ -13,6 +13,7 @@ export interface PaginationProps {
   activeBg: string;
   activeColor: string;
   activeHoverColor?: string;
+  style?: React.CSSProperties;
 }
 
 const Pagination: React.ForwardRefRenderFunction<
@@ -25,7 +26,8 @@ const Pagination: React.ForwardRefRenderFunction<
     whenPreviousPage,
     whenNextPage,
     whenPageChange,
-    bgType = 'primary'
+    bgType = 'primary',
+    style,
   } = props;
 
   const [page, setPage] = useState(startCountInZero ? 0 : 1);
@@ -54,7 +56,7 @@ const Pagination: React.ForwardRefRenderFunction<
   };
 
   return (
-    <Container ref={ref}>
+    <Container ref={ref} style={style}>
       <PreviousButton onClick={goBack} bgType={bgType} {...props}>
         Previous
       </PreviousButton>
