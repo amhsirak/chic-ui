@@ -23,6 +23,7 @@ export interface StyledCardProps {
   description?: string;
   hrefText?: string;
   type?: themeType;
+  style?: React.CSSProperties;
 }
 
 export const Card: React.ForwardRefRenderFunction<
@@ -39,6 +40,7 @@ export const Card: React.ForwardRefRenderFunction<
     footer,
     hrefText,
     description,
+    style,
     type = 'light'
   } = props;
 
@@ -48,6 +50,7 @@ export const Card: React.ForwardRefRenderFunction<
         className={className}
         ref={ref as React.MutableRefObject<HTMLDivElement>}
         type={type}
+        style={style}
       >
         {src && <StyledImage src={src} width={'100%'} height={'100%'} />}
         {title && <StyledTitle children={title} />}
