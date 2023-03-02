@@ -22,6 +22,7 @@ export interface TextInputProps
   // if input is controlled by another element
   readonly?: boolean;
   clearable?: boolean;
+  style?: React.CSSProperties;
   [key: string]: any;
 }
 
