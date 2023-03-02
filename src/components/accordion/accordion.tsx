@@ -5,10 +5,11 @@ export interface AccordionProps {
     header: string,
     description: string,
     classname?: string
+    style?: React.CSSProperties
 }
 
 const Accordion: React.ForwardRefRenderFunction<HTMLDivElement, AccordionProps> = (props, ref) => {
-    const { header, description, classname } = props;
+    const { header, description, classname, style } = props;
     const toggleRef = useRef<HTMLDivElement>(null);
     const descRef = useRef<HTMLDivElement>(null);
 
@@ -32,7 +33,7 @@ const Accordion: React.ForwardRefRenderFunction<HTMLDivElement, AccordionProps> 
     }
 
     return (
-        <StyledAccordion ref={ref} className={classname} >
+        <StyledAccordion ref={ref} className={classname} style={style}>
             <StyledHeader className='accordion-header' onClick={toggleHandler}><div ref={toggleRef} className='accordion-toggle-button'><span></span></div>{header}</StyledHeader>
             <StyledDescriptionWrapper className='desc-wrapper'><StyledDescription className='accordion-description close' ref={descRef}>{description}</StyledDescription></StyledDescriptionWrapper>
         </StyledAccordion >
