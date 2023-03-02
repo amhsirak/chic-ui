@@ -21,6 +21,7 @@ export interface SelectProps<T> {
   dataName?: string;
   error?: boolean;
   placeholder?: string;
+  style?: React.CSSProperties;
   onChange?: (value: T | T[]) => void;
 }
 
@@ -39,6 +40,7 @@ const Select: React.ForwardRefRenderFunction<
     dataKey,
     dataName,
     placeholder,
+    style,
     onChange
   },
   ref
@@ -116,7 +118,7 @@ const Select: React.ForwardRefRenderFunction<
   };
 
   return (
-    <SelectWrapper ref={ref} className={className} width={width}>
+    <SelectWrapper ref={ref} className={className} width={width} style={style}>
       <StyledSelectDiv
         tabIndex={disabled ? undefined : 0}
         disabled={disabled || false}
