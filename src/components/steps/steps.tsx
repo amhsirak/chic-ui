@@ -19,6 +19,7 @@ export interface StepsProps {
   divider?: ReactNode;
   style?: React.CSSProperties;
   children: ReactElement[] | ReactElement;
+  className?: string;
 }
 
 const Steps: React.ForwardRefRenderFunction<HTMLDivElement, StepsProps> = (
@@ -33,7 +34,8 @@ const Steps: React.ForwardRefRenderFunction<HTMLDivElement, StepsProps> = (
     onChange = (active: number) => {},
     divider,
     style,
-    children
+    children,
+    className
   } = props;
 
   const [responsiveDir, setResponsiveDir] = useState(direction);
@@ -65,6 +67,7 @@ const Steps: React.ForwardRefRenderFunction<HTMLDivElement, StepsProps> = (
             type,
             responsive,
             style,
+            className,
             index: i,
             length: stepsLength,
             activeIndex: active,
