@@ -24,6 +24,7 @@ export interface TextInputProps
   clearable?: boolean;
   style?: React.CSSProperties;
   [key: string]: any;
+  className?: string;
 }
 
 const TextInput: React.ForwardRefRenderFunction<
