@@ -14,7 +14,7 @@ If you are working on a new component, then follow the following folder structur
 
 ## Contributing Guidelines
 - If you're planning to implement a new feature I will recommend you to discuss with me before you start coding so you won't end up working on something that I don't want to implement. Create an Issue with proper name and content for discussion.
-- Need help in understanding the code? <a href="mailto:karishmashuklaa@gmail.com">Email me</a> or Discord - `carishma`
+- Need help in understanding the code? <a href="mailto:karishmashuklaa@gmail.com">Email me</a> or Discord - `carishma#3453`
 
 - For Contributing to this repository
   1. Fork the repository.
