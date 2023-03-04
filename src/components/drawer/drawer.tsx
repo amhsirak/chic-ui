@@ -19,6 +19,7 @@ export interface DrawerProps {
   onClose?: () => void;
   placement?: Placement;
   open?: boolean;
+  className?: string;
 
   /** Container */
   container?: HTMLElement;
@@ -39,6 +40,8 @@ export interface DrawerProps {
 
   /** Width for top and bottom placement. Will override size property  */
   width?: number;
+
+  style?: React.CSSProperties;
 }
 
 const drawerSize = {
@@ -66,7 +69,9 @@ const Drawer: React.ForwardRefRenderFunction<HTMLDivElement, DrawerProps> = (
     footerStyle,
     footer,
     height,
-    width
+    width,
+    style,
+    className
   } = props;
 
   const handleOnClose = useCallback(() => {
@@ -97,6 +102,8 @@ const Drawer: React.ForwardRefRenderFunction<HTMLDivElement, DrawerProps> = (
       tabIndex={-1}
       open={open}
       onClick={handleOnClose}
+      style={style}
+      className={className}
     >
       <StyledDrawerContainer
         height={customHeight}

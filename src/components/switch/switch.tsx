@@ -11,6 +11,7 @@ export interface SwitchProps {
   onChange?: () => void;
   disabled?: boolean;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export const Switch: React.ForwardRefRenderFunction<
@@ -24,6 +25,7 @@ export const Switch: React.ForwardRefRenderFunction<
     checked = false,
     disabled = false,
     className,
+    style,
     onChange
   } = props;
 
@@ -42,6 +44,7 @@ export const Switch: React.ForwardRefRenderFunction<
       padding={padding}
       checked={checked}
       onClick={handleOnChange}
+      style={style}
     >
       <input ref={ref} type="checkbox" checked={checked} hidden />
       <SwitchToggle

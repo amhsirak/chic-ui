@@ -16,16 +16,17 @@ function useAlert(initial: boolean): [boolean, () => void] {
 
   return [show, onClick];
 }
-export const Playground: Story<Arguments> = ({ content, ...args }) => {
+export const Playground: Story<Arguments> = () => {
   const [show, onClick] = useAlert(true);
   return (
     <Alert
       title={'Title'}
       message={'message'}
-      {...args}
+      dismissible
+      type="primary"
       show={show}
       onClose={onClick}
-    ></Alert>
+    />
   );
 };
 Playground.argTypes = {

@@ -17,6 +17,7 @@ interface BaseAlertProps {
   dismissible?: boolean;
   onClose?: () => void;
   show?: boolean;
+  style?: React.CSSProperties;
 }
 
 export type AlertProps = BaseAlertProps;
@@ -33,7 +34,8 @@ const Alert: React.ForwardRefRenderFunction<unknown, AlertProps> = (
     message,
     dismissible,
     show = true,
-    onClose
+    onClose,
+    style
   } = props;
 
   const styles = {
@@ -50,7 +52,7 @@ const Alert: React.ForwardRefRenderFunction<unknown, AlertProps> = (
   return (
     <>
       {show && (
-        <StyledAlert className={className} {...styles}>
+        <StyledAlert className={className} style={style} {...styles}>
           <StyledRow>
             <StyledTitle>{title && title}</StyledTitle>
             {dismissible && <StyledDismissible onClick={handleOnClose} />}

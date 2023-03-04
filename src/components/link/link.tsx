@@ -10,6 +10,7 @@ export interface LinkProps
   as?: ElementType;
   href: string;
   type?: themeType;
+  style?: React.CSSProperties;
 }
 
 const Link: React.ForwardRefRenderFunction<HTMLAnchorElement, LinkProps> = (
@@ -22,7 +23,8 @@ const Link: React.ForwardRefRenderFunction<HTMLAnchorElement, LinkProps> = (
     children,
     as = 'a',
     href,
-    type = 'primary'
+    type = 'primary',
+    style
   } = props;
 
   return (
@@ -33,6 +35,7 @@ const Link: React.ForwardRefRenderFunction<HTMLAnchorElement, LinkProps> = (
       as={disabled ? 'p' : as}
       href={href}
       type={type}
+      style={style}
     >
       {children}
     </StyledLink>

@@ -10,6 +10,7 @@ export interface SearchProps {
   width?: string;
   value?: string;
   onChange?: ChangeEventHandler<HTMLInputElement>;
+  style?: React.CSSProperties;
   placeholder?: string;
 }
 
@@ -17,7 +18,7 @@ const Search: React.ForwardRefRenderFunction<HTMLDivElement, SearchProps> = (
   props,
   ref
 ) => {
-  const { className, value, onChange, placeholder, width = '100%' } = props;
+  const { className, value, onChange, placeholder, width = '100%', style } = props;
 
   const textInputStyles = {
     width: '100%'
@@ -32,6 +33,7 @@ const Search: React.ForwardRefRenderFunction<HTMLDivElement, SearchProps> = (
         placeholder={placeholder}
         clearable
         isSearch={true}
+        style={style}
         {...textInputStyles}
       />
       <Button type="secondary" search={true}>

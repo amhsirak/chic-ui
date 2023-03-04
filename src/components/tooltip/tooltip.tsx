@@ -9,20 +9,21 @@ interface BaseTooltipProps {
     placement?: placementType,
     className?: string,
     content?: JSX.Element | string 
+    style?: React.CSSProperties
 }
 
 export type TooltipProps = BaseTooltipProps
 
 const Tooltip: React.ForwardRefRenderFunction<HTMLDivElement, TooltipProps> = (props, ref) => {
 
-    const {placement, className, content, type = 'primary' } = props
+    const {placement, className, content, type = 'primary', style } = props
 
     const styles = {
         colorType: type
     }
 
     return (
-        <StyledTooltip type="button" aria-label={`${content}`} placement={placement} className={className}      {...styles}>
+        <StyledTooltip type="button" aria-label={`${content}`} placement={placement} className={className} style={style}     {...styles}>
             Tooltip on {placement}
         </StyledTooltip>
     )

@@ -17,8 +17,9 @@ export interface StepsProps {
   type?: themeType;
   /** Custom Divider */
   divider?: ReactNode;
-
+  style?: React.CSSProperties;
   children: ReactElement[] | ReactElement;
+  className?: string;
 }
 
 const Steps: React.ForwardRefRenderFunction<HTMLDivElement, StepsProps> = (
@@ -32,7 +33,9 @@ const Steps: React.ForwardRefRenderFunction<HTMLDivElement, StepsProps> = (
     responsive = true,
     onChange = (active: number) => {},
     divider,
-    children
+    style,
+    children,
+    className
   } = props;
 
   const [responsiveDir, setResponsiveDir] = useState(direction);
@@ -63,6 +66,8 @@ const Steps: React.ForwardRefRenderFunction<HTMLDivElement, StepsProps> = (
           React.cloneElement(child as ReactElement, {
             type,
             responsive,
+            style,
+            className,
             index: i,
             length: stepsLength,
             activeIndex: active,
