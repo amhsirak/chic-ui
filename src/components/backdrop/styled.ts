@@ -4,7 +4,7 @@ import { theme as typeColors } from '../../tokens/themes';
 
 export const StyledBackdrop = styled.div<BackdropProps>`
   display: ${(props) => (props.visible ? 'block' : 'none')};
-  position: ${(props) => (props.relative ? 'relative' : 'fixed')};
+  position: absolute;
   left: 0;
   top: 0;
   width: 100vw;
