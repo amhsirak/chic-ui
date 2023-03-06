@@ -15,14 +15,7 @@ export const Backdrop: React.ForwardRefRenderFunction<
   HTMLDivElement,
   BackdropProps
 > = (props, ref) => {
-  const {
-    visible = true,
-    color,
-    zIndex,
-    style,
-    className,
-    children
-  } = props;
+  const { visible = true, color, zIndex, style, className, children } = props;
   return (
     <StyledBackdrop
       visible={visible}
