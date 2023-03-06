@@ -4,7 +4,6 @@ import { StyledBackdrop } from './styled';
 export interface BackdropProps {
   visible?: boolean;
   color?: string;
-  relative?: boolean;
   onClick?: MouseEventHandler<HTMLDivElement>;
   zIndex?: number;
   style?: React.CSSProperties;
@@ -20,7 +19,6 @@ export const Backdrop: React.ForwardRefRenderFunction<
     visible = true,
     color,
     zIndex,
-    relative,
     style,
     className,
     children
@@ -30,7 +28,6 @@ export const Backdrop: React.ForwardRefRenderFunction<
       visible={visible}
       color={color}
       zIndex={zIndex}
-      relative={relative}
       style={style}
       className={className}
     >
