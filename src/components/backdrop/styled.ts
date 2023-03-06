@@ -8,8 +8,8 @@ export const StyledBackdrop = styled.div<BackdropProps>`
       ? `
     display: flex;
     flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
     `
       : 'display: none;'}
   position: absolute;
