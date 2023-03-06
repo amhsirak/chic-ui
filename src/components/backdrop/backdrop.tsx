@@ -5,7 +5,6 @@ export interface BackdropProps {
   visible?: boolean;
   color?: string;
   onClick?: MouseEventHandler<HTMLDivElement>;
-  zIndex?: number;
   style?: React.CSSProperties;
   className?: string;
   children?: React.ReactNode;
@@ -15,20 +14,11 @@ export const Backdrop: React.ForwardRefRenderFunction<
   HTMLDivElement,
   BackdropProps
 > = (props, ref) => {
-  const {
-    visible = true,
-    color,
-    zIndex,
-    style,
-    className,
-    children,
-    onClick
-  } = props;
+  const { visible = true, color, style, className, children, onClick } = props;
   return (
     <StyledBackdrop
       visible={visible}
       color={color}
-      zIndex={zIndex}
       style={style}
       className={className}
       onClick={onClick}
