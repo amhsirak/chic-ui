@@ -1,4 +1,4 @@
-import React, { MouseEventHandler } from 'react';
+import React, { Children, MouseEventHandler } from 'react';
 import { StyledBackdrop } from './styled';
 
 export interface BackdropProps {
@@ -9,13 +9,22 @@ export interface BackdropProps {
   zIndex?: number;
   style?: React.CSSProperties;
   className?: string;
+  children?: React.ReactNode;
 }
 
 export const Backdrop: React.ForwardRefRenderFunction<
   HTMLDivElement,
   BackdropProps
 > = (props, ref) => {
-  const { visible = true, color, zIndex, relative, style, className } = props;
+  const {
+    visible = true,
+    color,
+    zIndex,
+    relative,
+    style,
+    className,
+    children
+  } = props;
   return (
     <StyledBackdrop
       visible={visible}
@@ -24,7 +33,9 @@ export const Backdrop: React.ForwardRefRenderFunction<
       relative={relative}
       style={style}
       className={className}
-    />
+    >
+      {children}
+    </StyledBackdrop>
   );
 };
 
