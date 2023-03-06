@@ -11,7 +11,6 @@ const Template: Story<BackdropProps> = (args) => <Backdrop {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  color: 'black',
   zIndex: 101,
   relative: true
 };
