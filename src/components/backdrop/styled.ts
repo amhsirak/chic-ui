@@ -3,10 +3,14 @@ import { BackdropProps } from './backdrop';
 import { theme as typeColors } from '../../tokens/themes';
 
 export const StyledBackdrop = styled.div<BackdropProps>`
-  display: ${(props) => (props.visible ? 'flex' : 'none')};
-  flex-direction: column;
+  ${
+    props => props.visible ? `
+    display: flex;
+    flex-direction: column;
   align-items: center;
   justify-content: center;
+    ` : 'display: none;'
+  }
   position: absolute;
   left: 0;
   top: 0;
