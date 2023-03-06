@@ -25,3 +25,22 @@ export const NotVisible = Template.bind({});
 NotVisible.args = {
   visible: false
 };
+
+export const Buttonish = () => {
+  const [open, setOpen] = React.useState(false)
+  const handleClose = () => {
+    setOpen(false);
+  }
+  const handleToggle = () => {
+    setOpen(!open);
+  }
+
+  return (
+    <>
+    <button onClick={handleToggle}>Toggle</button>
+    <Backdrop visible={open} onClick={handleClose}>
+      <p>Hello world</p>
+    </Backdrop>
+    </>
+  )
+}
