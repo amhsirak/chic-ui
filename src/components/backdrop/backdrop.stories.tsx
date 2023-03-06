@@ -12,13 +12,11 @@ const Template: Story<BackdropProps> = (args) => <Backdrop {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   zIndex: 101,
-  relative: true
 };
 
 export const Coloured = Template.bind({});
 Coloured.args = {
   color: 'gray',
-  relative: true
 };
 
 export const NotVisible = Template.bind({});
