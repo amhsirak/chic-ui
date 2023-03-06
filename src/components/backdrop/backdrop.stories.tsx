@@ -26,7 +26,7 @@ NotVisible.args = {
   visible: false
 };
 
-export const Buttonish = () => {
+export const withChildren = () => {
   const [open, setOpen] = React.useState(false)
   const handleClose = () => {
     setOpen(false);
