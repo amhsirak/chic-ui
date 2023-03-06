@@ -3,7 +3,10 @@ import { BackdropProps } from './backdrop';
 import { theme as typeColors } from '../../tokens/themes';
 
 export const StyledBackdrop = styled.div<BackdropProps>`
-  display: ${(props) => (props.visible ? 'block' : 'none')};
+  display: ${(props) => (props.visible ? 'flex' : 'none')};
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   left: 0;
   top: 0;
