@@ -10,13 +10,11 @@ export default {
 const Template: Story<BackdropProps> = (args) => <Backdrop {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  zIndex: 101,
-};
+Default.args = {};
 
 export const Coloured = Template.bind({});
 Coloured.args = {
-  color: 'gray',
+  color: 'gray'
 };
 
 export const NotVisible = Template.bind({});
@@ -25,20 +23,20 @@ NotVisible.args = {
 };
 
 export const withChildren = () => {
-  const [open, setOpen] = React.useState(false)
+  const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
-  }
+  };
   const handleToggle = () => {
     setOpen(!open);
-  }
+  };
 
   return (
     <>
-    <button onClick={handleToggle}>Toggle</button>
-    <Backdrop visible={open} onClick={handleClose}>
-      <p>Hello world</p>
-    </Backdrop>
+      <button onClick={handleToggle}>Toggle</button>
+      <Backdrop visible={open} onClick={handleClose}>
+        <p>Hello world</p>
+      </Backdrop>
     </>
-  )
-}
+  );
+};
