@@ -16,7 +16,7 @@ export const StyledBackdrop = styled.div<BackdropProps>`
   top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: ${(props) => (props.zIndex ? props.zIndex : 101)};
+  z-index: 9999;
   background-color: ${(props) =>
     props.color ? props.color : 'rgba(0,0,0,.5)'};
 `;
