@@ -12,8 +12,8 @@ import { themeType } from '../../tokens/themes';
 interface BaseAlertProps {
   type?: themeType;
   className?: string;
-  title: string;
-  message: string;
+  title: React.ReactNode;
+  message: React.ReactNode;
   dismissible?: boolean;
   onClose?: () => void;
   show?: boolean;
