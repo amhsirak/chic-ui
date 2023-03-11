@@ -8,6 +8,7 @@ export interface AvatarProps {
   isActive?: boolean;
   width?: number;
   height?: number;
+  style?: React.CSSProperties;
 }
 
 export const Avatar: React.ForwardRefRenderFunction<
@@ -21,6 +22,7 @@ export const Avatar: React.ForwardRefRenderFunction<
     isActive = false,
     height = 80,
     width = 80,
+    style,
     ...rest
   } = props;
   return (
@@ -32,6 +34,7 @@ export const Avatar: React.ForwardRefRenderFunction<
       isActive={isActive}
       className={className}
       name={name}
+      style={style}
     >
       {src ? (
         <StyledImage alt={name} src={src} {...rest} />

@@ -1,32 +1,47 @@
+<div align="center">
+
 # 🦄 Chic UI 
 
-<a href="https://www.npmjs.org/package/chic-ui"><img src="https://img.shields.io/npm/v/chic-ui?style=for-the-badge&labelColor=black&logo=npm&label=chic-ui"></a>
-<a href="https://www.npmjs.org/package/chic-ui"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge&labelColor=black&logo=github"></a>
+<a href="https://www.npmjs.org/package/chic-ui"><img src="https://img.shields.io/npm/v/chic-ui?style=for-the-badge"></a>
+<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/chic-ui?color=black&style=for-the-badge">
 
-**Simple and lightweight UI Component Library for React**
+**A set of lightweight reusable React components**
 
-## Built using
+</div>
 
-React • Styled Components • Storybook
+## Install
+
+Using NPM
+
+```
+npm i chic-ui --save
+```
+
+## Quick Start 
+
+```js
+import { Button, Divider } from 'chic-ui';
+
+const App = () => (
+  <>
+    <Button type="secondary">Click Me</Button>
+    <Divider />
+  </>
+);
+```
 
 ## Documentation
 
 https://chic-ui.vercel.app/
 
-## Installation
+## ⚠ Quick Disclaimer
 
-```
-npm i chic-ui
-```
+*This project is **very much** under development. The API is subject to change frequently without notice.*
 
 ## Contributions
 
-**You can read Contribution guidelines in [CONTRIBUTING.md](CONTRIBUTING.md)**
+**Read contribution guidelines in [CONTRIBUTING.md](CONTRIBUTING.md)**
 
 <a href="https://github.com/karishmashuklaa/chic-ui/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=karishmashuklaa/chic-ui" />
 </a>
-
-<hr>
-By <a href="https://github.com/karishmashuklaa/">Karishma Shukla</a> and <a href="https://github.com/karishmashuklaa/chic-ui/graphs/contributors"> Contributors</a>
-

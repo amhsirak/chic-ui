@@ -1,7 +1,11 @@
 import styled from 'styled-components';
-import { theme as typeColors } from '../../tokens/themes';
+import { themeType, theme as typeColors  } from '../../tokens/themes';
 
-export const StyledBreadcrumb = styled.ol`
+interface StyledBreadcrumbProps {
+  themeColor: themeType
+}
+
+export const StyledBreadcrumb = styled.ol<StyledBreadcrumbProps>`
   list-style: none;
   display: flex;
   align-items: center;
@@ -9,10 +13,22 @@ export const StyledBreadcrumb = styled.ol`
   flex-direction: row;
 
   .breadcrumb-separator {
-    display: flex;
     align-items: center;
-    color: ${typeColors.light.color};
+    color: ${({ themeColor }) => typeColors[themeColor].bgColor};
+    display: flex;
     margin: auto 6px;
     user-select: none;
+  }
+
+  .breadcrumb-item {
+    color: ${({ themeColor }) => typeColors[themeColor].bgColor};
+  }
+
+  .breadcrumb-item:hover {
+    color: ${({ themeColor }) => typeColors[themeColor].hover};
+  }
+
+  a { 
+    color: inherit;
   }
 `;

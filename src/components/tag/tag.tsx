@@ -7,6 +7,7 @@ export interface BaseTagProps {
   rounded?: boolean;
   className?: string;
   children?: ReactNode;
+  style?: React.CSSProperties;
 }
 
 // If `as` is added, tag becomes a custom html node specified in `as`
@@ -21,6 +22,7 @@ const Tag: React.ForwardRefRenderFunction<unknown, TagProps> = (props, ref) => {
     rounded = false,
     className,
     children,
+    style,
     as,
     to
   } = props;
@@ -45,6 +47,7 @@ const Tag: React.ForwardRefRenderFunction<unknown, TagProps> = (props, ref) => {
       type="span"
       ref={ref as React.MutableRefObject<HTMLSpanElement>}
       className={className}
+      style={style}
       {...styles}
     >
       {children}

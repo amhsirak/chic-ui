@@ -7,6 +7,7 @@ interface StyledButtonProps {
   size: ComponentSize;
   withText: boolean;
   isSearch: boolean;
+  outline: boolean;
 }
 
 // Real tag is assigned dynamically
@@ -16,7 +17,8 @@ export const StyledButton = styled.button<StyledButtonProps>`
   align-items: center;
   justify-content: center;
   font-size: 15px;
-  border: none;
+  border: ${(pr) =>
+    pr.outline ? `1px solid ${typeColors[pr.innerType].bgColor}` : 'none'};
   border-radius: ${(pr) => (pr.isSearch ? '0px 8px 8px 0px' : '8px')};
   outline: none;
   cursor: pointer;
@@ -24,13 +26,21 @@ export const StyledButton = styled.button<StyledButtonProps>`
   padding: 0 ${(pr) => sidePaddings[pr.size]}px;
   margin-right: 3px;
   height: ${(pr) => heights[pr.size]}px;
-  background-color: ${(pr) => typeColors[pr.innerType].bgColor};
-  color: ${(pr) => typeColors[pr.innerType].color};
-  &:hover {
+  background-color: ${(pr) =>
+    pr.outline ? `#ffff` : typeColors[pr.innerType].bgColor};
+  color: ${(pr) =>
+    pr.outline
+      ? typeColors[pr.innerType].bgColor
+      : typeColors[pr.innerType].color};
+
+  transition: background 300ms ease-in-out, color 300ms ease-in-out;
+
+  &:hover:enabled {
     background-color: ${(pr) => typeColors[pr.innerType].hover};
+    color: ${(pr) => typeColors[pr.innerType].color};
   }
   &:focus {
-   outline: none;
+    outline: none;
   }
   & > *:nth-child(1) {
     margin-left: ${(pr) => (pr.withText ? 7 : 5)}px;
