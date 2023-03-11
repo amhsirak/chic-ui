@@ -8,7 +8,7 @@ describe('Backdrop Component', () => {
       <>
         <Backdrop />
         <Backdrop color="#e4f0f4" />
-        <Backdrop zIndex={120} visible={false} />
+        <Backdrop visible={false} />
       </>
     );
     expect(BackdropGroup).toMatchSnapshot();
