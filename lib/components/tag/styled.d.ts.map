@@ -1,0 +1,1 @@
+{"version":3,"file":"styled.d.ts","sourceRoot":"","sources":["../../../src/components/tag/styled.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,SAAS,EAAuB,MAAM,qBAAqB,CAAC;AAErE,UAAU,cAAc;IACtB,SAAS,EAAE,SAAS,CAAC;IACrB,QAAQ,EAAE,OAAO,CAAC;IAClB,OAAO,EAAE,OAAO,CAAC;CAClB;AAGD,eAAO,MAAM,SAAS,iFAcrB,CAAC"}
