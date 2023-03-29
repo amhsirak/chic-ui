@@ -1,33 +1,40 @@
-import React from "react";
+import React from 'react';
 import { themeType } from 'src/tokens/themes';
-import { StyledTooltip } from "./styled";
+import { StyledTooltip } from './styled';
 
-export type placementType = 'top' | 'right' | 'bottom' | 'left'
+export type placementType = 'top' | 'right' | 'bottom' | 'left';
 
 interface BaseTooltipProps {
-    type?: themeType;
-    placement?: placementType,
-    className?: string,
-    content?: JSX.Element | string 
-    style?: React.CSSProperties
+  type?: themeType;
+  placement?: placementType;
+  className?: string;
+  content?: JSX.Element | string;
+  style?: React.CSSProperties;
 }
 
-export type TooltipProps = BaseTooltipProps
+export type TooltipProps = BaseTooltipProps;
 
-const Tooltip: React.ForwardRefRenderFunction<HTMLDivElement, TooltipProps> = (props) => {
+const Tooltip: React.ForwardRefRenderFunction<HTMLDivElement, TooltipProps> = (
+  props
+) => {
+  const { placement, className, content, type = 'primary', style } = props;
 
-    const {placement, className, content, type = 'primary', style } = props
+  const styles = {
+    colorType: type
+  };
 
-    const styles = {
-        colorType: type
-    }
-
-    return (
-        <StyledTooltip type="button" aria-label={`${content}`} placement={placement} className={className} style={style}     {...styles}>
-            Tooltip on {placement}
-        </StyledTooltip>
-    )
-}
+  return (
+    <StyledTooltip
+      type="button"
+      aria-label={`${content}`}
+      placement={placement}
+      className={className}
+      style={style}
+      {...styles}
+    >
+      Tooltip on {placement}
+    </StyledTooltip>
+  );
+};
 
 export default React.forwardRef<HTMLDivElement, TooltipProps>(Tooltip);
-
