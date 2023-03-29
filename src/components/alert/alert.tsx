@@ -22,8 +22,7 @@ interface BaseAlertProps {
 export type AlertProps = BaseAlertProps;
 
 const Alert: React.ForwardRefRenderFunction<unknown, AlertProps> = (
-  props,
-  ref
+  props
 ) => {
   const {
     type = 'primary',
