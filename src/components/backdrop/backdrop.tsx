@@ -22,6 +22,7 @@ export const Backdrop: React.ForwardRefRenderFunction<
       style={style}
       className={className}
       onClick={onClick}
+      ref={ref}
     >
       {children}
     </StyledBackdrop>
