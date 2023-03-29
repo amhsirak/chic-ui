@@ -18,6 +18,8 @@ export interface TextInputProps
   error?: boolean;
   width?: string;
   value?: string;
+  bordered: boolean;
+  maxLength?: number;
   onChange?: ChangeEventHandler<HTMLInputElement>;
   // if input is controlled by another element
   readonly?: boolean;
@@ -40,6 +42,8 @@ const TextInput: React.ForwardRefRenderFunction<
     value,
     className,
     onChange,
+    maxLength,
+    bordered = true,
     readonly = false,
     clearable = false,
     search = false,
@@ -52,6 +56,7 @@ const TextInput: React.ForwardRefRenderFunction<
     disabled: disabled,
     error,
     width,
+    bordered,
     withIcon: icon !== undefined,
     withCross: clearable,
     isSearch: search
@@ -64,6 +69,7 @@ const TextInput: React.ForwardRefRenderFunction<
         onChange={onChange}
         readOnly={readonly}
         ref={ref}
+        maxLength={maxLength}
         className={className}
         placeholder={placeholder}
         {...styles}
