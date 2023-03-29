@@ -17,7 +17,7 @@ export interface CircularProgressBarProps {
 const CircularProgressBar: React.ForwardRefRenderFunction<
   HTMLAnchorElement,
   CircularProgressBarProps
-> = (props, ref) => {
+> = (props) => {
   let {
     progress = 70,
     type = 'primary',
