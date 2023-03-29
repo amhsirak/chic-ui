@@ -14,7 +14,13 @@ const Divider: React.ForwardRefRenderFunction<HTMLHRElement, DividerProps> = (
   props,
   ref
 ) => {
-  const { type = 'secondary', className, dashed, thickness = 0.5, style } = props;
+  const {
+    type = 'secondary',
+    className,
+    dashed,
+    thickness = 0.5,
+    style
+  } = props;
 
   return (
     <StyledDivider

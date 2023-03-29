@@ -20,7 +20,7 @@ export interface ProgressBarProps {
 const ProgressBar: React.ForwardRefRenderFunction<
   HTMLAnchorElement,
   ProgressBarProps
-> = (props, ref) => {
+> = (props) => {
   const {
     progress = 70,
     type = 'primary',
