@@ -14,7 +14,7 @@ interface BaseTooltipProps {
 
 export type TooltipProps = BaseTooltipProps
 
-const Tooltip: React.ForwardRefRenderFunction<HTMLDivElement, TooltipProps> = (props, ref) => {
+const Tooltip: React.ForwardRefRenderFunction<HTMLDivElement, TooltipProps> = (props) => {
 
     const {placement, className, content, type = 'primary', style } = props
 
