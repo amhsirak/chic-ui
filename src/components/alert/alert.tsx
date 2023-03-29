@@ -6,7 +6,6 @@ import {
   StyledDismissible,
   StyledRow
 } from './styled';
-
 import { themeType } from '../../tokens/themes';
 
 interface BaseAlertProps {
