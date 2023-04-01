@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { themeType } from 'src/tokens/themes';
 export type placementType = 'top' | 'right' | 'bottom' | 'left';
 interface BaseTooltipProps {
