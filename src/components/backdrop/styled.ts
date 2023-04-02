@@ -11,7 +11,7 @@ export const StyledBackdrop = styled.div<BackdropProps>`
     justify-content: center;
     `
       : 'display: none;'}
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
