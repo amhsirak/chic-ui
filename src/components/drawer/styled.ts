@@ -61,7 +61,7 @@ export const StyledDrawerClose = styled.button`
   }
   :hover,
   :focus {
-    filter: drop-shadow(0px 2px 1px black);
+    filter: drop-shadow(0.5px 0.5px 0.5px black);
   }
 `;
 
