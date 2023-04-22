@@ -6,7 +6,6 @@ import {
   StyledDismissible,
   StyledRow
 } from './styled';
-
 import { themeType } from '../../tokens/themes';
 
 interface BaseAlertProps {
@@ -22,10 +21,7 @@ interface BaseAlertProps {
 
 export type AlertProps = BaseAlertProps;
 
-const Alert: React.ForwardRefRenderFunction<unknown, AlertProps> = (
-  props,
-  ref
-) => {
+const Alert: React.ForwardRefRenderFunction<unknown, AlertProps> = (props) => {
   const {
     type = 'primary',
     className,
