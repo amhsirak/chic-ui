@@ -68,16 +68,7 @@ export const StyledFooterText = styled.p`
 `;
 
 export const StyledFooterLink = styled.a<StyledCardProps>`
-  color: #d193fa;
+  color: ${(pr) => (pr.type ? typeColors[pr.type].color : '#00000')};
   cursor: pointer;
   text-decoration: none;
-  &:active,
-  &:visited {
-    color: #9357ba;
-    text-decoration: none;
-  }
-  &:focus,
-  &:hover {
-    color: #6874cc;
-  }
 `;
