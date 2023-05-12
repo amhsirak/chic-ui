@@ -73,7 +73,6 @@ export const StyledFooterLink = styled.a<StyledCardProps>`
   text-decoration: none;
   &:active,
   &:visited {
-    color: #9357ba;
     text-decoration: none;
   }
 `;
