@@ -59,7 +59,9 @@ export const Card: React.ForwardRefRenderFunction<
         {footer && (
           <StyledFooter>
             <StyledFooterText children={footer} />
-            {href && <StyledFooterLink href={href} children={hrefText} type={type} />}
+            {href && (
+              <StyledFooterLink href={href} children={hrefText} type={type} />
+            )}
           </StyledFooter>
         )}
         {children}
