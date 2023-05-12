@@ -76,8 +76,4 @@ export const StyledFooterLink = styled.a<StyledCardProps>`
     color: #9357ba;
     text-decoration: none;
   }
-  &:focus,
-  &:hover {
-    color: #6874cc;
-  }
 `;
