@@ -38,7 +38,7 @@ export const Card: React.ForwardRefRenderFunction<
     subTitle,
     children,
     footer,
-    hrefText,
+    hrefText = 'Link',
     description,
     style,
     type = 'light'
