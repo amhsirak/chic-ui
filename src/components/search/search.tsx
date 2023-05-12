@@ -28,7 +28,7 @@ const Search: React.ForwardRefRenderFunction<HTMLDivElement, SearchProps> = (
   } = props;
 
   const textInputStyles = {
-    width: '100%'
+    width: '10%'
   };
 
   return (
