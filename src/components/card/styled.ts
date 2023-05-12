@@ -71,8 +71,4 @@ export const StyledFooterLink = styled.a<StyledCardProps>`
   color: ${(pr) => (pr.type ? typeColors[pr.type].color : '#00000')};
   cursor: pointer;
   text-decoration: none;
-  &:active,
-  &:visited {
-    text-decoration: none;
-  }
 `;
