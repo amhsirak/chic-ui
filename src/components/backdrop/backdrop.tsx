@@ -15,6 +15,10 @@ export const Backdrop: React.ForwardRefRenderFunction<
   BackdropProps
 > = (props, ref) => {
   const { visible = true, color, style, className, children, onClick } = props;
+
+  const refObject = ref || React.createRef<HTMLDivElement>();
+  const newRefObject = Object.assign({}, refObject);
+
   return (
     <StyledBackdrop
       visible={visible}
@@ -22,7 +26,7 @@ export const Backdrop: React.ForwardRefRenderFunction<
       style={style}
       className={className}
       onClick={onClick}
-      ref={ref}
+      ref={newRefObject}
     >
       {children}
     </StyledBackdrop>
