@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import { theme } from '../../tokens/themes';
 import Tag, { TagProps } from '.';
 import Button from '../button';
@@ -7,7 +7,7 @@ type Arguments = TagProps & {
   content: string;
 };
 
-export const Playground: Story<Arguments> = ({ content, ...args }) => (
+export const Playground: StoryFn<Arguments> = ({ content, ...args }) => (
   <Tag {...args}>{content}</Tag>
 );
 
