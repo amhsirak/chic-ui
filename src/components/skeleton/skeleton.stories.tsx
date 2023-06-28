@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import Skeleton, { SkeletonProps } from '.';
 
 export default {
@@ -6,7 +6,7 @@ export default {
   component: Skeleton
 } as Meta;
 
-const Template: Story<SkeletonProps> = (args) => <Skeleton {...args} />;
+const Template: StoryFn<SkeletonProps> = (args) => <Skeleton {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
