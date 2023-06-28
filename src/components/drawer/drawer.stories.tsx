@@ -1,9 +1,9 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import Drawer, { DrawerProps } from '.';
 import { useArgs } from '@storybook/client-api';
 
-const Template: Story<DrawerProps> = ({ ...args }) => {
+const Template: StoryFn<DrawerProps> = ({ ...args }) => {
   const [{ open }, updateArgs] = useArgs();
   const handleClose = () => updateArgs({ open: !open });
   return (
