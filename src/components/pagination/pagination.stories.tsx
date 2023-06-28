@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import { theme } from '../../tokens/themes';
 import Pagination, { PaginationProps } from './pagination';
 export default {
@@ -18,7 +18,7 @@ export default {
   }
 } as Meta;
 
-const Template: Story<PaginationProps> = (args) => <Pagination {...args} />;
+const Template: StoryFn<PaginationProps> = (args) => <Pagination {...args} />;
 
 export const Default = Template.bind({});
 
