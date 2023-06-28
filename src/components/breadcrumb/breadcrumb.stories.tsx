@@ -1,5 +1,5 @@
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import Breadcrumb, { BreadcrumbProps } from '.';
 import { theme } from '../../tokens/themes';
 
@@ -21,7 +21,7 @@ const options = {
     { to: 'https://twitter.com', label: 'Twitter' }
   ]
 };
-const Template: Story<BreadcrumbProps> = (args) => (
+const Template: StoryFn<BreadcrumbProps> = (args) => (
   <Breadcrumb {...args}>
     {options.items.map(({ to, label }) => {
       return (
