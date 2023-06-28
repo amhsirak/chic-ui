@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { StoryFn } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import { theme } from '../../tokens/themes';
 import Alert, { AlertProps } from '.';
 
