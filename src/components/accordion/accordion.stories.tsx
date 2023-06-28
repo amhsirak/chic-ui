@@ -1,4 +1,4 @@
-import { Story, StoryFn } from '@storybook/react';
+import { StoryFn } from '@storybook/react';
 import React from 'react';
 import Accordion, { AccordionProps } from './accordion';
 
