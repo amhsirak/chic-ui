@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import { StoryFn } from '@storybook/react';
 import { theme } from '../../tokens/themes';
 import Alert, { AlertProps } from '.';
 
@@ -15,7 +16,7 @@ function useAlert(initial: boolean): [boolean, () => void] {
 
   return [show, onClick];
 }
-export const Playground: Story<Arguments> = () => {
+export const Playground: StoryFn<Arguments> = () => {
   const [show, onClick] = useAlert(true);
   return (
     <Alert
