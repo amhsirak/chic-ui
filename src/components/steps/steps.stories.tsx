@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { useArgs } from '@storybook/client-api';
 import Steps, { StepsProps } from '.';
 import { theme } from '../../tokens/themes';
@@ -22,7 +22,7 @@ export default {
 
 const { Step } = Steps;
 
-const Template: Story<StepsProps> = ({ ...args }) => {
+const Template: StoryFn<StepsProps> = ({ ...args }) => {
   return (
     <Steps {...args}>
       <Step title="Step One" subTitle="Step one details" />
