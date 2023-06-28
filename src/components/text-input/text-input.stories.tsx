@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import TextInput, { TextInputProps } from '.';
 import SearchIcon from '../../icons/Search';
 
@@ -8,7 +8,7 @@ export default {
   component: TextInput
 } as Meta;
 
-const Template: Story<TextInputProps> = (args) => <TextInput {...args} />;
+const Template: StoryFn<TextInputProps> = (args) => <TextInput {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
