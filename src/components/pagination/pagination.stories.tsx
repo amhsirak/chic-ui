@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { Story, Meta } from '@storybook/react';
 import { theme } from '../../tokens/themes';
 import Pagination, { PaginationProps } from './pagination';
 export default {
