@@ -1,5 +1,5 @@
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import { theme } from '../../tokens/themes';
 
 import CircularProgressBar, { CircularProgressBarProps } from './circularProgressBar';
@@ -15,7 +15,7 @@ export default {
   }
 } as Meta;
 
-const Template: Story<CircularProgressBarProps> = (args) => <CircularProgressBar {...args} />;
+const Template: StoryFn<CircularProgressBarProps> = (args) => <CircularProgressBar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import Image, { ImageProps } from '.';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: Image
 } as Meta;
 
-const Template: Story<ImageProps> = (args) => <Image {...args} />;
+const Template: StoryFn<ImageProps> = (args) => <Image {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

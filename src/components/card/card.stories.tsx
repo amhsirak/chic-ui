@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import Card, { StyledCardProps } from '.';
 import CardGroup from '../cardgroup';
 
@@ -7,7 +7,7 @@ export default {
   component: Card
 } as Meta;
 
-const Template: Story<StyledCardProps> = (args) => <Card {...args} />;
+const Template: StoryFn<StyledCardProps> = (args) => <Card {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

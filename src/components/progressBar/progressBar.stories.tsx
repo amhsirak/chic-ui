@@ -1,5 +1,5 @@
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import { theme } from '../../tokens/themes';
 
 import ProgressBar, { ProgressBarProps } from '.';
@@ -16,7 +16,7 @@ export default {
   }
 } as Meta;
 
-const Template: Story<ProgressBarProps> = (args) => <ProgressBar {...args} />;
+const Template: StoryFn<ProgressBarProps> = (args) => <ProgressBar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

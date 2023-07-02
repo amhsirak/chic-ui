@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/react/types-6-0';
+import { Meta } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 import Button from '.';

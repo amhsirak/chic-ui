@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import styled from 'styled-components';
 import { theme } from '../../tokens/themes';
 
@@ -16,7 +16,7 @@ const Box = styled.div`
   border-radius: 4px;
 `;
 
-export const Default: Story<Arguments> = ({ offsetX, offsetY, ...args }) => {
+export const Default: StoryFn<Arguments> = ({ offsetX, offsetY, ...args }) => {
   const offset: BadgeProps['offset'] = [offsetX, offsetY];
 
   return (
