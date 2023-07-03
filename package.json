@@ -1,6 +1,6 @@
 {
   "name": "chic-ui",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "🎨 Lightweight opinionated UI Component Library for React",
   "license": "MIT",
   "main": "./lib/index.js",
