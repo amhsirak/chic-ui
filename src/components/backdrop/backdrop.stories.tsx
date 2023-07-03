@@ -1,5 +1,5 @@
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import Backdrop, { BackdropProps } from '.';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: Backdrop
 } as Meta;
 
-const Template: Story<BackdropProps> = (args) => <Backdrop {...args} />;
+const Template: StoryFn<BackdropProps> = (args) => <Backdrop {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};

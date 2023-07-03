@@ -1,5 +1,5 @@
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import Link, { LinkProps } from '.';
 import { theme } from '../../tokens/themes';
@@ -15,7 +15,7 @@ export default {
   }
 } as Meta;
 
-const Template: Story<LinkProps> = (args) => <Link {...args} />;
+const Template: StoryFn<LinkProps> = (args) => <Link {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

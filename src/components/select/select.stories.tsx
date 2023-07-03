@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import React, { useState } from 'react';
 import Select, { SelectProps } from '.';
 
@@ -7,7 +7,7 @@ export default {
   component: Select
 } as Meta;
 
-const Template: Story<SelectProps<string[]>> = (args) => {
+const Template: StoryFn<SelectProps<string[]>> = (args) => {
   const [value, setValue] = useState('');
   const data = ['India', 'Mexico', 'Australia', 'Germany'];
 
