@@ -18,11 +18,17 @@ const Search: React.ForwardRefRenderFunction<HTMLDivElement, SearchProps> = (
   props,
   ref
 ) => {
-  const { className, value, onChange, placeholder, width = '100%', style } = props;
+  const {
+    className,
+    value,
+    onChange,
+    placeholder,
+    width = '100%',
+    style
+  } = props;
 
   const textInputStyles = {
-    width: '100%'
-    //placeholder
+    width: '10%'
   };
 
   return (
